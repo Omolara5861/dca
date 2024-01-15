@@ -1,6 +1,6 @@
 #intro h2 {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 54px;
     line-height: 66px;
     letter-spacing: -1.5px;
     color: #08083E;
@@ -8,7 +8,7 @@
 
 #intro p {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 46px;
     letter-spacing: -1.5px;
     color: #08083E;
@@ -19,18 +19,64 @@
     border-radius: 10px;
     background-color: #00284A;
     color: #fff;
+    padding: 2px;
+    margin-left: 190px;
+    text-align: center;
+    width: 212px;
 }
 
-#intro .btn {
+.btn {
     width: 181px;
-    height: 49px;
     padding: 16px 20px;
     border-radius: 8px;
     margin-right: 10px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
     background: linear-gradient(90deg, #0082F0 25.47%, #199EF3 68.59%, #6FB6F6 97.66%);
 }
 
-#intro .btn-trans {
+#intro .btn-trans, .box {
     background: transparent !important;
-    border: 1px solid linear-gradient(90deg, #0082F0 25.47%, #199EF3 68.59%, #6FB6F6 97.66%);
+    /* border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, #0082F0 25.47%, #199EF3 68.59%, #6FB6F6 97.66%); */
+    border: 1px solid #199EF3;
+    color: #000 ;
 }
+
+.box {
+    height: 322px;
+}
+
+#objective {
+    background: linear-gradient(180deg, rgba(237, 244, 251, 0.2) 0%, rgba(231, 240, 248, 0) 100%);
+}
+
+#structure div {
+font-size: 32px;
+font-weight: 600;
+line-height: 44px;
+letter-spacing: 0.5px;
+color: #08083E;
+}
+
+#benefit .benefit-box {
+    text-align: center;
+    box-shadow: 0px 4px 10px 2px #0000001A;
+    height: 287px;
+    margin: 10px 0;
+}
+
+#benefit .benefit-box img {
+    margin-bottom: 26px;
+}
+#benefit .benefit-box p {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    text-align: center;
+
+}
+
