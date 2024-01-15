@@ -128,3 +128,20 @@ section {
 .mb-50 {
     margin-bottom: 150px;
 }
+
+.accordion-button:not(.collapsed) {
+    background: unset !important;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    border: 1px solid #25252533;
+}
+.accordion-button:focus {
+    border-color: unset !important;
+    box-shadow: unset !important;
+}
+
+.accordion-button {
+    border: none;
+}
