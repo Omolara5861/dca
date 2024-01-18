@@ -165,3 +165,7 @@ color: #08083E;
         width: unset;
     }
 }
+
+.hidden {
+    display: none;
+}
