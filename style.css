@@ -157,10 +157,6 @@ color: #08083E;
         margin-top: 10px;
     }
 
-    #intro .gap-4 {
-        flex-direction: row;
-    }
-
     #pricing .btn {
         width: unset;
     }
