@@ -165,3 +165,15 @@ color: #08083E;
 .hidden {
     display: none;
 }
+
+.tools {
+   display: flex;
+   justify-content: center;
+   margin: 100px;
+}
+
+.tools img {
+    width: 250px;
+    height: 85px;
+    margin: 0 10px 10px 0;
+}
