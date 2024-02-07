@@ -178,3 +178,14 @@ color: #08083E;
     height: 85px;
     margin: 0 10px 10px 0;
 }
+
+/* container */
+.three-columns {
+    display:flex;
+}
+
+/* columns */
+.three-columns > * {
+    width:calc(100% / 3);
+    padding:1rem;
+}
