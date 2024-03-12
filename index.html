@@ -5,401 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DCA Courses Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img
+                        src="https://digitalcareers.academy/static/assets/images/dcasvg-logo.svg" height="60" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Explore Courses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="agile.html">Agile Project Manger</a></li>
+                                <li><a class="dropdown-item" href="business-analysis.html">Business Analysis</a></li>
+                                <li><a class="dropdown-item" href="scrum-master.html">Scrum Master</a></li>
+                                <li><a class="dropdown-item" href="work-experience.html">Work Experience</a></li>
+                                <li><a class="dropdown-item" href="product-management.html">Product Management</a></li>
+                                <li><a class="dropdown-item" href="courses.html">View All</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                                <a class="nav-link mx-2" href="work-experience.html">Work Experience Program</a>
+                            </li> -->
+                        <!-- <li class="nav-item">
+                                <a class="nav-link mx-2" href="contact.html">Contact Us</a>
+                            </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Company
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" mx-2 btn btn-trans" data-bs-toggle="modal" data-bs-target="#myModal">Free tech
+                                session</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" mx-2 btn" href="contact.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Free Tech Sessions Form</h4>
+                        <img src="images/times.png" alt="Close Btn" data-bs-dismiss="modal" />
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer text-center w-100">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Submit Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <main class="py-5">
-        <section id="intro">
-            <div class="container d-flex gap-5">
-                <img src="images/img1.png" alt="Course Image" class="col-md-6 img">
-                <div class="col-md-6 align-self-center">
-                    <h2>Become a Skilled Scrum Master</h2>
-                    <p>Get premium knowledge on the use of agile tools, techniques and hands-on tools to manage project
-                        effectively by scoping , creating schedules, budgeting and allocating of resources. </p>
-                    <div class="info d-flex mb-4">
-                        <strong>Instructor Led - Remote</strong>
-                        <div class="pill ">Duration: 8 - Weeks</div>
-                    </div>
-                    <div class="d-flex gap-4">
-                        <a href="" class="btn">
-                            Enroll Now
-                        </a>
-                        <a href="" class="btn btn-trans">
-                            Pricing
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class=" p-5 container">
-            <div class="d-flex mb-4 gap-5">
-                <div class="col-md-6 box p-4">
-                    <h4>Agile Scrum Master</h4>
-                    <ul>
-                        <li>Course Overview</li>
-                        <li>Pricing</li>
-                        <li>Learning Objective</li>
-                        <li>Course Benefit</li>
-                        <li>Testimonials</li>
-                        <li>Course Structure</li>
-                        <li>Scrum Master Accountability</li>
-                        <li>Course Schedule</li>
-                        <li>Agile Scrum Ceremony</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="mb-3">Course Overview</h3>
-                    <p>Today’s world requires both technical and soft skills for specialised positions which includes
-                        the role of a Scrum Master.
-                    </p>
-                    <p> The Scrum Master serves to facilitate scrum to the larger team by ensuring the scrum framework
-                        is followed. He or she is committed to the scrum values, agile principles and best practices.
-                        The scrum master should also remain flexible and open to opportunities for the team to improve
-                        their workflow.</p>
-                    <p> In this training, we will teach you how to use project management tools, collaboration tools,
-                        capacity planning, and agile games to improve team performance, and conflict management. We will
-                        also help with interview preparation.</p>
-                </div>
-            </div>
-            <div class="m-auto">
-                <h3 class="mb-2 text-center">Scrum Master Accountability</h3>
-                <ul>
-                    <li>As a Scrum Master, you are accountable for the overall effectiveness of the team by enabling the
-                        teams improve its practices, within the scrum framework</li>
-                    <li>Serves the team by facilitating removal of impediments to progress and helping them to focus on
-                        creating high-value increment.</li>
-                    <li>Facilitating stakeholder collaboration as requested or needed.</li>
-                    <li>Accountable for establishing Scrum as defined by the Scrum Guide</li>
-                    <li>Coaches the team and the entire organization on Scrum adoption, principles and practices,
-                        self-management, and cross-functionality.</li>
-                    <li>Facilitates scrum events, ensuring they take place, positive, productive, and kept within the
-                        timebox.</li>
-                    <li> Helping the Scrum Team understand the need for clear and concise Product Backlog items.</li>
-                    <li>Helping find techniques for effective Product Goal definition and Product Backlog Management.
-                    </li>
-                    <li>The Scrum Master removes conflicts within the team and fosters an environment where team members
-                        feel psychologically safe.</li>
-                    <li>Helping employees and stakeholders understand and enact an empirical approach for complex work.
-                    </li>
-                    <li>Removing barriers between the scrum teams and stakeholders.</li>
-                </ul>
-            </div>
-        </section>
-        <section id="objective" class="p-5 ">
-            <div class="container d-flex gap-5">
-                <img src="images/img2.png" alt="Course Image" class="col-md-6 img">
-                <div class="col-md-6 align-self-center">
-                    <h3>Learning Objective</h3>
-                    <ul>
-                        <li>Understanding Digital Transformation.</li>
-                        <li>Utilization of collaborative tools.</li>
-                        <li>Scrum Guide Review & Conducting Scrum Ceremonies.</li>
-                        <li>Capacity Planning, Estimation & Scrum Reports.</li>
-                        <li>Agile Games & Dealing with Team Conflict.</li>
-                        <li>CV Writing & Interview Prep.</li>
-                    </ul>
-                    <a href="" class="btn">
-                        Enroll Now
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section id="structure" class="p-5 ">
-            <h3 class="text-center">Course Structure</h3>
-            <div class="container text-center">
-                <div>Scrum Master Training Session @ 3.00pm UK time  / 10.00am EST  / 4.00pm WAT</div>
-                <div>Monday - Sprint Review @ 7.00pm - 10.00pm GMT (PRACTICALS)</div>
-                <div>Tuesday - Sprint Retrospective @ 7.00pm - 10.00pm GMT (PRACTICALS)</div>
-                <div>Daily Stand Up - 15 Munites Meeting (TIME - AS BY TEAM)</div>
-            </div>
-        </section>
-        <section id="benefit" class="p-5 container">
-            <h3 class="text-center">Course Benefit</h3>
-            <div class="row">
-                <div class="benefit-box col-md-4">
-                    <img src="icons/video.png" alt="">
-                    <p>Weekly Live Session</p>
-                </div>
-                <div class="benefit-box col-md-4">
-                    <img src="icons/users.png" alt="">
-                    <p>One-on-One Career
-                        Coaching Session</p>
-                </div>
-                <div class="benefit-box col-md-4">
-                    <img src="icons/user.png" alt="">
-                    <p>Digital Product
-                        Simulation</p>
-                </div>
-                <div class="benefit-box col-md-4">
-                    <img src="icons/community.png" alt="">
-                    <p>Become Part of Scrum
-                        Master Community of
-                        Practice</p>
-                </div>
-                <div class="benefit-box col-md-4">
-                    <img src="icons/chat.png" alt="">
-                    <p>Interview Prep and
-                        CV Review</p>
-                </div>
-                <div class="benefit-box col-md-4">
-                    <img src="icons/codementor.png" alt="">
-                    <p>Discounted access to
-                        DCA Work Experience
-                        Program </p>
-                </div>
-            </div>
-        </section>
-        <section id="schedule" class="p-5">
-            <div class="container">
-                <h3 class="text-center">Scrum Master Schedule</h3>
-                <div class="accordion" id="myAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="header1">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panel1Collapse">
-                                Week 1
-                            </button>
-                        </h2>
-                        <div id="panel1Collapse" class="accordion-collapse collaps" aria-labelledby="panel1Heading">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>Onboarding </li>
-                                    <li>Digital Transformation</li>
-                                    <li>Daily Stand-Up</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="header2">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panel2Collapse">
-                                Week 2 - 3
-                            </button>
-                        </h2>
-                        <div id="panel2Collapse" class="accordion-collapse collapse" aria-labelledby="panel2Heading">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>Online Collaboration Tools
-                                       </li>
-                                    <li>Daily Stand-Up</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="header3">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panel3Collapse">
-                                Week 4
-                            </button>
-                        </h2>
-                        <div id="panel3Collapse" class="accordion-collapse collapse" aria-labelledby="panel3Heading">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>Scrum Guide Review</li>
-                                    <li>Daily Stand-Up</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="header4">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panel4Collapse">
-                                Week 5 - 6
-                            </button>
-                        </h2>
-                        <div id="panel4Collapse" class="accordion-collapse collapse" aria-labelledby="panel4Heading">
-                            <div class="accordion-body">
-                                <li>Capacity Planning</li>
-                                <li>Estimation Techniques</li>
-                                <li>Scrum Reports</li>
-                                <li>Daily Stand-Up</li>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="header5">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panel5Collapse">
-                                Week 7
-                            </button>
-                        </h2>
-                        <div id="panel5Collapse" class="accordion-collapse collapse" aria-labelledby="panel5Heading">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>Agile Games</li>
-                                    <li>Dealing with Conflicts</li>
-                                    <li>Daily Stand-Up</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="header6">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panel6Collapse">
-                                Week 8
-                            </button>
-                        </h2>
-                        <div id="panel6Collapse" class="accordion-collapse collapse" aria-labelledby="panel6Heading">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>CV Writing</li>
-                                    <li>Job Scenario</li>
-                                    <li>Interview Prep</li>
-                                    <li>Daily Stand-Up</li>
-                                </ul>
-                        </div>
-                    </div>
-                </div>
-                <strong>Personal Research Required. All times in GMT</strong>
-            </div>
-        </section>
-        <section id="pricing" class="p-5 ">
-            <div class="container">
-                <h3 class="text-center">Pricing</h3>
-                <h5>(Practical Scrum Master)</h5>
-                <h4>Flexible and Convenient Pricing Option</h4>
-                <p>Our flexible pricing option has made achieving your goals easier i.e getting a course. You can
-                    conveniently pay for your desired course
-                    as in full and enjoy discount or paying in installment for over 2 - 3 months period.</p>
-                <div class="inner p-5">
-                    <button class="btn" onclick="showCurrentContent()">SM (Pay now in full)</button>
-                    <button class="btn btn-trans" onclick="showHiContent()">SM (3 times instalment)</button>
-                    <div class="outer p-3 mt-5" id="content">
-                        <!-- Initial content -->
-                        <h4>Pay Now</h4>
-                        <div class="d-flex justify-content-between ">
-                            <p>Course fee</p>
-                            <div>
-                                <h5>£699         (UK)</h5>
-                                <h5>N450,000  (NIG)</h5>
-                                <h5>$1,200      (CAD)</h5>
-                                <h5>$900         (USD)</h5>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn" onclick="payInFull()">Pay in Full</button>
-                        </div>
+        <section id="hero">
 
-                    </div>
-                    <!-- Additional content (initially hidden) -->
-                    <div class="outer p-3 mt-5 hidden" id="hiContent">
-                        <h4>Pay 3 times in installment</h4>
-                        <div>
-                            <div class="three-columns">
-                                <div class="fw-bold">1st Payment</div>
-                                <div class="fw-bold">2nd Payment</div>
-                                <div class="fw-bold">3rd Payment</div>
-                            </div>
-                            <div class="three-columns">
-                                <div>50%</div>
-                                <div>25%</div>
-                                <div>25%</div>
-                            </div>
-                            <div class="three-columns">
-                                <div>£384.45</div>
-                                <div>£192.23</div>
-                                <div>£192.23</div>
-                            </div>
-                            <div class="three-columns">
-                                <div>N247,500</div>
-                                <div>N123,750</div>
-                                <div></div>
-                            </div>
-                            <div class="three-columns">
-                                <div>$660</div>
-                                <div>$330</div>
-                                <div>$330</div>
-                            </div>
-                            <div class="three-columns">
-                                <div>$495</div>
-                                <div>$247.50</div>
-                                <div>$247.50</div>
-                            </div>
-                        </div>
-                        
-                        <div class="text-center">
-                            <button class="btn" onclick="payInFull()">Pay in Installment</button>
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-        <section id="ceremony" class="p-5">
-            <div class="container">
-                <h3 class="text-center mb-4">Agile Scrum Ceremonies</h3>
-                <div class="row">
-                    <img src="images/img3.png" alt="" class="col-md-6 img ">
-                    <div class="col-md-6">
-                        <p><strong>Sprint Planning:</strong>This is the meeting for the team to consider items of work
-                            to be completed and commits to what they have capacity to deliver during the coming sprint
-                        </p>
-                        <p><strong>Daily Stand-Up:</strong>This is the team meeting to provide update and progress of
-                            individual work done towards adding value to product development</p>
-                        <p><strong>Scrum Review:</strong>This is where the teamcases what they have completed for the
-                            stakeholders review and feedback and get a sign off</p>
-                        <p><strong>Scrum Retrospective:</strong>This a meeting where the team reflects on their
-                            performance during the current sprint seek ways to improve their interraction, practices,
-                            and lessons learnt</p>
-                        <p><strong>Sprint:</strong>This is a cycle of work for the team (can be 1-4 weeks interval)</p>
-                        <button class="btn">Enrol now</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="testimonials" class="p-5">
-            <div class="container">
-                <h3 class="text-center">Success Stories</h3>
-                <div class="d-flex gap-4 mt-50">
-                    <div class="testimonial text-center col-md-6">
-                        <img src="images/success1.png" alt="">
-                        <p>“I am happy to inform you that I have secured a process Analyst position with a Government
-                            Agency in the U.K. I am happy and excited about the opportunity. I want to thank the
-                            coaching team and Prof Oludare for your mentorship, support and the remarkable learning
-                            experience during my practical Business Analysis program.
-                            I encourage all present DCA students to stay motivated, Keep sweating it out and getting
-                            your hands dirty, you work and dedication will definitely be rewarded”.</p>
-                        <i>OLU</i>
-                    </div>
-                    <div class="testimonial text-center col-md-6">
-                        <img src="images/sucess2.png" alt="">
-                        <p>“I’m pleased o announce I have been offered a role as a Business Analyst for a software
-                            development company within the risk management sector.
-                            Always think about the end result, why you are on this platform, visualize the house, car
-                            and the ability to treat yourself and your family. When you succeed you will not only be a
-                            blessing to your own life but to others only”.</p>
-                        <i>DAREN.S</i>
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function showCurrentContent() {
-            document.getElementById('content').classList.remove('hidden');
-            document.getElementById('hiContent').classList.add('hidden');
-        }
-
-        function showHiContent() {
-            document.getElementById('content').classList.add('hidden');
-            document.getElementById('hiContent').classList.remove('hidden');
-        }
-
-        function payInFull() {
-            // Handle pay in full button click logic here
-            alert("Pay in Full button clicked");
-        }
-    </script>
 </body>
 
 </html>
