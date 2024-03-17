@@ -7,7 +7,8 @@ body {
     color: #67676a;
 }
 
-#navbar .btn, .modal-footer .btn {
+#navbar .btn,
+.modal-footer .btn {
     all: unset;
     height: 8px;
     padding: 8px 32px;
@@ -16,6 +17,7 @@ body {
     background: #2762BF;
     color: #fff;
 }
+
 #navbar .btn-trans {
     background: transparent !important;
     color: #2762BF;
@@ -33,19 +35,18 @@ body {
     box-shadow: 4px 4px 8px #E9F2FF
 }
 
-#navbar .nav-link:hover ,
+#navbar .nav-link:hover,
 #navbar .dropdown-menu a:hover {
-    background:  unset !important;
+    background: unset !important;
     color: #2762BF !important;
 }
 
 #navbar .nav-item {
     color: #1a1a1a;
-    margin: auto 4px;
+    margin: auto;
 }
 
 #navbar a {
-    padding-left: 8px;
     padding-right: 8px;
 }
 
@@ -61,12 +62,37 @@ body {
     letter-spacing: 0em;
 }
 
+#navbar .refer {
+    padding-right: 10px;
+    position: relative;
+}
+
+#navbar .refer a {
+    background-image: linear-gradient(90deg, #2F2C9F 0%, #B745CA 100%) !important;
+    /* Adjust colors as needed */
+    -webkit-background-clip: text;
+    /* For Safari */
+    background-clip: text;
+    color: transparent;
+
+}
+
+#navbar .refer img {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+#navbar .border-left {
+    border-left: 1px solid #DDDEE0;
+    margin-left: 12px;
+}
 
 .navbar-toggler:focus {
     box-shadow: none;
 }
 
-.modal-content  {
+.modal-content {
     padding: 18px 20px !important;
     border-radius: 16px;
     border: 1px;
@@ -77,18 +103,11 @@ body {
     padding: unset;
     padding: 0 20px;
 }
-.modal-header h4 {
-        font-weight: 600;
-        line-height: 36px;
-        color: #1a1a1a;
-}
 
-.modal-header .btn-close {
-    all: unset;
-    width: 17.5px;
-    height: 28px;
-    padding: 5.25px, 0px;
-    color: #F96060 !important;
+.modal-header h4 {
+    font-weight: 600;
+    line-height: 36px;
+    color: #1a1a1a;
 }
 
 .modal-footer {
@@ -99,4 +118,9 @@ body {
 .modal-footer .btn {
     height: 25px;
     width: 80%;
+}
+
+.form-control:focus {
+    border-color: none;
+    box-shadow: unset;
 }
