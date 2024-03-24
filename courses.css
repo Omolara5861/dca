@@ -1,3 +1,4 @@
+
 .course__section {
   background-image: url("./images/courses/course_hero.png");
   background-position: center;
@@ -6,9 +7,18 @@
   min-height: 300px;
   padding-top: 7rem;
   color: white;
+  position: relative;
 }
-img {
+.card {
+  border: 0;
+  border-radius: 20px;
+  width: 18rem;
+}
+.images{
   width: 100%;
+}
+.btn{
+  border-radius: 20px;
 }
 
 .box__section {
@@ -25,6 +35,59 @@ img {
   }
 }
 
+ .personality-modal{
+  display: flex;
+  flex-direction: column;
+  left: 75%;
+  position: relative;
+  margin-top: -15%;
+  width: 400px;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 70%;
+
+ 
+ }
+ .personality-modal  > :first-child{
+  width: 260px;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+ 
+ }
+.personality-modal .text-container{
+  width: 260px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+
+ 
+ }
+
+.personality-btn{
+  width: 30%;
+  height: 40%;
+
+}
+
 .course__details {
   background-image: url("./images/courses/Hero\ Section.png");
+}
+@media (max-width:768.97px) {
+  .card{
+    width: 80vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    object-fit: cover;
+   
+  }
+  .btn{
+    border-radius: 10px;
+  }
+  .personality-btn{
+  margin-right: 5vw;
+  width: 12%;
+  
+  }
+  .personality-modal{
+    display: none;
+  }
 }

@@ -475,6 +475,11 @@ body {
       .idea1{
         height: 5em;
       }
+      .buttons{
+        background-color: #2762BF;
+        border-radius: 25px;
+        border:0;
+      }
 
   /* MEDIA QUERIES FOR MOBILE & TABLETS */
 
@@ -593,5 +598,5 @@ body {
     }
 
     
-    line-height: 30px;
+    /* line-height: 30px; */
 }
