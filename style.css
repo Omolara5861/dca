@@ -1,179 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0em;
-    color: #67676a;
-    overflow-x: hidden;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #67676a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #navbar .btn,
 .modal-footer .btn {
-    all: unset;
-    height: 8px;
-    padding: 8px 32px;
-    border-radius: 50px;
-    border: 1px solid #2762BF;
-    background: #2762BF;
-    color: #fff;
+  all: unset;
+  height: 8px;
+  padding: 8px 32px;
+  border-radius: 50px;
+  border: 1px solid #2762bf;
+  background: #2762bf;
+  color: #fff;
 }
 
 #navbar .btn-trans {
-    background: transparent !important;
-    color: #2762BF;
+  background: transparent !important;
+  color: #2762bf;
 }
 
 #navbar {
-    background: #E9F2FF;
-    box-shadow: 0px 1px 2px 0px #0000000D;
-    font-weight: 500;
+  background: #e9f2ff;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+  font-weight: 500;
 }
 
 .nav-item .active {
-    border-radius: 6px;
-    background: #dbeaff;
-    box-shadow: 4px 4px 8px #E9F2FF
+  border-radius: 6px;
+  background: #dbeaff;
+  box-shadow: 4px 4px 8px #e9f2ff;
 }
 
 #navbar .nav-link:hover,
 #navbar .dropdown-menu a:hover {
-    background: unset !important;
-    color: #2762BF !important;
+  background: unset !important;
+  color: #2762bf !important;
 }
 
 #navbar .nav-item {
-    color: #1a1a1a;
-    margin: auto;
+  color: #1a1a1a;
+  margin: auto;
 }
 
 #navbar a {
-    padding-right: 8px;
+  padding-right: 8px;
 }
 
 #navbar .dropdown-menu {
-    padding: 12px;
-    border: none !important;
-    border-radius: 8px;
-    box-shadow: 0px 10px 38px -5px #0000001A;
-    background: #fff;
-    color: #3E3E3E;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
+  padding: 12px;
+  border: none !important;
+  border-radius: 8px;
+  box-shadow: 0px 10px 38px -5px #0000001a;
+  background: #fff;
+  color: #3e3e3e;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
 }
 
 #navbar .refer {
-    padding-right: 10px;
-    position: relative;
+  padding-right: 10px;
+  position: relative;
 }
 
 #navbar .refer a {
-    background-image: linear-gradient(90deg, #2F2C9F 0%, #B745CA 100%) !important;
-    /* Adjust colors as needed */
-    -webkit-background-clip: text;
-    /* For Safari */
-    background-clip: text;
-    color: transparent;
-
+  background-image: linear-gradient(90deg, #2f2c9f 0%, #b745ca 100%) !important;
+  /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  /* For Safari */
+  background-clip: text;
+  color: transparent;
 }
 
 #navbar .refer img {
-    position: absolute;
-    right: 0;
-    top: 10px;
+  position: absolute;
+  right: 0;
+  top: 10px;
 }
 
 #navbar .border-left {
-    border-left: 1px solid #DDDEE0;
-    margin-left: 12px;
+  border-left: 1px solid #dddee0;
+  margin-left: 12px;
 }
 
 .navbar-toggler:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .modal-content {
-    padding: 18px 20px !important;
-    border-radius: 16px;
-    border: 1px;
+  padding: 18px 20px !important;
+  border-radius: 16px;
+  border: 1px;
 }
 
 .modal-header {
-    border-bottom: none !important;
-    padding: unset;
-    padding: 0 20px;
+  border-bottom: none !important;
+  padding: unset;
+  padding: 0 20px;
 }
 
 .modal-header h4 {
-    font-weight: 600;
-    line-height: 36px;
-    color: #1a1a1a;
+  font-weight: 600;
+  line-height: 36px;
+  color: #1a1a1a;
 }
 
 .modal-footer {
-    all: unset;
+  all: unset;
 }
 
-
 .modal-footer .btn {
-    height: 25px;
-    width: 80%;
+  height: 25px;
+  width: 80%;
 }
 
 .form-control:focus {
-    border-color: none;
-    box-shadow: unset;
+  border-color: none;
+  box-shadow: unset;
 }
 
+/* section {
+  max-width: 1440px;
+  margin: 0 auto;
+} */
 .payment-page {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    padding-top: 20%;
-    padding-bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  padding-top: 20%;
+  padding-bottom: 20%;
 
 }
 
 .font-weight {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-.greentick{
-  width: 15%;
-}
 .agile {
-    max-width: 60%;
-    margin-top: 10px;
+  max-width: 60%;
+  margin-top: 10px;
 
 }
 
 .agile img {
-    width: 25%;
-    border-radius: 10%;
+  width: 25%;
+  border-radius: 10%;
 }
 
 .flex-container p {
-    text-align: center;
+  text-align: center;
 }
 
-.buttons {
-    background-color: #2762BF;
-    font-size: small;
-    border: 0;
-    border-radius: 25px;
-    text-decoration: none;
+.flex-container button {
+  background-color: #2762BF;
+  font-size: small;
+  border: 0;
+  border-radius: 20px;
 }
 
-.flex-container button :hover {
-    opacity: 5;
+#footer {
+  background: #05274C;
+  color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
 }
 
 #hero {
@@ -189,34 +202,22 @@ body {
     align-items: center;
     padding-top: 10%;
 }
-
-.popular-posts figure {
-    display: flex;
-    width: 28%;
-    flex-direction: column;
+#footer .border-tb {
+  border-top: 1px solid #586E87;
+  border-bottom: 1px solid #586E87;
+  padding: 32px 0;
 }
 
-.popular-posts figure p {
-    font-size: small;
-
-}
-.popular-posts figure h6 a {
- color: rgb(4, 4, 87);
- font-size: 14.5px;
- text-decoration: none;
- font-weight: 700;
- word-spacing: 1px;
-}
-.popular-posts figure blockquote{
-    font-size: small;
-
-}
-.popular-post img {
-    position: relative;
-    /* width: 30%; */
+#footer .mb-8 {
+  margin-bottom: 52px;
 }
 
-.font-bold{
+#footer .social-icon img:last-child {
+  margin-bottom: -8px;
+}
+
+#footer h5 {
+    font-size: 20px;
     font-weight: 700;
 }
 #courses form{
@@ -592,4 +593,5 @@ body {
     }
 
     
+    line-height: 30px;
 }
