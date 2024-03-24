@@ -178,8 +178,7 @@ body {
 
 #hero {
     position: relative;
-    height: 20%;
-    min-height: 70vh;
+    height: 319px;
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/blod1del.png);
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/blod1del.png);
     background-position: center;
@@ -233,6 +232,7 @@ body {
 #courses figure{
     width: 40%;
     display: flex;
+    position: relative;
     flex-direction: column;
 }
 #courses  form img{
@@ -247,13 +247,21 @@ body {
 #courses figure p{
     font-size: small;
 }
+.line{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(221, 220, 220);
+    
+}
 
 #hero2{
    background: #E9F2FF;
    width: 100%;
    text-align: center;
    color: #3c2770;
-   height: 35vh;
+    height: 319px;
+    align-items: center;
    font-weight: 900;   
 }
 
@@ -273,10 +281,9 @@ body {
 }
 #hero3{
     position: relative;
-    height: 20%;
-    min-height: 70vh;
-    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/img3.png);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/img3.png);
+    height: 319px;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/Hero\ Section.png);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/Hero\ Section.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -284,6 +291,7 @@ body {
     text-align: center;
     align-items: center;
     padding-top: 10%;
+    position: relative;
 }
 #hero3 div{
     width: 50%; 
@@ -291,6 +299,50 @@ body {
     left: 30%;
     top: 10%;
 }
+
+.ripple-effect{
+    position: absolute;
+    left: 60%;
+    width: 40%;
+}
+.ellipse1{
+    position: absolute;
+    
+    left: 45%;
+    place-self: center;
+}
+
+.ellipse2{
+    position: absolute;
+    top: 330px;
+    left: -2%;
+}
+.ellipses{
+    position: absolute;
+     right: 0%;
+   bottom: -275px;
+}
+#hero2 div span .ellipse-textprivacy{
+    position: absolute;
+    margin-top:30px;
+    left:42% ;
+}
+#hero2 div span .ellipse-textcontact{
+    position: absolute;
+    margin-top:30px;
+    left:43% ;
+}
+#hero2 div span .ellipse-textterms{
+    position: absolute;
+    margin-top:30px;
+    left:38% ;
+}
+#hero2 div span .ellipse-textfaq{
+    position: absolute;
+    margin-top:30px;
+    left:46.5% ;
+}
+
 .contactus .row{
     display: flex;
     justify-content: space-between;
@@ -329,6 +381,12 @@ body {
         background-position: right 0.75rem center;
         background-size: 8px 12px;
     }
+    .form-container .form-group label{
+        color:#363636;
+        font-size: 16px;
+        font-weight:600;
+        line-height: 24px;
+    }
     
     .contact-form img{
         height: 10%;
@@ -341,7 +399,7 @@ body {
        width: 50%;
     }
     .contact-texts{
-        color: #080557;
+        color:#05274C;
     }
     .icon-container{
         background-color: #080557;
@@ -368,6 +426,7 @@ body {
         width: 60%;
         margin-left: 10%;
         margin-left: 0;
+        object-fit: cover;
     }
     .refer-2{
       margin-left: -5%;
@@ -492,5 +551,45 @@ body {
         
     }
     
+    
+}
+@media (max-width: 768.98px) {
+    .ellipse1{
+        position: absolute;
+        left: 40%;
+        place-self: center;
+    }
+    
+    .ellipse2{
+        position: absolute;
+        top: 330px;
+        left: -2%;
+    }
+    .ellipse3{
+        position: absolute;
+         right: 0%;
+        bottom: 110px;
+    }
+    #hero2 div span .ellipse-textprivacy{
+        position: absolute;
+        margin-top:30px;
+        left:35% ;
+    }
+    #hero2 div span .ellipse-textcontact{
+        position: absolute;
+        margin-top:30px;
+        left:38% ;
+    }
+    #hero2 div span .ellipse-textterms{
+        position: absolute;
+        margin-top:30px;
+        left:30% ;
+    }
+    #hero2 div span .ellipse-textfaq{
+        position: absolute;
+        margin-top:30px;
+        left:46% ;
+    }
+
     
 }
