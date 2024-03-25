@@ -664,11 +664,8 @@ td {
   font-weight: 700;
 }
 
-.line {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: rgb(221, 220, 220);
+.cont {
+  border-bottom: 1px solid #CDCDD0
 }
 
 #hero2 {
