@@ -1145,6 +1145,11 @@ td {
   background: white;
   z-index: 8;
 }
+.page-header .elipse4 {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+}
 .page-header .ripple {
   position: absolute;
   right: 0;
