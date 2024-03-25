@@ -210,6 +210,15 @@ body {
   background: #F9FDFF;
 }
 
+#choose .title {
+  position: relative;
+}
+#choose .title img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 #choose .features {
   font-size: 20px;
   font-weight: 500;
@@ -849,8 +858,12 @@ body {
     left: 46%;
     line-height: 30px;
   }
-     #blog .d-flex {
+     .d-flex {
        flex-direction: column !important;
+     }
+
+     #choose .d-flex {
+      flex-direction: row !important;
      }
 
   #blog .d-flex img {
