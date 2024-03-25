@@ -1,4 +1,4 @@
-img {
+.images {
   width: 100%;
 }
 #work__experience {
@@ -30,6 +30,17 @@ img {
 .section__ {
   background: #f9fdff;
   padding: 4rem 0;
+}
+.card{
+
+  border-color: #B0CAF0 ;
+  box-shadow: 0.2px 0.5px  0.5px 0.5px #bfd9ff ;
+  
+}
+.ideaimage{
+  margin-left: -8%;
+  width:15%;
+  height: 20%;
 }
 .header {
   margin-top: 4em;

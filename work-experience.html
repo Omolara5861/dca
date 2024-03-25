@@ -20,6 +20,109 @@
     <link rel="stylesheet" href="experience.css" />
   </head>
   <body>
+
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="https://digitalcareers.academy/static/assets/images/dcasvg-logo.svg"
+              height="60" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link mx-2 active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="agile.html">Agile Project Manger</a></li>
+                  <li><a class="dropdown-item" href="business-analysis.html">Business Analysis</a></li>
+                  <li><a class="dropdown-item" href="scrum-master.html">Scrum Master</a></li>
+                  <li><a class="dropdown-item" href="work-experience.html">Work Experience</a></li>
+                  <li><a class="dropdown-item" href="product-management.html">Product Management</a></li>
+                  <li><a class="dropdown-item" href="courses.html">View All</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="work-experience.html">Work Experience Program</a>
+              </li>
+              <li class="nav-item refer">
+                <a class="nav-link mx-2" href="refer.html">Refer & Earn</a>
+                <img src="/images/coin.png">
+              </li>
+              <!-- <li class="nav-item dropdown">
+                              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  Resources
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                                  <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                              </ul>
+                          </li> -->
+              <!-- <li class="nav-item dropdown">
+                              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  Company
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                                  <li><a class="dropdown-item" href="#">Contact us</a></li>
+                              </ul>
+                          </li> -->
+              <div class="border-left">
+              </div>
+              <li class="nav-item">
+                <a class=" nav-link mx-2" href="contact.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class=" mx-2 btn btn-trans" data-bs-toggle="modal" data-bs-target="#myModal">Free tech
+                  session</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Free Tech Sessions Form</h4>
+              <img src="images/times.png" alt="Close Btn" data-bs-dismiss="modal" />
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="mb-3">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer text-center w-100">
+              <button type="button" class="btn" data-bs-dismiss="modal">Submit Request</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </header>
+
+    
     <main>
       <div id="work__experience">
         <h1>Work Experience Program</h1>
@@ -36,8 +139,9 @@
             </p>
             <button>Join Team</button>
           </div>
-          <div class="col-md-6">
-            <img src="images/experience/Group 44475.png" alt="" />
+          <div class="col-md-6 d-flex ">
+            <img src="images/experience/Group 44475.png" al class="images" />
+           <img src="images/Frame 1000003103.png" alt="" class="ideaimage">
           </div>
         </div>
       </section>
@@ -46,7 +150,7 @@
         <section class="container header">
           <div class="row align-items-center">
             <div class="col-md-6 pb-5 pb-md-0">
-              <img src="images/experience/Group 5600.png" alt="" />
+              <img src="images/experience/Group 5600.png" alt class="images" />
             </div>
             <div class="col-md-6">
               <p class="header__text">About the program</p>
@@ -64,7 +168,7 @@
           </div>
         </section>
 
-        <section class="container header">
+        <section class="container header ">
           <div class="row align-items-center">
             <div class="col-md-6">
               <p class="header__text">How it Works</p>
@@ -84,20 +188,20 @@
               <button>Join Team</button>
             </div>
             <div class="col-md-6">
-              <img src="images/experience/Image.png" alt="" />
-            </div>
+              <img src="images/experience/Image.png" alt="" class="images">
+           </div>
           </div>
         </section>
       </div>
 
-      <section class="container">
+      <section class="container mb-5">
         <div class="row justify-content-between align-items-center">
           <div class="col-md-5 card header m-lg-5 p-4 p-lg-5">
             <p class="header__text">Program Description</p>
             <div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class="images" >
                 </div>
                 <p>
                   3-months advanced hands-on training and practical work
@@ -108,7 +212,7 @@
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class="images">
                 </div>
                 <p>
                   Product discovery, planning, development, deployment and
@@ -117,49 +221,49 @@
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class ="images">
                 </div>
                 <p>Scrum Ceremonies</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class ="images">
                 </div>
                 <p>Remote Collaboration</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class ="images">
                 </div>
                 <p>Interactive Live session</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class="images">
                 </div>
                 <p>LinkedIn Profile setup</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class="images">
                 </div>
                 <p>Interview Guidance</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class="images">
                 </div>
                 <p>Job Opportunities</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class="images">
                 </div>
                 <p>Work reference</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class="images">
                 </div>
                 <p>On-the-job support</p>
               </div>
@@ -167,7 +271,7 @@
 
             <button>Join Team</button>
           </div>
-          <div class="col-md-5 card header p-4 p-lg-5">
+          <div class="col-md-5 card header p-4 p-lg-5 ">
             <p class="header__text">Career Prospects</p>
             <div>
               <div class="d-flex gap-2">
@@ -179,7 +283,7 @@
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class ="images">
                 </div>
                 <p>
                   Product discovery, planning, development, deployment and
@@ -188,49 +292,49 @@
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class="images">
                 </div>
                 <p>Scrum Ceremonies</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class ="images">
                 </div>
                 <p>Remote Collaboration</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class ="images">
                 </div>
                 <p>Interactive Live session</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class ="images">
                 </div>
                 <p>LinkedIn Profile setup</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class ="images">
                 </div>
                 <p>Interview Guidance</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class ="images">
                 </div>
                 <p>Job Opportunities</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class ="images">
                 </div>
                 <p>Work reference</p>
               </div>
               <div class="d-flex gap-2">
                 <div class="check-right">
-                  <img src="./images/experience/check.png" alt="" />
+                  <img src="./images/experience/check.png" alt="" class ="images">
                 </div>
                 <p>On-the-job support</p>
               </div>
@@ -241,5 +345,78 @@
         </div>
       </section>
     </main>
+
+    <footer id="footer" class="py-5 mt-5">
+      <div class="container">
+        <section class="row mb-8">
+          <div class="col-md-3">
+            <div class="mb-3">
+              <img src="images/logo.png" alt="Logo" /> <br />
+              <small>Equipping with digital skills</small>
+            </div>
+            <address>
+              Office Address: <br />
+              BOS House, <br />
+              Olden way Business Park, <br>
+              Ballybrit Galway, H91 E65V, Ireland
+            </address>
+          </div>
+          <div class="col-md-3">
+            <h5>Program Track</h5>
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Practical Scrum Master</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Practical Business Analysis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Data Analytics</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Resources</h5>
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="faqs.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="privacy-policy.html">Privacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terms.html">Terms and Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Get In Touch</h5>
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="contact.html">Contact Us</a>
+              </li>
+              <li>
+                Whatsapp
+              </li>
+              <li>
+                +447488818292 <br /> +15873303085
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="border-tb d-flex justify-content-between">
+          <span class="align-self-center">© 2024 Digital Careers Academy</span>
+          <div class="social-icon">
+            <img src="images/facebook.png" alt="Facebook Icon">
+            <img src="images/twitter.png" alt="Twitter Icon">
+            <img src="images/linkedin.png" alt="LinkedIn Icon">
+            <img src="images/instagram.png" alt="Instagram Icon">
+          </div>
+        </section>
+      </div>
+      </footer>
   </body>
 </html>
