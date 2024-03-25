@@ -187,10 +187,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #E9F2FF !important;
 }
 
 .page-header h1 {
-  color: #fff;
+  color: #05274C;
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
@@ -682,20 +683,6 @@ td {
   font-weight: lighter;
 }
 
-.privacy .content {
-  padding-left: 4em;
-}
-
-.privacy .list-item {
-  font-size: 12px;
-  margin-left: 3px;
-}
-
-.privacy .list-item a {
-  text-decoration: none;
-  margin-left: 3px;
-}
-
 #hero3 {
   position: relative;
   height: 319px;
@@ -1094,4 +1081,37 @@ td {
 
 .swiper-pagination-bullet-active {
   background-color: var(--second-color);
+}
+
+.privacy .content h6 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.privacy .content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.privacy .content .font-bold  {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #1a1a1a;
+}
+
+.privacy ol li {
+  margin: 12px 0;
+}
+
+.privacy ol li a {
+    font-size: 16px !important;
+    font-weight: 600;
+    line-height: 24px;
+    color: #abacb1;
+    text-decoration: none;
+}
+
+.privacy ol li.active, .privacy ol li a.active {
+   color: #05274C !important;
 }
