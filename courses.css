@@ -1,4 +1,6 @@
-
+.body{
+  overflow-x: hidden;
+}
 .course__section {
   background-image: url("./images/courses/course_hero.png");
   background-position: center;
