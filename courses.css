@@ -13,9 +13,46 @@ img {
 
 .box__section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* gap: 3rem; */
+  margin-top: 4rem;
+}
+
+.card__title {
+  p:first-child {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+.course__details {
+  background-image: url("./images/courses/Hero\ Section.png");
+}
+
+.learning__objective {
+  h1 {
+    /* font-family: DM Sans; */
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+  }
+  .check-right img {
+    width: 20px;
+  }
+  button {
+    padding: 0.6rem 3rem;
+    outline: none;
+    border-style: none;
+    border-radius: 50px;
+    background: #2762bf;
+    color: white;
+  }
+}
+.box__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
   gap: 3rem;
   margin-top: 4rem;
+  text-align: center;
 
   .card__title {
     p:first-child {
@@ -23,8 +60,10 @@ img {
       font-weight: 700;
     }
   }
-}
-
-.course__details {
-  background-image: url("./images/courses/Hero\ Section.png");
+  .card__image img {
+    width: 64px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
 }
