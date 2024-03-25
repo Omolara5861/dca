@@ -590,8 +590,6 @@ body {
         position: absolute;
         margin-top:30px;
         left:46% ;
+        line-height: 30px;
     }
-
-    
-    line-height: 30px;
 }
