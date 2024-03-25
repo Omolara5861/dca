@@ -49,8 +49,11 @@ img {
 }
 .box__section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(235px, 2fr));
   gap: 3rem;
+  /* /* width: 120px; */
+  /* height: 289px; */
+  padding: 64px 19px 102px 19px;
   margin-top: 4rem;
   text-align: center;
 
@@ -65,5 +68,24 @@ img {
     display: block;
     margin: 0 auto;
     padding: 1rem 0;
+  }
+}
+
+.agile__ceremony {
+  background: #f9fdff;
+  .card__title {
+    p:first-child {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  button {
+    padding: 0.6rem 3rem;
+    outline: none;
+    border-style: none;
+    border-radius: 50px;
+    background: #2762bf;
+    color: white;
+    margin-bottom: 3rem;
   }
 }
