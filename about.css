@@ -178,3 +178,16 @@
     margin: 0 auto;
   }
 }
+.box__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+
+  .card__title {
+    p:first-child {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}

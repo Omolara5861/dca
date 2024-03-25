@@ -20,7 +20,7 @@ body {
 
 .btn {
   border-radius: 50px;
-  background: #2762BF;
+  background: #2762bf;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -29,19 +29,19 @@ body {
 }
 
 .btn:hover {
-  border: 1px solid #3375D9;
-  color: #2762BF;
+  border: 1px solid #3375d9;
+  color: #2762bf;
   background: transparent !important;
 }
 
 .btn-trans {
-  border: 1px solid #3375D9;
-  color: #2762BF;
+  border: 1px solid #3375d9;
+  color: #2762bf;
   background: transparent !important;
 }
 
 .btn-trans:hover {
-  background: #2762BF !important;
+  background: #2762bf !important;
   color: #fff !important;
 }
 
@@ -77,10 +77,9 @@ body {
 }
 
 #navbar .btn-trans:hover {
-  background: #2762BF !important;
+  background: #2762bf !important;
   color: #fff !important;
 }
-
 
 #navbar {
   background: #e9f2ff;
@@ -188,7 +187,12 @@ body {
 } */
 
 #hero-sec {
-  background: linear-gradient(180.26deg, #E9F2FF 0.25%, #F6F9FF 89.18%, rgba(246, 249, 255, 0) 108.7%);
+  background: linear-gradient(
+    180.26deg,
+    #e9f2ff 0.25%,
+    #f6f9ff 89.18%,
+    rgba(246, 249, 255, 0) 108.7%
+  );
 }
 
 #hero-sec h2 {
@@ -207,7 +211,7 @@ body {
 
 #choose,
 #tech-session {
-  background: #F9FDFF;
+  background: #f9fdff;
 }
 
 #choose .title {
@@ -227,8 +231,8 @@ body {
 }
 
 #choose .box {
-  background: #FFFFFF;
-  border: 1px solid #EEEEEF;
+  background: #ffffff;
+  border: 1px solid #eeeeef;
   padding: 40px 31px 41px 30px;
   border-radius: 24px 0px 0px 0px;
   border: 1px 0px 0px 0px;
@@ -252,14 +256,14 @@ body {
 #courses .course {
   padding: unset;
   border-radius: 16px;
-  box-shadow: 0px 2px 10px 0px #0000001A;
+  box-shadow: 0px 2px 10px 0px #0000001a;
 }
 
 #courses .course .text h5 {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  color: #05274C;
+  color: #05274c;
 }
 
 #courses .course .text p {
@@ -291,7 +295,7 @@ body {
   align-items: center;
   width: 66px;
   height: 66px;
-  background: #D4D4D8;
+  background: #d4d4d8;
   opacity: 0.2px;
   font-size: 24px;
   font-weight: 700;
@@ -315,14 +319,14 @@ body {
 
 #blog {
   padding: 128px 0;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 #blog h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
-  color: #05274C;
+  color: #05274c;
   margin: 32px 0 20px;
 }
 
@@ -330,7 +334,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
-  color: #05274C;
+  color: #05274c;
 }
 
 #blog .col-md-5 p {
@@ -359,7 +363,6 @@ body {
   height: 80%;
   padding-top: 20%;
   padding-bottom: 20%;
-
 }
 
 .font-weight {
@@ -369,7 +372,6 @@ body {
 .agile {
   max-width: 60%;
   margin-top: 10px;
-
 }
 
 .agile img {
@@ -382,14 +384,14 @@ body {
 }
 
 .flex-container button {
-  background-color: #2762BF;
+  background-color: #2762bf;
   font-size: small;
   border: 0;
   border-radius: 20px;
 }
 
 #footer {
-  background: #05274C;
+  background: #05274c;
   color: #fff;
   font-size: 17px;
   font-weight: 400;
@@ -399,8 +401,18 @@ body {
 #hero {
   position: relative;
   height: 319px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/blod1del.png);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/blod1del.png);
+  background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(./images/blod1del.png);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(./images/blod1del.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -411,8 +423,8 @@ body {
 }
 
 #footer .border-tb {
-  border-top: 1px solid #586E87;
-  border-bottom: 1px solid #586E87;
+  border-top: 1px solid #586e87;
+  border-bottom: 1px solid #586e87;
   padding: 32px 0;
 }
 
@@ -434,7 +446,7 @@ body {
 }
 
 #courses form .btn {
-  background-color: #2762BF;
+  background-color: #2762bf;
   border-radius: 25px;
 }
 
@@ -452,7 +464,6 @@ body {
 #courses form img {
   position: absolute;
   z-index: 2 !important;
-
 }
 
 #courses figure img {
@@ -469,11 +480,10 @@ body {
   width: 100%;
   height: 2px;
   background-color: rgb(221, 220, 220);
-
 }
 
 #hero2 {
-  background: #E9F2FF;
+  background: #e9f2ff;
   width: 100%;
   text-align: center;
   color: #3c2770;
@@ -503,8 +513,18 @@ body {
 #hero3 {
   position: relative;
   height: 319px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/Hero\ Section.png);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/Hero\ Section.png);
+  background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(./images/Hero\ Section.png);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(./images/Hero\ Section.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -584,12 +604,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .custom-box-shadow .form-container button {
   border-radius: 30px;
-  background-color: #2762BF;
+  background-color: #2762bf;
   border: 0;
 }
 
@@ -635,7 +654,7 @@ body {
 }
 
 .contact-texts {
-  color: #05274C;
+  color: #05274c;
 }
 
 .icon-container {
@@ -671,7 +690,6 @@ body {
 
 .refer-2 {
   margin-left: -5%;
-
 }
 
 .refer2 {
@@ -683,7 +701,6 @@ body {
   text-align: center;
   align-self: center;
   place-content: center;
-
 }
 
 .faq-modal {
@@ -812,10 +829,7 @@ body {
 
   .social-icons {
     width: 60%;
-
   }
-
-
 }
 
 @media (max-width: 768.98px) {
@@ -861,13 +875,13 @@ body {
     left: 46%;
     /* line-height: 30px; */
   }
-     .d-flex {
-       flex-direction: column !important;
-     }
+  .d-flex {
+    flex-direction: column !important;
+  }
 
-     #choose .d-flex {
-      flex-direction: row !important;
-     }
+  #choose .d-flex {
+    flex-direction: row !important;
+  }
 
   #blog .d-flex img {
     width: 100%;
