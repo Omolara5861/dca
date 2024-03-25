@@ -10,6 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet">
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="swiper-bundle.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -145,7 +147,7 @@
           <h2>Why Choose Digital Careers Academy?</h2>
           <p>We offer a wide range of opportunity for you. <br />
             See what you get and your benefits</p>
-            <img src="images/choose-patterns.png" alt="Patterns">
+          <img src="images/choose-patterns.png" alt="Patterns">
         </div>
         <div class="row gap-6">
           <div class="box row col-lg-7">
@@ -354,32 +356,53 @@
       </div>
     </section>
 
-    <!-- <section id="testimonial">
+    <section id="testimonial">
       <div class="container">
         <img src="images/parterns.png" alt="A pattern" class="pattern1">
         <div class="title text-center">
-          <h2>What our candidates say about us</h2>
+          <h2>What our candidates <br /> say about us</h2>
         </div>
-        <div class="d-flex">
-          <img src="images/left.png" alt="Left arrow">
-          <div class="testimonial">
-            <img src="images/learner1.png" alt="Customer 1">
-            <div>
-              <img src="images/stars.png" alt="Five star Rating">
-              <strong>Digital careers academy gave meaning to my careers</strong>
-              <p>"The platform's user-friendly interface makes navigation seamless, and
-                the diverse range of courses caters to learners of all levels and interests.
-                What sets digital careers academy apart is the high-quality content provided
-                by knowledgeable instructors. The courses are well-structured, engaging,
-                and offer practical insights that can be applied in real-world scenarios.."</p>
-              <b><small>Vivian</small></b>
+        <div class="d-flex gap-5">
+          <img src="images/left.png" alt="Left arrow" class="img">
+          <div class="testimonials swiper">
+            <div class="card__content">
+              <div class="swiper-wrapper">
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner1.png" alt="Customer 1" class="col-lg-5">
+                  <div class="col-lg-6">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>Digital careers academy gave meaning to my careers</h3>
+                    <p>"The platform's user-friendly interface makes navigation seamless, and
+                      the diverse range of courses caters to learners of all levels and interests.
+                      What sets digital careers academy apart is the high-quality content provided
+                      by knowledgeable instructors. The courses are well-structured, engaging,
+                      and offer practical insights that can be applied in real-world scenarios.."</p>
+                    <span>Vivian</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner1.png" alt="Customer 1" class="col-lg-5">
+                  <div class="col-lg-6">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>Digital careers academy gave meaning to my careers</h3>
+                    <p>"The platform's user-friendly interface makes navigation seamless, and
+                      the diverse range of courses caters to learners of all levels and interests.
+                      What sets digital careers academy apart is the high-quality content provided
+                      by knowledgeable instructors. The courses are well-structured, engaging,
+                      and offer practical insights that can be applied in real-world scenarios.."</p>
+                    <span>Vivian</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <img src="images/right.png" alt="Right arrow">
+          <img src="images/right.png" alt="Right arrow" class="img">
         </div>
-        <img src="images/parterns.png" alt="A pattern" class="pattern1">
+        <img src="images/parterns.png" alt="A pattern" class="pattern2">
       </div>
-    </section> -->
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </section>
 
     <section id="blog">
       <div class="container">
@@ -412,8 +435,9 @@
               <img src="images/blog3.png" alt="Blog 1" height="200" width="197">
               <div>
                 <h4>3 Free tools for Process Mapping</h4>
-                <p>In Agile methodology, process mapping refers to the visualization of the workflow for a particular process. This is done
-                by creating a visual representation of the steps involved in completing a task or project.</p>
+                <p>In Agile methodology, process mapping refers to the visualization of the workflow for a particular
+                  process. This is done
+                  by creating a visual representation of the steps involved in completing a task or project.</p>
                 <button class="btn">Read more</button>
               </div>
             </div>
@@ -422,7 +446,7 @@
               <div>
                 <h4>Benefits of mentorship when transitioning into the tech industry</h4>
                 <p>Benefits of mentorship when transitioning
-                into the tech industry</p>
+                  into the tech industry</p>
                 <button class="btn">Read more</button>
               </div>
             </div>
@@ -504,6 +528,8 @@
       </section>
     </div>
   </footer>
+  <!--=============== SWIPER JS ===============-->
+  <script src="js/swiper-bundle.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -187,12 +187,10 @@ body {
 } */
 
 #hero-sec {
-  background: linear-gradient(
-    180.26deg,
-    #e9f2ff 0.25%,
-    #f6f9ff 89.18%,
-    rgba(246, 249, 255, 0) 108.7%
-  );
+  background: linear-gradient(180.26deg,
+      #e9f2ff 0.25%,
+      #f6f9ff 89.18%,
+      rgba(246, 249, 255, 0) 108.7%);
 }
 
 #hero-sec h2 {
@@ -217,6 +215,7 @@ body {
 #choose .title {
   position: relative;
 }
+
 #choose .title img {
   position: absolute;
   top: 0;
@@ -317,9 +316,71 @@ body {
   line-height: 24px;
 }
 
+#testimonial {
+  padding: 64px 0;
+  position: relative;
+}
+
+#testimonial .container {
+  position: relative;
+}
+#testimonial .container .d-flex .img{
+   height: 60px;
+   align-self: center;
+}
+
+
+#testimonial .pattern1 {
+  position: absolute;
+  left: 95px;
+  top: 90px;
+}
+#testimonial .pattern2 {
+  position: absolute;
+  right: 85px;
+  bottom: 0px;
+}
+.pattern1,
+.pattern2 {
+  z-index: -1 !important;
+}
+
+#testimonial .testimonial {
+  background: white;
+  padding: 70px 48px;
+  gap: 48px;
+  border-radius: 48px 0px 48px 0px;
+box-shadow: 0px 25px 50px -12px #0053D00D;
+}
+
+#testimonial .testimonial h3 {
+  color: #1a1a1a;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  margin: 24px 0;
+}
+
+#testimonial .testimonial p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#testimonial .testimonial span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+
 #blog {
   padding: 128px 0;
   background: #f8f8f8;
+}
+
+.w-80 {
+  width: 80%;
 }
 
 #blog h3 {
@@ -401,17 +462,13 @@ body {
 #hero {
   position: relative;
   height: 319px;
-  background-image: -webkit-linear-gradient(
-      bottom,
+  background-image: -webkit-linear-gradient(bottom,
       rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
+      rgba(0, 0, 0, 0.7)),
     url(./images/blod1del.png);
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
+      rgba(0, 0, 0, 0.7)),
     url(./images/blod1del.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -513,17 +570,13 @@ body {
 #hero3 {
   position: relative;
   height: 319px;
-  background-image: -webkit-linear-gradient(
-      bottom,
+  background-image: -webkit-linear-gradient(bottom,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
+      rgba(0, 0, 0, 0.2)),
     url(./images/Hero\ Section.png);
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
+      rgba(0, 0, 0, 0.2)),
     url(./images/Hero\ Section.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -713,33 +766,36 @@ body {
   margin-top: 2.5em;
 }
 
-    .collapse-btn{
-        border-radius: 25px;
-        place-self: baseline;
-    }
-     .collapse-button:after {
-        content: "x";
-        color: #bfc2c7;
-        font-weight: 500;
-        font-size:22px;
-      }
-  
-      .collapsed .collapse-button:after {
-        content: "+";
-        font-size:25px;
-      }
-      
-      #accordion2{
-        border: 0;
-      }
-      .idea1{
-        height: 5em;
-      }
-      .buttons{
-        background-color: #2762BF;
-        border-radius: 25px;
-        border:0;
-      }
+.collapse-btn {
+  border-radius: 25px;
+  place-self: baseline;
+}
+
+.collapse-button:after {
+  content: "x";
+  color: #bfc2c7;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.collapsed .collapse-button:after {
+  content: "+";
+  font-size: 25px;
+}
+
+#accordion2 {
+  border: 0;
+}
+
+.idea1 {
+  height: 5em;
+}
+
+.buttons {
+  background-color: #2762BF;
+  border-radius: 25px;
+  border: 0;
+}
 
 /* MEDIA QUERIES FOR MOBILE & TABLETS */
 
@@ -875,6 +931,7 @@ body {
     left: 46%;
     /* line-height: 30px; */
   }
+
   .d-flex {
     flex-direction: column !important;
   }
@@ -899,4 +956,13 @@ body {
 
 .gap-6 {
   gap: 40px;
+}
+
+.swiper-pagination-bullet {
+  background-color: hsl(212, 32%, 40%);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--second-color);
 }
