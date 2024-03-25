@@ -191,9 +191,9 @@ body {
 
 .page-header h1 {
   color: #fff;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 72px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
 }
 
 #hero-sec {
@@ -201,6 +201,44 @@ body {
       #e9f2ff 0.25%,
       #f6f9ff 89.18%,
       rgba(246, 249, 255, 0) 108.7%);
+}
+
+.course-details {
+  background: #E9F2FF !important;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.course-details .container {
+  position: relative;
+}
+
+.gap-10 {
+  gap: 6rem;
+}
+.container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #1a1a1a;
+  }
+
+.container .lead {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+  }
+
+  .course-d p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+  }
+
+.course-details .container .elipse {
+  position: absolute;
+  top: 5px;
+  right: -40px;
 }
 
 #hero-sec h2 {
@@ -215,6 +253,11 @@ body {
   font-weight: 400;
   line-height: 30px;
   margin: 32px 0;
+}
+
+.pencil {
+  margin-bottom: -35px;
+  margin-left: -10px;
 }
 
 #choose,
@@ -262,7 +305,7 @@ body {
   margin-bottom: 48px;
 }
 
- .course {
+.course {
   padding: unset;
   border-radius: 16px;
   box-shadow: 0px 2px 10px 0px #0000001a;
@@ -297,20 +340,22 @@ body {
 .course .overlay-content {
   color: #fff;
 }
+
 .course .overlay-content a:last-child {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 21px;
-    text-decoration: none;
-    color: #85ABEB;
-    margin-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-decoration: none;
+  color: #85ABEB;
+  margin-left: 10px;
 }
 
 .course .overlay-content h5 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
 }
+
 .course .overlay-content p {
   font-size: 15px;
   font-weight: 400;
@@ -320,6 +365,68 @@ body {
 .course:hover .overlay {
   display: flex;
   height: 80%;
+}
+
+.course-d .box__section .box {
+  box-shadow: 0px 3px 10px 0px #0000001A;
+  padding: 64px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.course-d .box__section .box__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
+}
+
+.course-d .benefits {
+  position: relative;
+}
+.course-d .detail-plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 56px auto;
+  background: #F9FDFF;
+  border: 1px solid #DDDEE0;
+  box-shadow: 0px 2px 10px 0px #ABCCFF1A;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #CDCDD0;
+}
+
+th {
+  color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+td {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #363636;
+}
+
+.learning__objective .box__title p{
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
 }
 
 #tech-session {
@@ -360,6 +467,11 @@ body {
   color: #1a1a1a;
 }
 
+.d-testimonial {
+  background: #F5F5F5 !important;
+  padding: 100px 0 82px;
+}
+
 #refer p {
   color: #52525b;
   font-size: 16px;
@@ -375,9 +487,10 @@ body {
 #testimonial .container {
   position: relative;
 }
-#testimonial .container .d-flex .img{
-   height: 60px;
-   align-self: center;
+
+#testimonial .container .d-flex .img {
+  height: 60px;
+  align-self: center;
 }
 
 
@@ -386,11 +499,13 @@ body {
   left: 95px;
   top: 90px;
 }
+
 #testimonial .pattern2 {
   position: absolute;
   right: 85px;
   bottom: 0px;
 }
+
 .pattern1,
 .pattern2 {
   z-index: -1 !important;
@@ -401,7 +516,7 @@ body {
   padding: 70px 48px;
   gap: 48px;
   border-radius: 48px 0px 48px 0px;
-box-shadow: 0px 25px 50px -12px #0053D00D;
+  box-shadow: 0px 25px 50px -12px #0053D00D;
 }
 
 #testimonial .testimonial h3 {
