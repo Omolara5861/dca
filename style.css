@@ -85,15 +85,13 @@ body {
 }
 
 .nav-item .active {
-  border-radius: 6px;
-  background: #dbeaff;
-  box-shadow: 4px 4px 8px #e9f2ff;
+color: #0063F7 !important;
 }
 
 #navbar .nav-link:hover,
 #navbar .dropdown-menu a:hover {
   background: unset !important;
-  color: #2762bf !important;
+  color: #0063F7 !important;
 }
 
 #navbar .nav-item {
