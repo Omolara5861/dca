@@ -24,9 +24,13 @@ main {
   background-color: #fff;
 }
 
+.main {
+  margin-top: -70px;
+}
+
 nav {
-    position: relative;
-      z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 .btn {
@@ -279,11 +283,13 @@ nav {
   background: #f9fdff;
 }
 
-#choose .title, .digital__career .title {
+#choose .title,
+.digital__career .title {
   position: relative;
 }
 
-#choose .title img, .digital__career .title img {
+#choose .title img,
+.digital__career .title img {
   position: absolute;
   top: 0;
   right: 0;
@@ -675,10 +681,6 @@ td {
   margin-bottom: 52px;
 }
 
-#footer .social-icon {
-  display: flex;
-}
-
 #footer .social-icon a {
   all: unset;
 }
@@ -1012,8 +1014,8 @@ td {
 
 .page-header .elipse4 {
   position: absolute;
-    top: -30px;
-    right: 10px;
+  top: -30px;
+  right: 10px;
 }
 
 .page-header .ripple {
@@ -1073,29 +1075,35 @@ form button {
   margin-left: -35px;
 }
 
+.work-ex .elipse {
+  margin-left: -120px;
+}
+
 .mb-56 {
   margin-bottom: 40px;
 }
 
 .story p {
-    font-weight: 400;
-    line-height: 30px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .experience h3 {
   font-size: 48px;
   font-weight: 800;
   line-height: 72px;
- background-image: linear-gradient(180deg, #0551A5 0%, #002246 100%);
--webkit-background-clip: text;
+  background-image: linear-gradient(180deg, #0551A5 0%, #002246 100%);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
+
 .experience span {
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
 }
+
 .experience p {
   font-size: 20px;
   font-weight: 700;
@@ -1249,6 +1257,11 @@ form button {
 
   h2 {
     font-size: 28px !important;
+    line-height: 34px !important;
+  }
+
+  .reverse {
+    flex-direction: column-reverse !important;
   }
 
   #choose .col-lg-4 {
@@ -1275,6 +1288,10 @@ form button {
     top: 41%;
   }
 
+    .work-ex .elipse {
+      margin-left: -85px;
+    }
+
   .faq-modal .d-flex {
     flex-direction: unset !important;
   }
@@ -1292,8 +1309,11 @@ form button {
     display: none;
   }
 
-    .experience div {
-      margin-bottom: 100px;
-    }
-}
+  .experience div {
+    margin-bottom: 100px;
+  }
 
+  #footer .d-flex {
+    flex-direction: unset !important;
+  }
+}
