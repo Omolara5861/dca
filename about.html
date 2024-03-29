@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -146,9 +148,10 @@
     </section>
     </header>
     <main>
-      <section class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 col-12">
+      <section class="container pt-5 pb-3 story border-bottom">
+        <div class="row gap-4 ">
+          <div class="col-lg-5">
+            <h2 class="mb-56">Our Story</h2>
             <p>
               Digital Careers Academy (DCA), a subsidiary of Digital Business
               Konsult Ltd, is a Digital Innovation Hub that designs and builds
@@ -168,57 +171,53 @@
               guide your journey towards securing high-paying digital roles.
             </p>
           </div>
-          <div class="col-md-5 our-story-image">
+          <div class="col-lg-5 our-story-image">
             <img src="images/About/career.png" alt="" class="images" />
           </div>
         </div>
       </section>
-      <section class="container">
+      <section class="container py-5">
         <div
           class="experience d-flex flex-wrap flex-column d-md-flex flex-md-row justify-content-around align-items-center text-center"
         >
-          <div class="gradient-text">
-            <h1>20</h1>
+          <div>
+            <h3>20</h3>
             <p class="pal">Professional</p>
-            <p>Teachers</p>
+            <span>Teachers</span>
           </div>
           <div>
-            <h1>10</h1>
+            <h3>10</h3>
             <p class="pal">Learning</p>
-            <p>Groups</p>
+            <span>Groups</span>
           </div>
           <div>
-            <h1>100</h1>
+            <h3>100</h3>
             <p class="pal">Happy</p>
-            <p>students</p>
+            <span>students</span>
           </div>
           <div>
-            <h1>50+</h1>
+            <h3>50+</h3>
             <p class="pal">Courses</p>
-            <p>classes</p>
+            <span>classes</span>
           </div>
         </div>
       </section>
 
-      <section class="digital__career">
+      <section class="digital__career py-5">
         <div class="container">
-          <div class="heading__section">
-            <div class="heading__header">
-              <h1>Why Choose Digital Careers Academy?</h1>
-              <p>
-                We offer a wide range of opportunity for you. See what you get
-                and your benefits
-              </p>
-            </div>
-            <div><img src="./images/About/plus.png" alt="" class="images" /></div>
-          </div>
+         <div class="title text-center pt-3">
+          <h2>Why Choose Digital Careers Academy?</h2>
+          <p>We offer a wide range of opportunity for you. <br />
+            See what you get and your benefits</p>
+          <img src="images/choose-patterns.png" alt="Patterns">
+        </div>
           <div class="box__section">
             <div class="card">
               <div class="card__image">
                 <img src="./images/About/comprehensive.png" alt="" class="images" />
               </div>
               <div class="card__title">
-                <p>Comprehensive Curriculum</p>
+                <h5>Comprehensive Curriculum</h5>
                 <p>
                   We offer comprehensive training in Business Analysis, Scrum
                   Master, & Data Analytics.
@@ -230,7 +229,7 @@
                 <img src="./images/About/experience.png" alt="" />
               </div>
               <div class="card__title">
-                <p>Practical Hands-on Experience</p>
+                <h5>Practical Hands-on Experience</h5>
                 <p>
                   Our interns gain work experience by using collaborative and
                   product development tools in an interactive simulated
@@ -243,7 +242,7 @@
                 <img src="./images/About/flexibility.png" alt="" class="images"/>
               </div>
               <div class="card__title">
-                <p>Flexibility and Accessibility</p>
+                <h5>Flexibility and Accessibility</h5>
                 <p>
                   Learning management system that allows candidates access all
                   training sessions at all times. Coaches are readily available
@@ -256,7 +255,7 @@
                 <img src="./images/About/expert.png" alt="" class="images" />
               </div>
               <div class="card__title">
-                <p>Industry Expert Instructors</p>
+                <h5>Industry Expert Instructors</h5>
                 <p>
                   Our coaches are certified industry experts with years of
                   experience who provide valuable insights and guidance.
@@ -268,7 +267,7 @@
                 <img src="./images/About/affordable.png" alt="" class="images" />
               </div>
               <div class="card__title">
-                <p>Affordable Fees</p>
+                <h5>Affordable Fees</h5>
                 <p>
                   Budget friendly fees. We also offer Interest free payment
                   plans
@@ -281,9 +280,9 @@
       <section class="container">
         <div class="career__begin">
           <div class="career__text">
-            <p class="career__text__header">
+            <h3>
               Join us to Begin your Career Today!
-            </p>
+            </h3>
             <p class="career__text">
               We offer various courses that will equip you with the knowledge
               and skills you need to start, switch, or boost your career. We
@@ -293,45 +292,147 @@
               are.
             </p>
             <p class="ready">Ready to begin your career journey?</p>
-            <button type="submit">
+            <a href="courses.html" class="button">
               Start Learning <img src="./images/About/Vector.png" alt="" />
-            </button>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="container">
-        <div class="team">
-          <p>OUR TEAM</p>
-          <p class="coach">Meet Our Coaches</p>
-          <p>
-            With expertise spanning diverse courses and a passion for fostering
-            learning, our coaches are here to guide and support you on your
-            educational journey
+      <section class="container team py-5">
+        <div class="title text-center">
+          <h5>our team</h5>
+          <h2>Meet Our Coaches</h2>
+          <p class="mb-5">With expertise spanning diverse courses and a passion for fostering learning, <br />
+            our coaches are here to guide and support you on  <br />
+            your educational journey
           </p>
         </div>
         <div>
-          <!-- <div class="card d-flex">
-            <div class="card__fi">
-              <div><img src="./images/About/oludare.png" alt="" /></div>
-              <div>
-                <p>Oludare Olorunfemi</p>
-                <p>CEO, Founder,FIP, CIPP/E, CIPM, PECB cDPO, CDPSE, PSM1</p>
+           <div class="d-flex gap-6 mb-56">
+            <div class="w-50 team-member">
+              <div class="d-flex gap-4">
+                <div class="w-30">
+                  <img src="images/about/oludare.png" alt="Oludare Olorunfemi">
+                  <h6>Oludare Olorunfemi</h6>
+                  <p>CEO, Founder FIP, CIPP/E, CIPM, PECB cDPO, CDPSE, PSM1</p>
+                  <div class="ml-2">
+                      <a href="#" target="_blank">
+                        <img src="images/about/twitter.png" alt="Twitter">
+                      </a>
+                      <a href="#" target="_blank">
+                         <img src="images/about/linkedin.png" alt="Linkedin">
+                      </a>
+                        <a href="#" target="_blank">
+                         <img src="images/about/ig.png" alt="Instagram">
+                      </a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <p class="w-70">Oludare is a multiskilled highly competent Data Privacy/Digital Transformation Coach with over 15 years global experience providing resource and capability development to organizations and individuals. Excellently skilled in coaching and leading teams globally in designing and developing digital products that meet customer needs, while adopting Agile frameworks. Expertise cover Data Protection, Product Management and Delivery, Digital Business Transformation, and Scrum Coaching</p>
               </div>
             </div>
-            <div class="card__sec">
-              <p>
-                Oludare is a multiskilled highly competent Data Privacy/Digital
-                Transformation Coach with over 15 years global experience
-                providing resource and capability development to organizations
-                and individuals. Excellently skilled in coaching and leading
-                teams globally in designing and developing digital products that
-                meet customer needs, while adopting Agile frameworks. Expertise
-                cover Data Protection, Product Management and Delivery, Digital
-                Business Transformation, and Scrum Coaching
-              </p>
+            <div class="w-50 team-member">
+             <div class="d-flex gap-4">
+               <div class="w-30">
+                 <img src="images/about/babajide.png" alt="Babajide Jolaolu-Kehinde">
+                 <h6>Babajide Jolaolu-Kehinde</h6>
+                 <p>Business Analysis Coach,
+ PSPO, BPM, LSSGB, CBAP </p>
+                 <div class="ml-2">
+                     <a href="#" target="_blank">
+                       <img src="images/about/twitter.png" alt="Twitter">
+                     </a>
+                     <a href="#" target="_blank">
+                        <img src="images/about/linkedin.png" alt="Linkedin">
+                     </a>
+                       <a href="#" target="_blank">
+                        <img src="images/about/ig.png" alt="Instagram">
+                     </a>
+                 </div>
+               </div>
+               <div class="line"></div>
+               <p class="w-70">A Proactive IIBA Certified Business Analyst, 
+ Certified Professional Scrum Product 
+ Owner, Business Process Modeller and 
+ Lean Six Sigma Yellow & Green Belt with
+ strong understanding of business process
+ architecture with the ability to produce 
+ high-quality output and value. Proven 
+ experience in coaching & mentoring on
+ Business & Process Improvement Analysis. A keen team worker that is result-driven
+ and able to motivate & mentor others to
+ think “outside the box”</p>
+             </div>
+           </div>
+           </div>
+           <div class="d-flex gap-6">
+              <div class="w-50 team-member">
+              <div class="d-flex gap-4">
+                <div class="w-30">
+                  <img src="images/about/lisa.png" alt="Lisa Williams">
+                  <h6>Lisa Williams</h6>
+                  <p>MBA, PGDM, CSPO, SMC</p>
+                  <div class="ml-2">
+                      <a href="#" target="_blank">
+                        <img src="images/about/twitter.png" alt="Twitter">
+                      </a>
+                      <a href="#" target="_blank">
+                         <img src="images/about/linkedin.png" alt="Linkedin">
+                      </a>
+                        <a href="#" target="_blank">
+                         <img src="images/about/ig.png" alt="Instagram">
+                      </a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <p class="w-70">An agile coach with experience as a product 
+owner, business analyst and digital marketer
+Lisa has accreditation in scrum mastery in
+addition to data analysis, e-commerce and
+GDPR. Lisa is data-driven and customer-centric,
+supporting globally co-located and dispersed
+teams in the delivery of innovative products
+within the tech industry. Lisa is passionate about agile working and 
+motivating teams to drive up engagement,
+commitment to quality and high performance
+over the delivery life-cycle.</p>
+              </div>
             </div>
-          </div> -->
+             <div class="w-50 team-member">
+              <div class="d-flex gap-4">
+                <div class="w-30">
+                  <img src="images/about/nnadozie.png" alt="Nnadozie Orisakwe (PhD)">
+                  <h6>Nnadozie Orisakwe (PhD)</h6>
+                  <p>CIPP/E, ISO27001, CDMP,
+ASPO, PSM1</p>
+                  <div class="ml-2">
+                      <a href="#" target="_blank">
+                        <img src="images/about/twitter.png" alt="Twitter">
+                      </a>
+                      <a href="#" target="_blank">
+                         <img src="images/about/linkedin.png" alt="Linkedin">
+                      </a>
+                        <a href="#" target="_blank">
+                         <img src="images/about/ig.png" alt="Instagram">
+                      </a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <p class="w-70">A data privacy and information security 
+professional with broad industry experience
+implementing privacy programs, information
+security management systems (ISMS),
+coaching and leading operational teams.
+An enthusiast of the 'shift-left' philosophy
+and specialist in Saas and third-party risk. 
+Nnadozie is a digital age solutions provider
+helping clients deliver objectives whilst 
+ensuring compliance to relevant regulations
+and standards.</p>
+              </div>
+            </div>
+           </div>
         </div>
       </section>
     </main>
@@ -409,14 +510,8 @@
       </div>
       </footer>
 
-      <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
