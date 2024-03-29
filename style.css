@@ -18,6 +18,17 @@ body {
   box-sizing: border-box;
 }
 
+main {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+}
+
+nav {
+    position: relative;
+      z-index: 10;
+}
+
 .btn {
   border-radius: 50px;
   background: #2762bf;
@@ -85,7 +96,7 @@ body {
 }
 
 .nav-item .active {
-color: #0063F7 !important;
+  color: #0063F7 !important;
 }
 
 #navbar .nav-link:hover,
@@ -1001,8 +1012,8 @@ td {
 
 .page-header .elipse4 {
   position: absolute;
-  top: -15px;
-  right: 20px;
+    top: -30px;
+    right: 10px;
 }
 
 .page-header .ripple {
@@ -1051,11 +1062,17 @@ form button {
   line-height: 30px;
   color: #05274c;
 }
-    .collapse-btn {
-      border-radius: 20px;
-      font-size: 5px;
-      padding: 5px 10px;
-    }
+
+.collapse-btn {
+  border-radius: 20px;
+  font-size: 5px;
+  padding: 5px 10px;
+}
+
+.about .elipse {
+  margin-left: -35px;
+}
+
 /* MEDIA QUERIES FOR MOBILE & TABLETS */
 
 @media (max-width: 1000.98px) {
@@ -1218,22 +1235,26 @@ form button {
     line-height: 54px;
   }
 
-    .contact .elipse {
-      margin-left: -30px;
-      top: 40%;
-    }
+  .contact .elipse {
+    margin-left: -30px;
+    top: 40%;
+  }
 
-    .faq-modal .d-flex {
-      flex-direction: unset !important;
-    }
+  .about .elipse {
+    margin-left: -10px;
+    top: 41%;
+  }
 
-    .faq-modal h6 {
-      margin-top: unset !important;
-      margin-bottom: unset !important;
-    }
+  .faq-modal .d-flex {
+    flex-direction: unset !important;
+  }
 
-    .card-body {
-      padding: 15px !important;
-    }
+  .faq-modal h6 {
+    margin-top: unset !important;
+    margin-bottom: unset !important;
+  }
+
+  .card-body {
+    padding: 15px !important;
+  }
 }
-
