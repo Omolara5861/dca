@@ -195,11 +195,10 @@ nav {
   box-shadow: unset;
 }
 
-/* section {
-  max-width: 1440px;
-  margin: 0 auto;
-} */
-
+#myModal textarea {
+  height: 113px;
+  resize: none;
+}
 .page-header {
   height: 320px;
   display: flex;
@@ -1074,6 +1073,16 @@ td {
 .page-header .ripple {
   position: absolute;
   right: 0;
+}
+
+.learning__objective, .course-schedule {
+  background: #F9FDFF;
+}
+
+.course-schedule .schedule-plus {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .contact {
