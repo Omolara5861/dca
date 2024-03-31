@@ -1390,8 +1390,7 @@ form button {
   }
 
   .privacy ol {
-    width: 0%;
-    visibility: hidden;
+    display: none;
   }
 
   .privacy .content {
@@ -1698,6 +1697,13 @@ form button {
 
   p {
     font-size: 16px !important;
+  }
+
+  p.font-bold {
+      font-size: 20px !important;
+      font-weight: 600;
+      line-height: 33px;
+      color: #363636;
   }
 
   .btn {
