@@ -18,6 +18,10 @@ body {
   box-sizing: border-box;
 }
 
+.modal-header img {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -199,6 +203,7 @@ nav {
   height: 113px;
   resize: none;
 }
+
 .page-header {
   height: 320px;
   display: flex;
@@ -1075,7 +1080,8 @@ td {
   right: 0;
 }
 
-.learning__objective, .course-schedule {
+.learning__objective,
+.course-schedule {
   background: #F9FDFF;
 }
 
@@ -1398,7 +1404,8 @@ form button {
   .refer-earn .d-flex {
     flex-direction: unset !important;
   }
- .mx-3 {
+
+  .mx-3 {
     margin-right: unset !important;
     margin-left: unset !important;
     margin-top: 15px;
