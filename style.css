@@ -1428,12 +1428,11 @@ form button {
   .contactus .row {
     width: 100%;
     display: flex;
-    padding: 10%;
     align-items: center;
   }
 
   .social-icons {
-    width: 60%;
+    width: 100%;
   }
 }
 
@@ -1461,6 +1460,11 @@ form button {
 }
 
 @media (max-width: 768.98px) {
+
+  .contact {
+    padding: 15px;
+  }
+
   .course-d .accordion {
     padding: unset;
   }
@@ -1568,6 +1572,10 @@ form button {
   .d-flex {
     flex-direction: column !important;
   }
+
+    .contactus .d-flex {
+      flex-direction: unset !important;
+    }
 
   #choose .d-flex {
     flex-direction: row !important;
