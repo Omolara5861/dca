@@ -1663,9 +1663,40 @@ form button {
 
   .payment-options {
     width: 100%;
+    padding: unset;
   }
 
+  table {
+    width: 100%;
+  }
   .btn-container button:last-child {
     margin-top: 10px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 520px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  table td {
+    border-bottom: none;
+    display: block;
+    text-align: left;
+  }
+
+  p {
+    font-size: 16px !important;
   }
 }
