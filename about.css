@@ -128,10 +128,9 @@
   }
 
   @media screen and (max-width: 768px) {
-      padding: 20px !important;
-    .career__text {
-      max-width: 100%;
+    padding: 20px !important;
 
+    .career__text {
       h3 {
         font-size: 28px;
         line-height: 44px;
@@ -160,6 +159,7 @@
     text-decoration: none;
     margin-left: 16px;
   }
+
   .team-member {
     padding: 32px 16px;
     border-radius: 16px;
@@ -202,13 +202,20 @@
   }
 
   @media screen and (max-width: 768px) {
-   .w-30, .w-70, .w-50 {width: unset !important;}
-   .line {
-    display: none;
-   }
-   .w-70 {
-    text-align: center;
-   }
+
+    .w-30,
+    .w-70,
+    .w-50 {
+      width: unset !important;
+    }
+
+    .line {
+      display: none;
+    }
+
+    .w-70 {
+      text-align: center;
+    }
   }
 }
 
@@ -223,5 +230,25 @@
       font-size: 18px;
       font-weight: 700;
     }
+  }
+}
+
+@media screen and (max-width: 1164px) {
+  .career__text {
+    max-width: 100% !important;
+  }
+
+  .w-50 .d-flex {
+    flex-direction: column;
+  }
+
+  .w-50 .d-flex .w-30,
+  .w-50 .d-flex .w-70 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .team .line {
+    display: none;
   }
 }
