@@ -401,7 +401,7 @@ nav {
 
 .courses {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 52px;
   margin-top: 4rem;
 }
@@ -491,6 +491,20 @@ nav {
 
 .course-d .benefits {
   position: relative;
+}
+
+.course-d .benefits .box__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 52px;
+  margin-top: 4rem;
+}
+.course-d .benefits .box__section .box .box__title p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #363636;
+  margin-top: 32px;
 }
 
 .course-d .detail-plus {
@@ -1448,6 +1462,9 @@ form button {
 }
 
 @media (max-width: 768.98px) {
+  .course-d .accordion {
+    padding: unset;
+  }
   #testimonial .d-flex {
     flex-direction: unset !important;
     gap: 10px !important;
@@ -1471,20 +1488,21 @@ form button {
     display: block;
     text-align: left !important;
   }
+
   #testimonial .pattern1,
   #testimonial .pattern2 {
     width: 68px;
   }
 
   #testimonial .pattern2 {
-      right: 25px;
-      bottom: -10px;
+    right: 25px;
+    bottom: -10px;
   }
 
-    #testimonial .pattern1 {
-      left: 10px;
-      top: 75px;
-    }
+  #testimonial .pattern1 {
+    left: 10px;
+    top: 75px;
+  }
 
   .ellipse1 {
     position: absolute;
