@@ -1179,7 +1179,7 @@ form button {
   color: #2762BF;
 }
 
-.payment-page {
+.payment-page, .refer-earn {
   position: unset !important;
 }
 
