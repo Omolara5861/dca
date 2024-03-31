@@ -18,6 +18,50 @@ body {
   box-sizing: border-box;
 }
 
+
+
+.course-d .accordion {
+  padding: 24px 46px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 1px 5px 0px #0000001A;
+  margin-top: 56px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.course-d .accordion-item {
+  border: none;
+}
+
+.course-d .line {
+  height: 1px;
+  background: #CDCDD0;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.course-d .accordion-button:focus {
+  border-color: unset;
+  box-shadow: unset;
+}
+
+.course-d .accordion-button:not(.collapsed) {
+  background-color: unset;
+  box-shadow: unset;
+}
+
+.course-d .accordion-button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #363636;
+}
+
+.course-d .accordion-button::after {
+  color: #363636;
+}
+
 .modal-header img {
   cursor: pointer;
 }
@@ -1179,7 +1223,8 @@ form button {
   color: #2762BF;
 }
 
-.payment-page, .refer-earn {
+.payment-page,
+.refer-earn {
   position: unset !important;
 }
 
