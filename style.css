@@ -1699,4 +1699,8 @@ form button {
   p {
     font-size: 16px !important;
   }
+
+  .btn {
+    width: unset !important;
+  }
 }
