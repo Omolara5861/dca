@@ -99,22 +99,36 @@
           <!-- Modal Header -->
           <div class="modal-header">
             <h4 class="modal-title">Free Tech Sessions Form</h4>
-            <img src="../../images/times.png" alt="Close Btn" data-bs-dismiss="modal" />
+            <img src="images/times.png" alt="Close Btn" data-bs-dismiss="modal" />
           </div>
           <!-- Modal body -->
           <div class="modal-body">
             <div class="mb-3">
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email" />
+              <input type="text" name="fullname" class="form-control" id="inputEmail" placeholder="Full name">
             </div>
             <div class="mb-3">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Password" />
+              <input type="email" name="email" class="form-control" id="inputPassword" placeholder="Email address">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputPassword" placeholder="Phone number">
+            </div>
+            <div class="mb-3">
+              <select name="course" id="course" class="form-control">
+                <option value="program">Select program</option>
+                <option value="agile-project-manager">Agile Project Manger</option>
+                <option value="business-analysis">Business Analysis</option>
+                <option value="scrum-master">Scrum Master</option>
+                <option value="work-experience">Work Experience</option>
+                <option value="product-management">Product Management</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control">Tell us what you're looking for</textarea>
             </div>
           </div>
           <!-- Modal footer -->
           <div class="modal-footer text-center w-100">
-            <button type="button" class="btn" data-bs-dismiss="modal">
-              Submit Request
-            </button>
+            <button type="button" class="btn" data-bs-dismiss="modal">Submit Request</button>
           </div>
         </div>
       </div>
