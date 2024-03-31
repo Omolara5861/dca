@@ -1179,6 +1179,10 @@ form button {
   color: #2762BF;
 }
 
+.payment-page {
+  position: unset !important;
+}
+
 /* MEDIA QUERIES FOR MOBILE & TABLETS */
 
 @media (max-width: 1000.98px) {
