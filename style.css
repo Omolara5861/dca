@@ -18,7 +18,28 @@ body {
   box-sizing: border-box;
 }
 
+.course-d .details-card {
+  padding: 24px 24px 40px 24px;
+  border-radius: 16px;
+  border: 1px solid #EEEEEF;
+  box-shadow: 0px 2px 10px 0px #0000000D;
+}
 
+.course-d .details-card .icon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.course-d .details-card .icon .name{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #363636;
+}
+
+.course-d .details-card .icon:last-child {
+  margin-bottom: unset;
+}
 
 .course-d .accordion {
   padding: 24px 46px;
@@ -1135,6 +1156,86 @@ td {
   top: 0;
 }
 
+
+#pricing {
+  position: relative;
+  background: #052345;
+  color: #fff;
+  padding: 100px 0;
+}
+
+#pricing h2 {
+  color: #fff;
+}
+
+.payment-options {
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 48px 80px;
+  gap: 48px;
+  border-radius: 16px;
+}
+
+.btn-container button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  background: #fff;
+  color: #363636;
+  height: 40px;
+  padding: 8px 32px;
+  border-radius: 8px;
+  border: 1px;
+  cursor: pointer;
+}
+
+.btn-container button.active {
+  background: #05274C;
+  color: #fff;
+}
+
+.btn-container {
+  background: #F5F5F5;
+  padding: 8px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.payment-plan h3 {
+  color: #67676a;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.payment-plan p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #2762BF;
+}
+
+.payment-plan .price {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #27272a;
+}
+
+.payment-plan {
+  display: none;
+  border: 1px solid #E6EEFC;
+  box-shadow: 0px 4px 38px 0px #0053D00D;
+  padding: 48px 0;
+  text-align: center;
+}
+
+.payment-plan.active {
+  display: block;
+}
+
 .contact {
   padding: 46px 48px;
   border-radius: 16px;
@@ -1315,7 +1416,31 @@ form button {
   }
 }
 
+#pricing .container {
+  position: relative;
+}
+
+#pricing .pellipse {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+
+#pricing .pellipse2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+#pricing .patterns {
+  position: absolute;
+  top: 50%;
+  left: 95px;
+}
+
 @media (max-width: 768.98px) {
+
   .ellipse1 {
     position: absolute;
     left: 40%;
@@ -1459,4 +1584,25 @@ form button {
     margin-left: unset !important;
     margin-top: 15px;
   }
+
+  .lead {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+
+    #pricing .patterns {
+      width: 66px;
+      position: absolute;
+      top: 220px;
+      left: 110px;
+    }
+  
+    .payment-options {
+      width: 100%;
+    }
+
+    .btn-container button:last-child {
+       margin-top: 10px;
+    }
 }

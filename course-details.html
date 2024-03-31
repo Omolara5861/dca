@@ -146,7 +146,7 @@
               and mentoring less experienced team members. Project managers manage
               the scope, schedule, and budget of a project while also providing the
               leadership and controls necessary to enable business change.</p>
-            <img src="images/course-details.png" alt="details" class="mb-5">
+            <!-- <img src="images/course-details.png" alt="details" class="mb-5"> -->
             <div class="tns-container d-flex gap-4">
               <a href="payment.html" class="btn"> Enroll Now</a>
               <a href="#pricing" class="btn btn-trans"> Pricing</a>
@@ -184,7 +184,36 @@
             </div>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
-            <img src="./images/courses/duration.png" alt="" />
+        <div class="details-card">
+        <div class="icon">
+          <div class="name">
+            <img src="images/tumer.png" alt="Duration"> &nbsp; Duration:
+          </div>
+            <span class="text"> 8 weeks</span>
+        </div>
+        <div class="icon">
+          <div class="name"><img src="images/book.png" alt="Lectures"> &nbsp; Lectures:
+          </div>
+            <span class="text"> 50</span>
+        </div>
+        <div class="icon">
+          <div class="name"><img src="images/user.png" alt="Lectures"> &nbsp;Instructor:</div>
+          <span class="text"> 50</span>
+        </div>
+        <div class="icon">
+          <div class="name"><img src="images/layers.png" alt="Lectures"> &nbsp; Levels:
+          </div>
+            <span class="text"> 50</span>
+        </div>
+        <div class="icon">
+          <div class="name"><img src="images/computer.svg" alt="Lectures"> &nbsp;Training Method: </div>
+            <span class="text"> 50</span>
+        </div>
+        <div class="icon">
+            <div class="name"><img src="images/user.png" alt="Lectures">  &nbsp; Pricing: </div>
+            <span class="text"> 50</span>
+        </div>
+    </div>
           </div>
         </div>
       </div>
@@ -368,7 +397,7 @@
       </div>
     </section>
 
-    <section class=" course-schedule pt-5 pb-4">
+    <section class=" course-schedule pt-5 pb-5">
       <div class="container position-relative">
         <div class="text-center mb-5">
           <img src="images/schedule-patterns.png" alt="Patterns" class="schedule-plus" />
@@ -420,6 +449,37 @@
 </div>
       </div>
 
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="title text-center">
+              <h2>Pricing</h2>
+              <p>Flexible and Convenient Pricing Option</p>
+                  <p>Our flexible pricing option has made achieving your goals easier i.e getting a course. <br>
+              You can conveniently pay for your desired course as in full and enjoy <br>
+              discount or paying in installment for over 2 - 3 months period</p>
+        </div>
+
+        <div class="payment-options">
+          <div class="btn-container row  m-auto mb-5 justify-content-center">
+            <button id="oneTimePayment" onclick="selectOption('oneTime')" class="active col-lg-6">One Time Payment</button>
+            <button id="installmentPayment" onclick="selectOption('installment')" class="col-lg-6">Installment Payment</button>
+          </div>
+            <div id="oneTime" class="payment-plan m-auto active">
+                <h3>One Time Payment</h3>
+                <p >Course Fee:</p>
+                <p class="price">£699</p>
+                <button class="btn">Pay Now</button>
+            </div>
+            <div id="installment" class="payment-plan">
+                <h3>Installment Payment</h3>
+            </div>
+        </div>
+        <img src="images/price-parterns.png" alt="pattern" class="patterns">
+        <img src="images/price-ellipse.png" alt="ellipse" class="pellipse">
+      </div>
+      <img src="images/price-ellipse2.png" alt="ellipse" class="pellipse2">
     </section>
 
     <section class="learning__objective">
@@ -597,7 +657,7 @@
 
    <!--=============== SWIPER JS ===============-->
   <script src="js/swiper-bundle.min.js"></script>
-  <!-- <script src="js/script.js"></script> -->
+  <script src="js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
