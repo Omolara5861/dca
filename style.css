@@ -854,6 +854,17 @@ td {
     margin: 24px 0 32px;
 }
 
+.blog-main .popular-posts .heading {
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.blog-main .popular-posts h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    color: #363636;
+}
+
 .blog-main .posts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -889,6 +900,7 @@ td {
 }
 .blog-main .posts .post img {
   border-radius: 8px 8px 0 0;
+  width: 100%;
 }
 .blog-main .posts .post .text {
     padding: 24px;
@@ -1821,4 +1833,9 @@ form button {
   .btn {
     width: unset !important;
   }
+
+    .blog-main .col-md-5 h3 {
+      font-size: 20px;
+      line-height: 30px;
+    }
 }
