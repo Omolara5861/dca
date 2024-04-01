@@ -789,12 +789,8 @@ td {
 }
 
 .blog {
-  background: linear-gradient(to top,
-      rgba(26, 26, 26, 0.7),
-      rgba(26, 26, 26, 0.7)),
-    url(images/blogbg.jpg) !important;
-  background-position: center center;
-  background-blend-mode: darken;
+  background: url(images/blogbg.png) !important;
+  background-position: center top;
 }
 
 .blog-role {
