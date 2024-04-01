@@ -98,6 +98,22 @@ main {
   background-color: #fff;
 }
 
+.scroll-to-top {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background: #05274C;
+  box-shadow: 0px 20px 60px 0px #00000066;
+  display: none;
+    position: fixed;
+    cursor: pointer;
+    z-index: 1000;
+  right: 19px;
+  bottom: 141px;
+      justify-content: center;
+      align-items: center;
+}
+
 .main {
   margin-top: -70px;
 }
@@ -1819,5 +1835,10 @@ form button {
     .blog-main .col-md-5 h3 {
       font-size: 20px;
       line-height: 30px;
+    }
+
+    .scroll-to-top {
+      width: 60px;
+      height: 60px;
     }
 }

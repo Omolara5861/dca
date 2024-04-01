@@ -34,3 +34,27 @@ function selectOption(plan) {
     }
   
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollToTopBtn = document.getElementById("scrollToTop");
+
+  // Add scroll event listener to the window
+  window.addEventListener("scroll", function () {
+    // If user scrolls down by a certain amount, display the scroll-to-top button
+    if (window.pageYOffset > 100) {
+      scrollToTopBtn.style.display = "flex";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  });
+
+  // Add click event listener to scroll-to-top button
+  scrollToTopBtn.addEventListener("click", function () {
+    // Scroll to the top of the page with smooth behavior
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
