@@ -407,7 +407,7 @@ nav {
 
 .courses {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 52px;
   margin-top: 4rem;
 }
@@ -816,17 +816,110 @@ td {
   font-weight: lighter;
 }
 
+.blog {
+  background: linear-gradient(to top,
+      rgba(26, 26, 26, 0.7),
+      rgba(26, 26, 26, 0.7)),
+    url(images/blogbg.jpg) !important;
+  background-position: center center;
+  background-blend-mode: darken;
+}
+
+
+.blog h1 {
+  color: #f5f5f5;
+}
+
+.blog-main {
+  background: #F7F9FE;
+}
+
+.blog-main .col-md-5 h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #05274C;
+}
+.blog-main .date {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    color: #71717a;
+}
+.blog-main .col-md-5 p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #363636;
+    margin: 24px 0 32px;
+}
+
+.blog-main .posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 47px;
+  margin-top: 4rem;
+}
+
+
+.blog-main .posts .post {
+  position: relative;
+  border: 1px solid #EEEEEF;
+  background: #fff;
+  box-shadow: 0px 4px 6px -2px #0000000D;
+  border-radius: 8px;
+}
+.blog-main .post .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 23px 16px;
+  background: rgba(24, 24, 27, 0.6);
+  display: none;
+  transition: all .5s ease-in;
+}
+
+.blog-main .post:hover .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+  height: 60%;
+}
+.blog-main .posts .post img {
+  border-radius: 8px 8px 0 0;
+}
+.blog-main .posts .post .text {
+    padding: 24px;
+}
+.blog-main .posts .post h5{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #05274C;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.blog-main .posts .post p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #52525b;
+}
+
 #hero3 {
   position: relative;
   height: 319px;
   background-image: -webkit-linear-gradient(bottom,
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)),
-    url(./images/Hero\ Section.png);
+    url(images/Hero\ Section.png);
   background-image: linear-gradient(to top,
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)),
-    url(./images/Hero\ Section.png);
+    url(images/Hero\ Section.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
