@@ -797,6 +797,11 @@ td {
   background-blend-mode: darken;
 }
 
+.blog-role {
+  background: url(images/rolebg.png) !important;
+  background-position: center bottom;
+}
+
 
 .blog h1 {
   color: #f5f5f5;
