@@ -291,7 +291,7 @@ body{
 }
 
 
-@media (max-width :1000px) {
+@media (max-width :1024px) {
       .referralbox{
             width: 95%;
       }
@@ -372,6 +372,7 @@ body{
       .signup-page .row .form-container h6{
             width:90vw ;
             margin-left: 0;
+           
       }
       .lock-icon{
             margin-top: 11.8em;

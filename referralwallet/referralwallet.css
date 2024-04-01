@@ -96,7 +96,6 @@ main .flex-column .main-content > :first-child{
 }
 
 .main-content figure div{
-   
       gap: 16px;
 }
 .referafriend{
@@ -181,8 +180,8 @@ label{
       height: 384px;
       margin-left: 4%;
       margin-right: 4%;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 10px; 
+       padding-right: 10px;
 }
 .table-container .table tr{
      font-weight: 600;
@@ -301,13 +300,14 @@ label{
 }
 
 @media  (max-width :700px){
-      main .flex-column .main-content > :first-child{
+      main .blue-container{
             display: flex;
             flex-direction: column;
             align-items: center;        
       }
       .referafriend{
             width: 90%;
+            
       }
       .link-container button{
             width: 60px;
@@ -331,6 +331,8 @@ label{
       .main-content figure div p{
             font-size: 13.5px;
       }
+     
+
      .table-container{
       margin-left: 0;
      
@@ -346,8 +348,8 @@ main .flex-column .figures {
       max-width: max-content;
 }
 .table th{
-      color: red;
       font-size: 14px;
+
 }
      
 
@@ -366,18 +368,20 @@ main .flex-column .figures {
       
       }
       .table-container{
-            margin-left: 0;
             padding-left:0;
             padding-right: 0;
       }
-      .table-container .table tr {
-            font-size: 12px;
-            width: 30%;
+      
+      .table-container  table th {
+            word-wrap: break-word;
+            /* overflow-wrap: break-word; */
+            /* background-color: red; */
       }
-      /* .email-data{
-            width: 50px;
-            background-color: red;
-      } */
+      .table-container  table td{
+      font-size: 14px;
+      }
+      
+     
 
      
 
