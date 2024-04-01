@@ -118,6 +118,12 @@ nav {
   width: 216px;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  width: unset;
+  position: unset;
+}
+
 .btn:hover {
   border: 1px solid #3375d9;
   color: #2762bf !important;
@@ -1087,12 +1093,15 @@ td {
 }
 
 .swiper-pagination-bullet {
-  background-color: hsl(212, 32%, 40%);
+  background-color: transparent;
   opacity: 1;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #DDDEE0;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--second-color);
+  background-color: #2762BF;
 }
 
 .privacy .content h6 {
