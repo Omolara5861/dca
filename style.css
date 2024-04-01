@@ -479,8 +479,16 @@ body {
         background-color: #2762BF;
         border-radius: 25px;
         border:0;
+        height: 48px;
       }
 
+      .p-tag{
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #363636;
+      }
   /* MEDIA QUERIES FOR MOBILE & TABLETS */
 
 @media (max-width: 1000.98px) {
@@ -559,6 +567,7 @@ body {
     
     
 }
+
 @media (max-width: 768.98px) {
     .ellipse1{
         position: absolute;

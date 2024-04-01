@@ -1,4 +1,7 @@
-.referralsignup{
+body{
+      overflow-x:hidden;
+}
+.referralbox{
       width: 620px;
       height: 477px;
       border:1px;
@@ -6,11 +9,10 @@
       display: flex;
       flex-direction: row;
       margin-top:82px;
-      margin-left: 20%;
       border-radius: 20px;
       margin-bottom: 20%;
 }
-.referralsignup  > :first-child {
+.referbox   {
       display: flex;
       flex-direction: column;
       width: 339px;
@@ -25,13 +27,13 @@
       height: 100px;
 
 }
-.referralsignup  > :first-child img{
+/* .referralbox  > :first-child img{
       width: 75px;
       height: 75px;
       margin-top: 12.5px;
       margin-left: 12.5px;
-}
-.referralsignup :nth-child(2){
+} */
+.referralbox :nth-child(2){
       display:flex ;
       flex-direction: column;
       width: 339px;
@@ -53,7 +55,7 @@
       line-height: 27px;
       color: #67676A;
 }
-.referralsignup button{
+.referralbox button{
       width: 364px;
       height: 48px;
       border-radius: 50px;
@@ -67,5 +69,318 @@
       margin-top:30px;
       align-content: center;
       place-content: center;
+      place-self: center;
      
 }
+.signup-page .row >:first-child{
+       height: 875px;
+       top: 101px;
+     
+
+}
+.signup-page .form-container{
+      width: 476px;
+      height: 495px;
+      margin-left:158px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      margin-top: 69px;
+
+}
+.signup-page .row .form-container h6{
+      max-width: 269px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      align-self: center;
+      color: #363636;
+}
+.signup-form{
+      width: 476px;
+      height:288px;
+      gap: 16px;
+      
+}
+.signup-form figure{
+      width: 230px;
+      height:80px;
+      display: flex;
+      flex-direction: column;
+      /* background-color: red; */
+      gap: 8px;    
+}
+.signup-form figure label{
+      color: #363636;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+}
+.signup-form figure input{
+      height: 48px;
+}
+.signup-form figure button{
+      font-weight:500;
+      line-height: 24px;
+      font-size: 16px;
+      
+}
+.signup-form .checkbox p {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+}
+.signup-form .checkbox p a{
+      text-decoration: none;
+}
+.verify-container{
+      width: 620px;
+      height: 477px;
+      border:1px;
+      box-shadow: 0px 3px 10px 0px #0000001A;
+      display: flex;
+      flex-direction: row;
+      margin-top:82px;
+      border-radius: 20px;
+      margin-bottom: 20%;
+
+}
+.verify-box{
+      width: 466px;
+      height: 354px;
+      margin-left: 70.5px;
+      align-items: flex-start;
+}
+
+.verify-box button{
+      width: 100%;
+      height: 48px;
+      border-radius: 50px;
+      background-color: #2762BF;
+      gap:8px;
+      border:0;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-top:30px;
+      align-content: center;
+      place-content: center;
+      place-self: center;
+}
+
+.verify-box h6{
+      font-size: 28px;
+      font-weight: 800;
+      color: #1A1A1A;
+      line-height: 27px;
+      place-self: flex-start;
+}
+
+.verify-box p{
+      font-weight: 500;
+      font-size: 18px;
+    color: #67676A;
+    line-height: 27px;
+    place-self: center;
+
+}
+
+.input-container  {
+      width: 466px;
+      height: 500px;
+      gap: 2px;
+}
+
+.otp-input{
+      border: 1px solid rgb(181, 179, 179);
+      width:70px;
+      height: 48px;
+      border-radius: 8px;
+      margin-top: 10px;
+      text-align: center; 
+}
+
+.forgot-password{
+      place-content: flex-end;
+}
+.nav{
+      height: 101px;
+      background: #E9F2FF;
+      width: 100vw;
+}
+.fg-password-input{
+      height: 48px;
+      border-radius: 8px;
+     border: 1px solid #DDDEE0;
+    
+}
+.reset-password-input{
+      height: 48px;
+      border-radius: 8px;
+     border: 0.1;
+     border-color: #DDDEE0;
+     position: relative;
+}
+.lock-icon{
+      position:absolute;
+      z-index: 1;
+      margin-top: 11.4em;
+       margin-left: 20px;
+       
+
+}
+.template-rec{
+      background-color: #05274C;
+      width: 100%;
+      height: 15.54px;
+}
+
+.email-bar{
+      width: 85%;
+      margin-top: 55.06px;
+      margin-left: 40.4px;
+}
+.email-bar img{
+      width: 93.91px;
+      height: 66.23px;
+}
+.email-bar div {
+    flex-direction: column;
+    height:51.01px;  
+    width: 208px;
+    place-items:center; 
+}
+.email-bar div  a{
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15.03px;
+      line-height: 22.54px;
+      color:#05274C;
+}
+.email-content{
+      width:83%;
+      margin-top: 165.34px;
+      gap: 10.02px;
+      margin-left: 40.4px;
+}
+.email-content h5 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 42.08px;
+      color: #27575D;
+}
+.email-btn{
+      text-decoration: none;
+      color: white;
+      width: 364.7px;
+      margin-left: 20%;
+      height: 48px;
+      padding: 159.31px, 32.06px, 159.31px, 32.06px;
+}
+.email-close{
+      font-size: 20.04px;
+      line-height: 30.06px;
+      color: #363636;
+      margin-top: 50px;
+      margin-left: 40.4px;
+}
+.footer{
+      margin-top: 100px;
+}
+
+
+@media (max-width :1000px) {
+      .referralbox{
+            width: 95%;
+      }
+
+      .referralbox  > :first-child{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+      }
+      
+      
+.referralsignup button{
+      width: 95%;
+      
+}
+.signup-page .row{
+      display: flex;
+      flex-direction: column-reverse;
+}
+.signup-page .form-container{
+       width: 80%;
+       margin-left: 5%;
+
+}
+.instructions-img{
+      width: 100vw;
+      }
+
+      .signup-form{
+            margin-left: 20%;
+      }
+      .signup-page .row .form-container h6{
+            width:60vw ;
+            margin-left: 50%;
+      }
+}
+.email-alert{
+      background-color: #2762BF;
+      border-radius: 10px;
+      width: 450px;
+      height: 60px;
+      place-self: center;
+      /* align-self: center;    */
+   
+}
+
+
+@media (max-width :768px){
+      .email-btn{
+            margin-left:2px;
+            width:350px;
+      }
+      .email-bar{
+            margin-left: 5%;
+            width: 100%;
+      }
+      .email-bar img{
+            width: 85px;
+            height: 55px;
+      }
+      .verify-box {
+            margin-left: 30px;
+            width: 80vw;
+      }
+      .verify-box p{
+           font-size: 17px;
+           width: fit-content;
+
+      }
+      .otp-input{
+            width: 14%;
+
+      }
+      .signup-form{
+            width: 90vw;
+            margin-left: 0;
+      }
+      .signup-page .row .form-container h6{
+            width:90vw ;
+            margin-left: 0;
+      }
+      .lock-icon{
+            margin-top: 11.8em;
+      }
+      .verify-box button{
+            width: 92%;
+      }
+      .email-alert
+      {
+            width: 80VW;
+      }
+} 
