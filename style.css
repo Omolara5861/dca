@@ -638,17 +638,19 @@ td {
   bottom: 0px;
 }
 
-.pattern1,
-.pattern2 {
-  z-index: -1 !important;
+
+#testimonial .testimonials {
+  border-radius: 48px 0 48px 0;
 }
 
 #testimonial .testimonial {
   background: white;
   padding: 70px 48px;
   gap: 48px;
-  border-radius: 48px;
+  border-radius: 48px 0 48px 0;
   box-shadow: 0px 25px 50px -12px #0053D00D;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #testimonial .testimonial h3 {

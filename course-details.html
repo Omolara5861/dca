@@ -10,6 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet" />
+    <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="swiper-bundle.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
@@ -539,14 +541,15 @@
         </div>
       </div>
     </section>
+
     <section id="testimonial" class="d-testimonial">
       <div class="container">
         <img src="images/parterns.png" alt="A pattern" class="pattern1">
         <div class="title text-center">
           <h2>What our candidates <br /> say about us</h2>
         </div>
-        <div class="d-flex gap-5">
-          <img src="images/left.png" alt="Left arrow" class="img">
+        <div class="d-flex gap-5 gap-sm-2 mt-4">
+          <img src="images/left.png" alt="Left arrow" class="img swiper-button-prev">
           <div class="testimonials swiper">
             <div class="card__content">
               <div class="swiper-wrapper">
@@ -563,10 +566,30 @@
                     <span>Vivian</span>
                   </div>
                 </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner1.png" alt="Customer 1" class="col-lg-5">
+                  <div class="col-lg-6">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>Digital careers academy gave meaning to my careers</h3>
+                    <p>"I am happy to inform you that I have secured a process Analyst position with a Government Agency in the U.K. I am happy and excited about the opportunity. I want to thank the coaching team and Prof Oludare for your mentorship, support and the remarkable learning experience during my practical Business Analysis program..."</p>
+                    <span>Olu</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner1.png" alt="Customer 1" class="col-lg-5">
+                  <div class="col-lg-6">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>Digital careers academy gave meaning to my careers</h3>
+                    <p>" I’m pleased to announce I have been offered a role as a Business Analyst for a software development company within the risk management sector.
+Always think about the end result, why you are on this platform, visualize the house, car and the ability to treat yourself and your family. When you succeed you will not only be a blessing to your own life but to others only
+                          .."</p>
+                    <span>Daren S</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <img src="images/right.png" alt="Right arrow" class="img">
+          <img src="images/right.png" alt="Right arrow" class="img swiper-button-next">
         </div>
         <img src="images/parterns.png" alt="A pattern" class="pattern2">
       </div>
