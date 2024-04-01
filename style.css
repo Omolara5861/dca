@@ -683,34 +683,6 @@ td {
   width: 80%;
 }
 
-#blog h3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px;
-  color: #05274c;
-  margin: 32px 0 20px;
-}
-
-#blog h4 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  color: #05274c;
-}
-
-#blog .col-md-5 p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0.02em;
-}
-
-#blog .col-md-6 p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
 .payment-page {
   height: 100%;
   width: 100%;
@@ -919,6 +891,15 @@ td {
   font-weight: 400;
   line-height: 24px;
   color: #52525b;
+}
+
+.blog-details .py-3 {
+  width: 90%;
+  margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #646464;
 }
 
 #hero3 {
@@ -1819,7 +1800,7 @@ form button {
     text-align: left;
   }
 
-  p {
+  p, li {
     font-size: 16px !important;
   }
 
