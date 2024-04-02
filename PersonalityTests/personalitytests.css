@@ -182,12 +182,15 @@ body{
       flex-direction: column;
       gap: 80px;
       width: 100%;
-      border: red;
       height:163px;
+    }
+    .question-container .container-box .btn-box{
+      display: flex;
+      justify-content: space-between;
     }
     
     .question-container .container-box a button{
-      width: 390px;
+      width: 385px;
       height: 48px;
       text-align: center;
     }
@@ -298,7 +301,6 @@ body{
 .button-container{
       width: 466px;
       display: flex;
-      gap: 32px;
       height: 48px;
 }
 .button-container button{
