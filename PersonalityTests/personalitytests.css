@@ -182,6 +182,7 @@ body{
       flex-direction: column;
       gap: 80px;
       width: 100%;
+      border: red;
       height:163px;
     }
     
