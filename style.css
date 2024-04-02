@@ -108,6 +108,9 @@ body {
   border-radius: 16px;
   border: 1px;
 }
+.popup-content{
+  padding: 0 !important;
+}
 
 .modal-header {
   border-bottom: none !important;
