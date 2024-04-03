@@ -1794,7 +1794,9 @@ form button {
     margin-top: 10px;
   }
 
-  
+    .last-content {
+      margin-bottom: 50px !important;
+    }
 }
 
 @media only screen and (max-width: 520px) {
@@ -1841,4 +1843,51 @@ form button {
       width: 60px;
       height: 60px;
     }
+
+    
+}
+
+/* Feedback Changes */
+
+.course img {
+  border-radius: 16px 16px 0 0;
+}
+
+.course .overlay {
+  border-radius: 16px;
+}
+
+img {
+  object-fit: cover !important;
+  border-radius: 16px;
+}
+
+.last-content {
+  margin-bottom: 100px;
+}
+
+.scroll-to-top img {
+  width: 30px;
+  height: 30px;
+}
+
+#choose .box {
+  border-radius: 24px;
+}
+
+.schedule-plus, .choose-plus, .detail-plus {
+  width: 81px;
+  height: 88px;
+}
+
+@media only screen and (max-width: 520px) {
+  table tr td:first-child {
+    font-weight: 900 !important;
+  }
+
+  .testimonial img {
+    width: 70%;
+      margin: 0 auto;
+  }
+
 }
