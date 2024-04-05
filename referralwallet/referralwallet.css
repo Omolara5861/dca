@@ -148,6 +148,7 @@ label{
 }
 .myreferrals >:first-child{
       width: 90%;
+      padding-left: 0;
 }
 .myreferrals >:first-child h6{
       font-size: 20px;

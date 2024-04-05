@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,6 +30,10 @@
         height: 90px; 
         
       }
+      .bi-list:hover {
+  border: 1px solid #2762BF80;
+
+      }
     
     </style>
   </head>
@@ -38,6 +43,15 @@
         <div
           class="d-flex container align-items-center py-2 justify-content-between"
         >
+        <i class="bi bi-list d-lg-none button py-1 px-2 rounded" role="button"
+        id="dropbtn"
+              type="button"
+              data-toggle="collapse"
+              data-target="#sidebarCollapse"
+              aria-controls="sidebarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="font-size: 20px;" ></i>
           <a class="navbar-brand" href="#"
             ><img
               src="https://digitalcareers.academy/static/assets/images/dcasvg-logo.svg"
@@ -65,13 +79,7 @@
             <img
               src="../icons/dropdown.png"
               alt=""
-              id="dropbtn"
-              type="button"
-              data-toggle="collapse"
-              data-target="#sidebarCollapse"
-              aria-controls="sidebarCollapse"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              
             />
           </div>
         </div>
@@ -203,7 +211,7 @@
 
           <div class="myreferrals   w-100   mt-5">
             
-            <div  class="container-fluid mx-auto px-5 d-flex justify-content-between">
+            <div  class="container-fluid mx-auto p d-flex justify-content-between">
              
               <h6>My referrals (2)</h6>
               <div class="buttons gap-4 d-flex">

@@ -608,6 +608,18 @@ body {
         margin-top:30px;
         left:46% ;
     }
+    .popup-img{
+      width: 40vw;
+
+    }
+    .btn-con {
+      display: flex;
+      flex-direction: column;
+      background-color: red;
+      height: 100px;
+
+    }
+   
 
     
     /* line-height: 30px; */
