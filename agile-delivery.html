@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agile Delivery Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="https://digitalcareers.academy/static/assets/images/dcasvg-logo.svg" height="60" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="agile.html">Agile Project Manger</a></li>
+                <li><a class="dropdown-item" href="business.html">Business Analysis</a></li>
+                <li><a class="dropdown-item" href="scrum.html">Scrum Master</a></li>
+                <li><a class="dropdown-item" href="work-experience.html">Work Experience</a></li>
+                <li><a class="dropdown-item" href="product.html">Product Management</a></li>
+                <li><a class="dropdown-item" href="courses.html">View All</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="work-experience.html">Work Experience Program</a>
+            </li>
+            <li class="nav-item refer">
+              <a class="nav-link mx-2" href="refer.html">Refer & Earn</a>
+              <img src="images/coin.png">
+            </li>
+            <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Resources
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                    </ul>
+                                </li> -->
+            <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Company
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                                        <li><a class="dropdown-item" href="#">Contact us</a></li>
+                                    </ul>
+                                </li> -->
+            <div class="border-left">
+            </div>
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class=" nav-link mx-2" href="https://lms.digitalcareers.academy/sign-in/" target="_blank">Login</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class=" mx-2 btn btn-trans" data-bs-toggle="modal" data-bs-target="#myModal">Free tech
+                session</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Free Tech Sessions Form</h4>
+            <img src="images/times.png" alt="Close Btn" data-bs-dismiss="modal" />
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="mb-3">
+              <input type="text" name="fullname" class="form-control" id="inputEmail" placeholder="Full name">
+            </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" id="inputPassword" placeholder="Email address">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputPassword" placeholder="Phone number">
+            </div>
+            <div class="mb-3">
+              <select name="course" id="course" class="form-control">
+                <option value="program">Select program</option>
+                <option value="agile-project-manager">Agile Project Manger</option>
+                <option value="business-analysis">Business Analysis</option>
+                <option value="scrum-master">Scrum Master</option>
+                <option value="work-experience">Work Experience</option>
+                <option value="product-management">Product Management</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control">Tell us what you're looking for</textarea>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer text-center w-100">
+            <button type="button" class="btn" data-bs-dismiss="modal">Submit Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="hero-sec" class="course-details">
+      <div class="container">
+        <img src="images/pencil.png" alt="pencil" class="pencil">
+        <div class="row py-4">
+          <div class="col-lg-6 align-self-center mb-5">
+            <h2>Agile Delivery Manager</h2>
+            <p>An Agile Delivery Manager (also called an ADM) is a skilled person who focuses on making things happen, responsible for ensuring their teams have everything they need to succeed. They are great at managing stakeholders and are responsible for coordinating across multiple departments to remove any impediments.</p>
+            <p>He/She is responsible for successfully delivering a service or product to a client or customer. They work with a team of professionals to ensure that the service is delivered on time, within budget, and to the required quality standards.
+</p>
+            <!-- <img src="images/course-details.png" alt="details" class="mb-5"> -->
+            <div class="tns-container d-flex gap-4">
+              <a href="payment.html" class="btn"> Enroll Now</a>
+              <a href="#pricing" class="btn btn-trans"> Pricing</a>
+            </div>
+          </div>
+          <img src="images/courses/course.png" alt="Group of people sitting" class="col-lg-6 z-1">
+        </div>
+        <img src="images/elipse.png" alt="elipse" class="elipse">
+      </div>
+    </section>
+  </header>
+  <main class="course-d">
+
+    <section>
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-7 text-lg-start">
+            <h2 class="text-left">
+              Course Overview
+            </h2>
+            <div class="col-lg-10 fs-6">
+              <p>
+                The difference between a Agile Delivery Manager and a Scrum Master therefore lies mainly in the Scope and in the responsibility. An Agile Delivery Manager works at a higher level and oversees multiple teams or projects, while a Scrum Master works at a lower level and focuses on one team or project.
+              </p>
+              <p>
+                Also, while the traditional Project Manager role focuses on planning and completing projects within scope, time, and budget constraints, the Agile Delivery Manager role is all about continuous improvement and innovation, focusing on collaboration and Agile practices and focus on the day-to-day flow of their delivery team, working to improve processes.
+
+              </p>
+            </div>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <div class="details-card">
+              <div class="icon">
+                <div class="name">
+                  <img src="images/tumer.png" alt="Duration"> &nbsp; Duration:
+                </div>
+                <span class="text"> 12 weeks</span>
+              </div>
+              <div class="icon">
+                <div class="name"><img src="images/book.png" alt="Lectures"> &nbsp; Lectures:
+                </div>
+                <span class="text"> 50</span>
+              </div>
+              <div class="icon">
+                <div class="name"><img src="images/user.png" alt="Lectures"> &nbsp;Instructor:</div>
+                <span class="text"> Taiye Idiaghe</span>
+              </div>
+              <div class="icon">
+                <div class="name"><img src="images/layers.png" alt="Lectures"> &nbsp; Levels:
+                </div>
+                <span class="text"> 4</span>
+              </div>
+              <div class="icon">
+                <div class="name"><img src="images/computer.svg" alt="Lectures"> &nbsp; Training Method</div>
+                <span class="text"> Remote Learning</span>
+              </div>
+              <div class="icon">
+                <div class="name"><img src="images/user.png" alt="Lectures"> &nbsp; Pricing: </div>
+                <span class="text"> £850</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="course__str">
+        <h2 class="text-center">Course Structure</h2>
+        <table>
+          <tr>
+            <th>Days</th>
+            <th>Activity</th>
+            <th>Time</th>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>Agile Delivery Manager Training</td>
+            <td>8.00pm UK Time <br> 8.00pm WAT </td>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>Sprint Review</td>
+            <td>7.00pm - 10.00pm UK Time <br>7.00 pm - 10.00 pm WAT</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Spring Retro / Sprint Planning</td>
+            <td>7.00 pm - 10.00 pm UK Time<br>7.00 pm - 10.00 pm WAT</td>
+          </tr>
+        </table>
+
+      </div>
+    </section>
+
+    <section class="learning__objective">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="./images/courses/Group 44473.png" alt="" class="w-100" />
+          </div>
+          <div class="col-lg-6">
+            <div class="text-left">
+              <h2>Learning Objectives</h2>
+              <p class="lead">Upon completion of this program you will:</p>
+            </div>
+            <div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>
+                  Learn how to use modern project management methodologies and collaboration tools that are relevant in the workplace now and in the future
+                </p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>
+                  Demonstrate Agile principles and values with a solid understanding of Agile Manifesto
+                </p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Practically use the Scrum Framework in teams, with the various roles, events and artifacts to get maximum value from the course</p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Demonstrate how to use Kanban methodology and principles to visualise workflow with Kanban boards and managing Work-In-Progress (WIP) limits</p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>
+                 Use Lean Principles to reduce waste and improve efficiency, value stream mapping and continuous improvements.
+                </p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Demonstrate Agile Delivery Tools like Jira, Trello and Asana to facilitate Agile practices and communication.
+</p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>
+                  Track progress and identifying bottlenecks through Key Performance Indicator (KPIs) for Agile teams, and create effective reports for stakeholders.
+                </p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>
+                  Effectively lead and motivate teams through display of Agile Leadership and Communication Strategies.
+                </p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>
+                  Manage Agile Transformation, Strategies for implementing Agile at scale, while overcoming challenges in Agile adoption and sustaining Agile practices and culture within organisations.
+
+                </p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>
+                  Learn with Case Studies and follow Best Practices in line with obtain in the industry. Exposure to real-world examples of successful Agile Delivery Management. Best practices for overcoming common Agile challenges and Lessons Learnt.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container benefits">
+      <div class="text-center">
+        <h2>Course Benefits</h2>
+        <p class="lead">
+          Here are some phrases highlighting the benefits <br> of taking courses
+        </p>
+      </div>
+      <img src="./images/about/plus.png" alt="" class="detail-plus" />
+      <div class="box__section  justify-content-center my-5">
+        <div class="box">
+          <div class="box__image">
+            <img src="./images/courses/images box.png" alt="" />
+          </div>
+          <div class="box__title">
+            <p>Acquire Agile Project Management skills to establish the foundation for a successful and dynamic career</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box__image">
+            <img src="./images/courses/images box (3).png" alt="" />
+          </div>
+          <div class="box__title">
+            <p>Become proficient in implementing top-notch project management methodologies and best-practices, including the use of tools like Jira, Trello and Asana.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box__image">
+            <img src="./images/courses/images box (4).png" alt="" />
+          </div>
+          <div class="box__title">
+            <p>Acquire Agile Project Management skills to establish the foundation for a successful and dynamic career.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class=" course-schedule pt-5 pb-5">
+      <div class="container position-relative">
+        <div class="text-center mb-5">
+          <img src="images/schedule-patterns.png" alt="Patterns" class="schedule-plus" />
+          <h2>Agile Delivery Manager Schedule</h2>
+          <p class="lead">
+            We offer a wide range of opportunity for you. <br> See what you get and your benefits
+          </p>
+        </div>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Week 1
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>Introduction to Agile Delivery Management</p>
+                <li>Overview of Agile methodologies</li>
+                <li>Role and responsibilities of an Agile Delivery Manager</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Week 2
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Agile Principles and Values</p>
+                <li>Understanding the Agile Manifesto</li>
+                <li>Principles behind the Agile Manifesto</li>
+                <li>Values that drive Agile practices</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Week 3
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Scrum Framework</p>
+                <li>Overview of Scrum roles, events, and artifacts</li>
+                <li>Responsibilities of the Scrum Master and Product Owner</li>
+                <li>Sprint planning, daily stand-ups, sprint reviews, and retrospectives</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                Week 4
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Kanban Methodology</p>
+                <li>Understanding Project Scope</li>
+                <li>Managing Project Scope</li>
+                <li>Identify tools & techniques to create effective project status reports</li>
+               
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                Week 5
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Lean Principles</p>
+                <li>Introduction to Lean thinking</li>
+                <li>Reducing waste and improving efficiency</li>
+                <li>Value stream mapping and continuous improvement</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+             <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true" aria-controls="panelsStayOpen-collapseSix">
+                Week 6
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <p> Agile Delivery Tools</p>
+                <li>Introduction to popular Agile tools such as Jira, Trello, and Asana</li>
+                <li>Using tools to facilitate Agile practices and communication</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="true" aria-controls="panelsStayOpen-collapseSeven">
+                Week 7
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Agile Metrics and Reporting</p>
+                <li>Key performance indicators (KPIs) for Agile teams</li>
+                <li>Tracking progress and identifying bottlenecks</li>
+                <li>Creating effective Agile reports for stakeholders</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+           <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="true" aria-controls="panelsStayOpen-collapseEight">
+                Week 8
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <p>Agile Leadership and Communication</p>
+                <li>Servant leadership in Agile environments</li>
+                <li>Effective communication strategies for Agile teams</li>
+                <li>Building and motivating high-performing Agile teams</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                Week 9
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Agile Transformation</p>
+                <li>Strategies for implementing Agile at scale</li>
+                <li>Overcoming challenges in Agile adoption</li>
+                <li>Sustaining Agile practices and culture within organisations</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                Week 10
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Case Studies and Best Practices</p>
+                <ul>
+                  <li>Real-world examples of successful Agile delivery management</li>
+                  <li>Best practices for overcoming common Agile challenges</li>
+                  <li>Lessons learned from Agile transformations in various industries</li>
+                </ul>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="title text-center">
+          <h2>Pricing</h2>
+          <p>Flexible and Convenient Pricing Option</p>
+          <p>Our flexible pricing option has made achieving your goals easier i.e getting a course. <br>
+            You can conveniently pay for your desired course as in full and enjoy <br>
+            discount or paying in installment for over 2 - 3 months period</p>
+        </div>
+
+        <div class="payment-options">
+          <div class="btn-container row  m-auto mb-5 justify-content-center">
+            <button id="oneTimePayment" onclick="selectOption('oneTime')" class="active col-lg-6">One Time Payment</button>
+            <button id="installmentPayment" onclick="selectOption('installment')" class="col-lg-6">Installment Payment</button>
+          </div>
+          <div id="oneTime" class="payment-plan m-auto active">
+            <h3>One Time Payment</h3>
+            <p>Course Fee:</p>
+            <p class="price">N750,000 (NIG)</p>
+            <p class="price">$1,500 (CAD)</p>
+            <p class="price">$1,100 (USD)</p>
+            <p class="price">£850</p>
+            <a href="payment/agile-project-management/?payment_option=one-time" class="btn">Pay Now</a>
+          </div>
+          <div id="installment" class="payment-plan active">
+            <h3>Installment Payment</h3>
+            <div class="row">
+              <div class="col-xl-4">
+                <p>1st installment:</p>
+                <p class="price">£425</p>
+                <p class="price">NGN375,000</p>
+                <p class="price">$750</p>
+                <p class="price">$550</p>
+              </div>
+              <div class="col-xl-4">
+                <p>2nd installment:</p>
+                <p class="price">£212.5</p>
+                <p class="price">NGN187,500</p>
+                <p class="price">$375</p>
+                <p class="price">$275.00</p>
+              </div>
+              <div class="col-xl-4">
+                <p>3rd installment:</p>
+                <p class="price">£212.5</p>
+                <p class="price">NGN187,500</p>
+                <p class="price">$375</p>
+                <p class="price">$275.00</p>
+              </div>
+            </div>
+            <a href="/payment/agile-project-management/?payment_option=installment" class="btn">Pay Now</a>
+          </div>
+        </div>
+        <img src="images/price-parterns.png" alt="pattern" class="patterns">
+        <img src="images/price-ellipse.png" alt="ellipse" class="pellipse">
+      </div>
+      <img src="images/price-ellipse2.png" alt="ellipse" class="pellipse2">
+    </section>
+
+    <section class="learning__objective">
+      <div class="container col-xl-12 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-6 text-lg-start">
+            <div class="text-left">
+              <h2 class="fs-3 text-black pb-4">Agile Scrum Ceremonies:</h2>
+            </div>
+            <div class="text-black">
+              <div class="box__title">
+                <p>Sprint Planning:</p>
+              </div>
+              <p>
+                This is a meeting for the team to consider items of work to be
+                completed and commits to what they have capacity to deliver
+                during the coming Sprint.
+              </p>
+
+              <div class="box__title">
+                <p>Daily Stand-Up:</p>
+              </div>
+              <p>
+                This is a 15-minute team meeting to provide updates and
+                progress of individual work done towards adding value to
+                product development.
+              </p>
+              <div class="box__title">
+                <p>Scrum Review:</p>
+              </div>
+              <p>
+                This is where the team showcases what they have completed for
+                the Stakeholders’ review and feedback and get a sign-off.
+              </p>
+              <div class="box__title">
+                <p>Scrum Retrospective:</p>
+              </div>
+              <p>
+                This is a meeting where the team reflects on their performance
+                during the current Sprint and seek ways to improve their
+                interaction, practices and lessons learnt
+              </p>
+              <div class="box__title">
+                <p>Sprint:</p>
+              </div>
+              <p>
+                This is a cycle of work for the team (can be 1 - 4 weeks
+                interval)
+              </p>
+
+              <a class="btn" href="payment.html">Enroll Now</a>
+            </div>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-6 mt-5">
+            <img src="./images/courses/Group 44473 (1).png" alt="agile scrum" class="w-100" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonial" class="d-testimonial">
+      <div class="container">
+        <img src="images/parterns.png" alt="A pattern" class="pattern1">
+        <div class="title text-center">
+          <h2>What our candidates <br /> say about us</h2>
+        </div>
+        <div class="d-flex gap-5 gap-sm-2 mt-4">
+          <img src="images/left.png" alt="Left arrow" class="img swiper-button-prev">
+          <div class="testimonials swiper">
+            <div class="card__content">
+              <div class="swiper-wrapper">
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner1.png" alt="Customer 1" class="col-lg-4">
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>DCA is a very great learning platform</h3>
+                    <p>"DCA is a very great learning platform. I’m currently enrolled in their Business
+                      Analysis training programme and it has been a wonderful experience so far.
+                      I have learnt so many new skills and this experience has even encouraged me
+                      to want to learn more about product management and product development.
+                      I’m happy I enrolled for this programme.."</p>
+                    <span>Pelumi Okunade</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner2.png" alt="Customer 1" class="col-lg-4">
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>A Beyond Rewarding Experience!!!</h3>
+                    <p>"Enrolling with DCA has been beyond rewarding for me. Being someone who transitioned into tech from a totally unrelated field, I can now boast of the confidence, skills and expertise needed to excel in this field since enrolling for the Scrum Master and Agile Delivery Manager training at DCA. The courses delivery from the various coaches who are always available to provide learning support, hands-on training on various collaborative tools and learning resources made available to students to study at their own time, are a few benefits of enrolling on DCA. I would recommend DCA again and again. Many thanks to DCA!!!."</p>
+                    <span>Kemi Adekeye</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner3.png" alt="Customer 1" class="col-lg-4">
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>Really great place to train</h3>
+                    <p>Really great place to train - you get hands-on experience, mentoring, personalized
+                      learning and genuine interest in your overall welfare. DCA comes highly
+                      recommended.</p>
+                    <span>Tabs</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner4.png" alt="Customer 1" class="col-lg-4">
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>Deep Learning & Hands-on Work.</h3>
+                    <p>"I have taken a few courses and I must say this one is exemplary. Industry expert
+                      coaches tutored and helped me to be ready and pivot to a new digital role.
+                      I attended training sessions with practical and hands-on live change projects. The modelling of the training conditioned the learning environment to industry standard.
+                      It totally exceeded my expectations. I'd recommend the course to anyone who is considering moving to tech or trying to gain new tech skills.."</p>
+                    <span>Ola Balogun</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner5.png" alt="Customer 1" class="col-lg-4">
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>Fantastic Coaches & Hands-on experience</h3>
+                    <p>"Fantastic Trainers/Coaches & opportunities for work experience for graduating
+                      students from simulation. DCA also support with free interview prep class. Candidates who joins the WX
+                      team are supported with reference when they get their permanent offers. Theoretical & Practical hands on style/framework. Great place to be!."</p>
+                    <span>Babajide Jolaolu-Kehinde</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="images/right.png" alt="Right arrow" class="img swiper-button-next">
+        </div>
+        <img src="images/parterns.png" alt="A pattern" class="pattern2">
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </section>
+    <div class="scroll-to-top" id="scrollToTop">
+      <img src="images/arrow-up.svg" alt="Arrow Up">
+    </div>
+  </main>
+  <footer id="footer" class="py-5">
+    <div class="container">
+      <section class="row mb-8">
+        <div class="col-lg-3">
+
+          <address>
+            Office Address: <br />
+            BOS House, <br />
+            Olden way Business Park, <br>
+            Ballybrit Galway, H91 E65V, Ireland
+          </address>
+        </div>
+        <div class="col-lg-3">
+          <h5>Program Track</h5>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Practical Scrum Master</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Practical Business Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Data Analytics</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Resources</h5>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="faqs.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">Terms and Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Get In Touch</h5>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="contact.html">Contact Us</a>
+            </li>
+            <li>
+              Whatsapp
+            </li>
+            <li>
+              +447488818292 <br /> +15873303085
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="border-tb d-flex justify-content-between">
+        <span class="align-self-center">© 2024 Digital Careers Academy</span>
+        <div class="social-icon">
+          <a href="https://www.facebook.com/digitalcareersacademyDCA">
+            <img src="images/facebook.png" alt="Facebook Icon">
+          </a>
+          <a href="https://img.icons8.com/?size=1x&id=63306&format=png">
+            <img src="images/twitter.png" alt="Twitter Icon">
+          </a>
+          <a href="https://www.linkedin.com/company/digitalcareersacademydca">
+            <img src="images/linkedin.png" alt="LinkedIn Icon">
+          </a>
+          <a href="https://www.instagram.com/digitalcareersacademy/">
+            <img src="images/instagram.png" alt="Instagram Icon">
+          </a>
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
