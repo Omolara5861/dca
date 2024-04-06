@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="https://digitalcareers.academy/static/assets/images/dcasvg-logo.svg" height="60" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="agile.html">Agile Project Manger</a></li>
+                <li><a class="dropdown-item" href="business.html">Business Analysis</a></li>
+                <li><a class="dropdown-item" href="scrum.html">Scrum Master</a></li>
+                <li><a class="dropdown-item" href="work-experience.html">Work Experience</a></li>
+                <li><a class="dropdown-item" href="product.html">Product Management</a></li>
+                <li><a class="dropdown-item" href="courses.html">View All</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="work-experience.html">Work Experience Program</a>
+            </li>
+            <li class="nav-item refer">
+              <a class="nav-link mx-2" href="refer.html">Refer & Earn</a>
+              <img src="images/coin.png">
+            </li>
+            <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Resources
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                    </ul>
+                                </li> -->
+            <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Company
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                                        <li><a class="dropdown-item" href="#">Contact us</a></li>
+                                    </ul>
+                                </li> -->
+            <div class="border-left">
+            </div>
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class=" nav-link mx-2" href="https://lms.digitalcareers.academy/sign-in/" target="_blank">Login</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class=" mx-2 btn btn-trans" data-bs-toggle="modal" data-bs-target="#myModal">Free tech
+                session</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Free Tech Sessions Form</h4>
+            <img src="images/times.png" alt="Close Btn" data-bs-dismiss="modal" />
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="mb-3">
+              <input type="text" name="fullname" class="form-control" id="inputEmail" placeholder="Full name">
+            </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" id="inputPassword" placeholder="Email address">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputPassword" placeholder="Phone number">
+            </div>
+            <div class="mb-3">
+              <select name="course" id="course" class="form-control">
+                <option value="program">Select program</option>
+                <option value="agile-project-manager">Agile Project Manger</option>
+                <option value="business-analysis">Business Analysis</option>
+                <option value="scrum-master">Scrum Master</option>
+                <option value="work-experience">Work Experience</option>
+                <option value="product-management">Product Management</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control">Tell us what you're looking for</textarea>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer text-center w-100">
+            <button type="button" class="btn" data-bs-dismiss="modal">Submit Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="hero-sec" class="course-details">
+      <div class="container">
+        <img src="images/pencil.png" alt="pencil" class="pencil">
+        <div class="row py-4">
+          <div class="col-lg-6 align-self-center mb-5">
+            <h2>Product Management </h2>
+            <p>Take our immersive hands-on experience live course and begin your career journey to becoming one of the most sought-after professionals in the product management space.
+
+
+
+              <br>
+              Our Product Management course is a 12-week intensive hands-on program that sees you working - in an agile environment - on the various stages of the product software development cycle.
+
+            </p>
+            <!-- <img src="images/course-details.png" alt="details" class="mb-5"> -->
+            <div class="tns-container d-flex gap-4">
+              <a href="payment.html" class="btn"> Enroll Now</a>
+              <a href="#pricing" class="btn btn-trans"> Pricing</a>
+            </div>
+          </div>
+          <img src="images/courses/course.png" alt="Group of people sitting" class="col-lg-6 z-1">
+        </div>
+        <img src="images/elipse.png" alt="elipse" class="elipse">
+      </div>
+    </section>
+  </header>
+  <main class="course-d">
+
+    <section>
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-7 text-lg-start">
+            <h2 class="text-left">
+              Course Overview
+            </h2>
+            <div class="col-lg-10 fs-6">
+              <p>
+                The course adopts the hands-on approach in equipping you with the right digital skills, tools and experience needed to be part of a product development/management team.
+              </p>
+              <p>In this program, it’s okay to have no previous technical know-how, as you’ll begin with well-detailed relevant theories. Observe excitedly as you gradually develop all soft and technical skills needed to excel. And coding skills are not a prerequisite.</p>
+            </div>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <div class="details-card">
+              <div class="icon">
+                <div class="name">
+                  <img src="images/tumer.png" alt="Duration"> &nbsp; Duration:
+                </div>
+                <span class="text"> 12 weeks</span>
+              </div>
+              <div class="icon">
+                <div class="name"><img src="images/book.png" alt="Lectures"> &nbsp; Lectures:
+                </div>
+                <span class="text"> 50</span>
+              </div>
+              <div class="icon">
+                <div class="name"><img src="images/user.png" alt="Lectures"> &nbsp;Instructor:</div>
+                <span class="text"> Timothy Amaefule</span>
+              </div>
+              <div class="icon">
+                <div class="name"><img src="images/layers.png" alt="Lectures"> &nbsp; Levels:
+                </div>
+                <span class="text"> 4</span>
+              </div>
+              <div class="icon">
+                <div class="name"><img src="images/computer.svg" alt="Lectures"> &nbsp; Training Method</div>
+                <span class="text"> Remote Learning</span>
+              </div>
+              <div class="icon">
+                <div class="name"><img src="images/user.png" alt="Lectures"> &nbsp; Pricing: </div>
+                <span class="text"> £699</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="course__str">
+        <h2 class="text-center">Course Structure</h2>
+        <table>
+          <tr>
+            <th>Days</th>
+            <th>Activity</th>
+            <th>Time</th>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>Product Management Training</td>
+            <td>10.00am 2.00pm UK Time <br> 10.00am 2.00pm WAT
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>Sprint Review</td>
+            <td>7.00pm - 10.00pm UK Time <br>7.00 pm - 10.00 pm WAT</td>
+          </tr>
+          <tr>
+            <td>Tuesday </td>
+            <td>Spring Retro / Sprint Planning <br><br> Daily Stand-Up meetings of 15 minutes (TIME AGREED BY TEAM) </td>
+            <td>7.00 pm - 10.00 pm UK Time<br>7.00 pm - 10.00 pm WAT</td>
+          </tr>
+        </table>
+
+      </div>
+    </section>
+
+    <section class="learning__objective">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="./images/courses/Group 44473.png" alt="" class="w-100" />
+          </div>
+          <div class="col-lg-6">
+            <div class="text-left">
+              <h2>Learning Objectives</h2>
+              <p class="lead">Upon embarking on this program, you will learn to:</p>
+            </div>
+            <div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>
+                  Learn about digital transformation initiatives and different concepts that surround product development in a way that satisfies customer’s needs.
+                </p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>
+                  Actively involve in research and interviews to fully understand customer needs
+                </p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Learn how to analyse research and findings</p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Understand the concept of design thinking, product design and UX research</p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>
+                  Collaborate with other members of the agile team imbibing the principles and practices of scrum framework
+                </p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Understand product strategy, how to define problem, the user and the market</p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Learn how to brainstorm and present ideas and solution prototypes</p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Learn about Agile Development and Scrum Framework</p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Understand Product Prioritisation, testing prototypes with users
+                </p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Participate actively in product backlog refinement</p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Understand Product Release Planning</p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Product testing, Product Launch and Marketing Plans</p>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="check-right">
+                  <img src="./images/courses/correct.png" alt="" />
+                </div>
+                <p>Dealing with project stakeholders, using effective soft skills.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container benefits">
+      <div class="text-center">
+        <h2>Course Benefits</h2>
+        <p class="lead">
+          Here are some phrases highlighting the benefits <br> of taking courses
+        </p>
+      </div>
+      <img src="./images/about/plus.png" alt="" class="detail-plus" />
+      <div class="box__section  justify-content-center my-5">
+        <div class="box">
+          <div class="box__image">
+            <img src="./images/courses/images box.png" alt="" />
+          </div>
+          <div class="box__title">
+            <p>You will acquire Product management abilities to lay the groundwork for a lucrative and dynamic career</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box__image">
+            <img src="./images/courses/images box (4).png" alt="" />
+          </div>
+          <div class="box__title">
+            <p>Tactically manage product development with best practice tools like Miro, Mockflow, Figma, Justinmind, and Jira</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class=" course-schedule pt-5 pb-5">
+      <div class="container position-relative">
+        <div class="text-center mb-5">
+          <img src="images/schedule-patterns.png" alt="Patterns" class="schedule-plus" />
+          <h2>Product Management Program Schedule</h2>
+          <p class="lead">
+            We offer a wide range of opportunity for you. <br> See what you get and your benefits
+          </p>
+        </div>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Week 1
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>Class Introduction, Product Selection and Forming Product Teams </p>
+                <li>Digital Transformation and the job market</li>
+                <li>Introduction to Product Development </li>
+                <li>Concept of Product Thinking</li>
+                <li>Product Development Framework</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Week 2
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Product Design and UX Research
+                </p>
+                <li>Design Thinking (Empathize, Define, Ideate, Prototype, Test)</li>
+                <li>Define Collaboration spaces and Tools</li>
+                <li>Develop Research and Interview Questions
+</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Week 3
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Product Research and Findings</p>
+                <li>Analyse Research and Findings</li>
+                <li>Prepare Product Development metrics</li>
+                <li>Analyse User and Market</li>
+                <li>Product Ideation and Design Thinking
+</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                Week 4 - 5
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Product Strategy and Defining Solution</p>
+                <li>Define Solution</li>
+                <li>Define Product Strategy including market forces and success factors</li>
+                <li>Present brainstorm idea</li>
+                <li>Present Solution Prototype to Stakeholder</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                Week 6 - 7
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p> Product Development and Scrum Framework</p>
+                <li>Agile Development and Scrum Framework
+</li>
+                <li>Product Prioritisation</li>
+                <li>Testing Prototypes with users</li>
+                <li>Prepare Business Case</li>
+                <li>Defining Minimum Viable Product</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true" aria-controls="panelsStayOpen-collapseSix">
+                Week 8 - 9
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p> Product Roadmapping and Releases</p>
+                <li>Prepare Product Roadmap</li>
+                <li>Stakeholder Management</li>
+                <li>Product Backlog Refinement</li>
+                <li>Release Planning</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="true" aria-controls="panelsStayOpen-collapseSeven">
+                Week 10 - 11
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Product Testing and Launch</p>
+                <li>Design and Develop Landing Page / Site Map</li>
+                <li>Product Testing Documentation</li>
+                <li>Product Launch</li>
+                <li>Update Marketing Plan</li>
+                <li>Update Lessons Learnt</li>
+                <li> Product Feedback</li>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="true" aria-controls="panelsStayOpen-collapseEight">
+                Week 12
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <p>Preparing Close Out Reports</p>
+                <li>Collate Portfolio </li>
+                <li>CV Reviews</li>
+                <li>How to prepare for Product Management Interviews</li>
+                <li>Interview Techniques</li>
+                <li>LinkedIn Optimisation</li>
+                <li>Interview Questions and Answers</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="title text-center">
+          <h2>Pricing</h2>
+          <p>Flexible and Convenient Pricing Option</p>
+          <p>Our flexible pricing option has made achieving your goals easier i.e getting a course. <br>
+            You can conveniently pay for your desired course as in full and enjoy <br>
+            discount or paying in installment for over 2 - 3 months period</p>
+        </div>
+
+        <div class="payment-options">
+          <div class="btn-container row  m-auto mb-5 justify-content-center">
+            <button id="oneTimePayment" onclick="selectOption('oneTime')" class="active col-lg-6">One Time Payment</button>
+            <button id="installmentPayment" onclick="selectOption('installment')" class="col-lg-6">Installment Payment</button>
+          </div>
+          <div id="oneTime" class="payment-plan m-auto active">
+            <h3>One Time Payment</h3>
+            <p>Course Fee:</p>
+            <p class="price">N650,000 (NIG)</p>
+            <p class="price">$1,600 (CAD)</p>
+            <p class="price">$1,200 (USD)</p>
+            <p class="price">£950</p>
+            <a href="payment/agile-project-management/?payment_option=one-time" class="btn">Pay Now</a>
+          </div>
+          <div id="installment" class="payment-plan active">
+            <h3>Installment Payment</h3>
+            <div class="row">
+              <div class="col-xl-4">
+                <p>1st installment:</p>
+                <p class="price">£475</p>
+                <p class="price">NGN247,500</p>
+                <p class="price">$660</p>
+                <p class="price">$495</p>
+              </div>
+              <div class="col-xl-4">
+                <p>2nd installment:</p>
+                <p class="price">£237.5</p>
+                <p class="price">NGN325,000</p>
+                <p class="price">$800</p>
+                <p class="price">$600</p>
+              </div>
+              <div class="col-xl-4">
+                <p>3rd installment:</p>
+                <p class="price">£237.5</p>
+                <p class="price">NGN325,000</p>
+                <p class="price">$800</p>
+                <p class="price">$600</p>
+              </div>
+            </div>
+            <a href="/payment/agile-project-management/?payment_option=installment" class="btn">Pay Now</a>
+          </div>
+        </div>
+        <img src="images/price-parterns.png" alt="pattern" class="patterns">
+        <img src="images/price-ellipse.png" alt="ellipse" class="pellipse">
+      </div>
+      <img src="images/price-ellipse2.png" alt="ellipse" class="pellipse2">
+    </section>
+
+    <section class="learning__objective">
+      <div class="container col-xl-12 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-6 text-lg-start">
+            <div class="text-left">
+              <h2 class="fs-3 text-black pb-4">Agile Scrum Ceremonies:</h2>
+            </div>
+            <div class="text-black">
+              <div class="box__title">
+                <p>Sprint Planning:</p>
+              </div>
+              <p>
+                This is a meeting for the team to consider items of work to be
+                completed and commits to what they have capacity to deliver
+                during the coming Sprint.
+              </p>
+
+              <div class="box__title">
+                <p>Daily Stand-Up:</p>
+              </div>
+              <p>
+                This is a 15-minute team meeting to provide updates and
+                progress of individual work done towards adding value to
+                product development.
+              </p>
+              <div class="box__title">
+                <p>Scrum Review:</p>
+              </div>
+              <p>
+                This is where the team showcases what they have completed for
+                the Stakeholders’ review and feedback and get a sign-off.
+              </p>
+              <div class="box__title">
+                <p>Scrum Retrospective:</p>
+              </div>
+              <p>
+                This is a meeting where the team reflects on their performance
+                during the current Sprint and seek ways to improve their
+                interaction, practices and lessons learnt
+              </p>
+              <div class="box__title">
+                <p>Sprint:</p>
+              </div>
+              <p>
+                This is a cycle of work for the team (can be 1 - 4 weeks
+                interval)
+              </p>
+
+              <a class="btn" href="payment.html">Enroll Now</a>
+            </div>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-6 mt-5">
+            <img src="./images/courses/Group 44473 (1).png" alt="agile scrum" class="w-100" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonial" class="d-testimonial">
+      <div class="container">
+        <img src="images/parterns.png" alt="A pattern" class="pattern1">
+        <div class="title text-center">
+          <h2>What our candidates <br /> say about us</h2>
+        </div>
+        <div class="d-flex gap-5 gap-sm-2 mt-4">
+          <img src="images/left.png" alt="Left arrow" class="img swiper-button-prev">
+          <div class="testimonials swiper">
+            <div class="card__content">
+              <div class="swiper-wrapper">
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner1.png" alt="Customer 1" class="col-lg-4">
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>DCA is a very great learning platform</h3>
+                    <p>"DCA is a very great learning platform. I’m currently enrolled in their Business
+                      Analysis training programme and it has been a wonderful experience so far.
+                      I have learnt so many new skills and this experience has even encouraged me
+                      to want to learn more about product management and product development.
+                      I’m happy I enrolled for this programme.."</p>
+                    <span>Pelumi Okunade</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner2.png" alt="Customer 1" class="col-lg-4">
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>A Beyond Rewarding Experience!!!</h3>
+                    <p>"Enrolling with DCA has been beyond rewarding for me. Being someone who transitioned into tech from a totally unrelated field, I can now boast of the confidence, skills and expertise needed to excel in this field since enrolling for the Scrum Master and Agile Delivery Manager training at DCA. The courses delivery from the various coaches who are always available to provide learning support, hands-on training on various collaborative tools and learning resources made available to students to study at their own time, are a few benefits of enrolling on DCA. I would recommend DCA again and again. Many thanks to DCA!!!."</p>
+                    <span>Kemi Adekeye</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner3.png" alt="Customer 1" class="col-lg-4">
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>Really great place to train</h3>
+                    <p>Really great place to train - you get hands-on experience, mentoring, personalized
+                      learning and genuine interest in your overall welfare. DCA comes highly
+                      recommended.</p>
+                    <span>Tabs</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner4.png" alt="Customer 1" class="col-lg-4">
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>Deep Learning & Hands-on Work.</h3>
+                    <p>"I have taken a few courses and I must say this one is exemplary. Industry expert
+                      coaches tutored and helped me to be ready and pivot to a new digital role.
+                      I attended training sessions with practical and hands-on live change projects. The modelling of the training conditioned the learning environment to industry standard.
+                      It totally exceeded my expectations. I'd recommend the course to anyone who is considering moving to tech or trying to gain new tech skills.."</p>
+                    <span>Ola Balogun</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner5.png" alt="Customer 1" class="col-lg-4">
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating">
+                    <h3>Fantastic Coaches & Hands-on experience</h3>
+                    <p>"Fantastic Trainers/Coaches & opportunities for work experience for graduating
+                      students from simulation. DCA also support with free interview prep class. Candidates who joins the WX
+                      team are supported with reference when they get their permanent offers. Theoretical & Practical hands on style/framework. Great place to be!."</p>
+                    <span>Babajide Jolaolu-Kehinde</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="images/right.png" alt="Right arrow" class="img swiper-button-next">
+        </div>
+        <img src="images/parterns.png" alt="A pattern" class="pattern2">
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </section>
+    <div class="scroll-to-top" id="scrollToTop">
+      <img src="images/arrow-up.svg" alt="Arrow Up">
+    </div>
+  </main>
+  <footer id="footer" class="py-5">
+    <div class="container">
+      <section class="row mb-8">
+        <div class="col-lg-3">
+
+          <address>
+            Office Address: <br />
+            BOS House, <br />
+            Olden way Business Park, <br>
+            Ballybrit Galway, H91 E65V, Ireland
+          </address>
+        </div>
+        <div class="col-lg-3">
+          <h5>Program Track</h5>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Practical Scrum Master</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Practical Business Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Data Analytics</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Resources</h5>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="faqs.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">Terms and Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Get In Touch</h5>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="contact.html">Contact Us</a>
+            </li>
+            <li>
+              Whatsapp
+            </li>
+            <li>
+              +447488818292 <br /> +15873303085
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="border-tb d-flex justify-content-between">
+        <span class="align-self-center">© 2024 Digital Careers Academy</span>
+        <div class="social-icon">
+          <a href="https://www.facebook.com/digitalcareersacademyDCA">
+            <img src="images/facebook.png" alt="Facebook Icon">
+          </a>
+          <a href="https://img.icons8.com/?size=1x&id=63306&format=png">
+            <img src="images/twitter.png" alt="Twitter Icon">
+          </a>
+          <a href="https://www.linkedin.com/company/digitalcareersacademydca">
+            <img src="images/linkedin.png" alt="LinkedIn Icon">
+          </a>
+          <a href="https://www.instagram.com/digitalcareersacademy/">
+            <img src="images/instagram.png" alt="Instagram Icon">
+          </a>
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
