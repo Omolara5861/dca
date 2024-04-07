@@ -1897,7 +1897,9 @@ img {
   .course-details .container .elipse {
     display: none;
   }
-  #pricing .pellipse2 {
-    z-index: -1;
-  }
+}
+
+.btn {
+  position: relative;
+  z-index: 99;
 }
