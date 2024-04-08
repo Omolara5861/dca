@@ -2020,6 +2020,20 @@ img {
   background: #E6EEFC;
 }
 
+.note {
+  color: #1a1a1a !important;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+#pricing h5 {
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
 @media (max-width: 768px) {
 
   .eligibility img:first-child,
