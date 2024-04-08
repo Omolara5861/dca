@@ -1964,3 +1964,19 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.how-it-works {
+  color: #363636;
+}
+
+.how-it-works h4 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 34px;
+}
+
+.how-it-works p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
