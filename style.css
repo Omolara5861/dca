@@ -1910,9 +1910,57 @@ img {
   #courses form .btn {
     width: 100% !important;
   }
+  .eligibility img:first-child,
+  .eligibility img:last-child {
+    width: 81px;
+  }
+  .eligibility .container img {
+    width: 200px;
+  }
 }
 
 .btn {
   position: relative;
   z-index: 99;
+}
+
+/* Work Experience */
+.eligibility {
+  background: #f7f9fe;
+  margin-top: 100px;
+  position: relative;
+}
+
+.eligibility .container {
+  padding: 113px 0;
+  position: relative;
+}
+
+.eligibility p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #05274c;
+}
+
+.eligibility img:first-child,
+.eligibility img:nth-child(2),
+.eligibility img:last-child {
+  position: absolute;
+}
+
+.eligibility img:first-child {
+  bottom: 0;
+  left: 0;
+}
+
+.eligibility img:last-child {
+  top: 0;
+  right: 0;
+}
+
+.eligibility .container .ellipse {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
