@@ -310,10 +310,12 @@ nav {
 }
 
 #hero-sec {
-  background: linear-gradient(180.26deg,
-      #e9f2ff 0.25%,
-      #f6f9ff 89.18%,
-      rgba(246, 249, 255, 0) 108.7%);
+  background: linear-gradient(
+    180.26deg,
+    #e9f2ff 0.25%,
+    #f6f9ff 89.18%,
+    rgba(246, 249, 255, 0) 108.7%
+  );
 }
 
 .course-details {
@@ -459,9 +461,11 @@ nav {
   width: 100%;
   /* height: 0; */
   padding: 23px 16px;
-  background: linear-gradient(6.62deg,
-      #05274c 64.99%,
-      rgba(5, 39, 76, 0) 94.46%);
+  background: linear-gradient(
+    6.62deg,
+    #05274c 64.99%,
+    rgba(5, 39, 76, 0) 94.46%
+  );
   display: none;
   transition: all 0.5s ease-in;
 }
@@ -751,13 +755,17 @@ td {
 #hero {
   position: relative;
   height: 319px;
-  background-image: -webkit-linear-gradient(bottom,
+  background-image: -webkit-linear-gradient(
+      bottom,
       rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+      rgba(0, 0, 0, 0.7)
+    ),
     url(./images/blod1del.png);
-  background-image: linear-gradient(to top,
+  background-image: linear-gradient(
+      to top,
       rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+      rgba(0, 0, 0, 0.7)
+    ),
     url(./images/blod1del.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -928,13 +936,17 @@ td {
 #hero3 {
   position: relative;
   height: 319px;
-  background-image: -webkit-linear-gradient(bottom,
+  background-image: -webkit-linear-gradient(
+      bottom,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)),
+      rgba(0, 0, 0, 0.2)
+    ),
     url(images/Hero\ Section.png);
-  background-image: linear-gradient(to top,
+  background-image: linear-gradient(
+      to top,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)),
+      rgba(0, 0, 0, 0.2)
+    ),
     url(images/Hero\ Section.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -1918,7 +1930,6 @@ img {
   z-index: 99;
 }
 
-
 /* Work Experience */
 
 .eligibility {
@@ -1962,7 +1973,7 @@ img {
 }
 
 .how-it-works {
-  background: #F9FDFF;
+  background: #f9fdff;
   color: #363636;
   padding: 64px 0 152px;
   margin-top: 100px;
@@ -1999,25 +2010,25 @@ img {
 }
 
 .how-it-works .green {
-  background: #E9F9EF;
+  background: #e9f9ef;
 }
 
 .how-it-works .pink {
-  background: #FEEFEF;
+  background: #feefef;
 }
 
 .how-it-works .white {
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .how-it-works .butter {
-  background: #FEF4D7;
+  background: #fef4d7;
   margin-top: 18px;
   height: 45%;
 }
 
 .how-it-works .purple {
-  background: #E6EEFC;
+  background: #e6eefc;
 }
 
 .note {
@@ -2035,7 +2046,6 @@ img {
 }
 
 @media (max-width: 768px) {
-
   .eligibility img:first-child,
   .eligibility img:last-child {
     width: 81px;
@@ -2060,4 +2070,23 @@ img {
   .how-it-works .butter {
     height: unset !important;
   }
+}
+
+/* Privacy Notice */
+.privacy table {
+  width: 100%;
+}
+
+.privacy table td,
+.privacy table th {
+  text-align: initial;
+}
+
+.privacy div a {
+  text-decoration: underline;
+}
+
+.privacy strong,
+.privacy h5 {
+  color: #1a1a1a;
 }
