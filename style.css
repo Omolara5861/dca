@@ -812,6 +812,7 @@ body {
       gap:5px;
       display: flex;
       height: 48px;
+      margin-top: 30px;
 }
 .button-container button{
       width: 216px;
@@ -1412,6 +1413,15 @@ input:focus{
   .request-box h6{
     font-size: 20px !important;
     line-height: 35px !important;
+  }
+  .congrats-container {
+    width: 80vw !important;
+  }
+  .tie-container {
+    height: 700px;
+  }
+  .tie-container .button-container {
+    margin-top: 70px !important;
   }
   
 }
