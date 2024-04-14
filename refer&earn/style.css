@@ -426,9 +426,7 @@ img {
 
  .verify-box p {
      font-weight: 500;
-     font-size: 18px;
      color: #67676A;
-     line-height: 27px;
      place-self: center;
 
  }
@@ -683,11 +681,6 @@ img {
      .verify-box {
          margin-left: 30px;
          width: 80vw;
-     }
-
-     .verify-box p {
-         font-size: 17px;
-
      }
 
      .otp-input {
