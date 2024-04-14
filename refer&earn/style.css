@@ -1,3 +1,205 @@
+ nav {
+     position: relative;
+     z-index: 10;
+ }
+
+ .btn {
+     border-radius: 50px;
+     background: #2762bf;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 24px;
+     color: #fff;
+     padding: 8px 24px;
+     width: 216px;
+ }
+
+ .swiper-button-next,
+ .swiper-button-prev {
+     width: unset;
+     position: unset;
+ }
+
+ .btn:hover {
+     border: 1px solid #3375d9;
+     color: #2762bf !important;
+     background: transparent !important;
+ }
+
+ .btn-trans {
+     border: 1px solid #3375d9;
+     color: #2762bf;
+     background: transparent !important;
+ }
+
+ .btn-trans:hover {
+     background: #2762bf !important;
+     color: #fff !important;
+ }
+
+ .title h2 {
+     font-size: 36px;
+     font-weight: 700;
+     line-height: 54px;
+     color: #1a1a1a;
+ }
+
+ .title p {
+     margin: 16px;
+ }
+
+ #navbar .btn,
+ .modal-footer .btn {
+     all: unset;
+     height: 8px;
+     padding: 8px 32px;
+     border-radius: 50px;
+     border: 1px solid #2762bf;
+     background: #2762bf;
+     color: #fff;
+ }
+
+ #navbar .btn-trans {
+     background: transparent !important;
+     color: #2762bf;
+ }
+
+ #navbar .btn-trans:hover {
+     background: #2762bf !important;
+     color: #fff !important;
+ }
+
+ #navbar {
+     background: #e9f2ff;
+     box-shadow: 0px 1px 2px 0px #0000000d;
+     font-weight: 500;
+ }
+
+ .nav-item .active {
+     color: #0063f7 !important;
+ }
+
+ #navbar .nav-link:hover,
+ #navbar .dropdown-menu a:hover {
+     background: unset !important;
+     color: #0063f7 !important;
+ }
+
+ #navbar .nav-item {
+     color: #1a1a1a;
+     margin: auto;
+ }
+
+ #navbar a {
+     padding-right: 8px;
+ }
+
+ #navbar .dropdown-menu {
+     padding: 12px;
+     border: none !important;
+     border-radius: 8px;
+     box-shadow: 0px 10px 38px -5px #0000001a;
+     background: #fff;
+     color: #3e3e3e;
+     font-weight: 400;
+     line-height: 27px;
+     letter-spacing: 0em;
+ }
+
+ #navbar .refer {
+     padding-right: 10px;
+     position: relative;
+ }
+
+ #navbar .refer a {
+     background-image: linear-gradient(90deg, #2f2c9f 0%, #b745ca 100%) !important;
+     /* Adjust colors as needed */
+     -webkit-background-clip: text;
+     /* For Safari */
+     background-clip: text;
+     color: transparent;
+ }
+
+ #navbar .refer img {
+     position: absolute;
+     right: 0;
+     top: 10px;
+ }
+
+ #navbar .border-left {
+     border-left: 1px solid #dddee0;
+     margin-left: 12px;
+ }
+
+ .navbar-toggler:focus {
+     box-shadow: none;
+ }
+
+ .modal-content {
+     padding: 18px 20px !important;
+     border-radius: 16px;
+     border: 1px;
+ }
+
+ .modal-header {
+     border-bottom: none !important;
+     padding: unset;
+     padding: 0 20px;
+ }
+
+ .modal-header h4 {
+     font-weight: 600;
+     line-height: 36px;
+     color: #1a1a1a;
+ }
+
+ .modal-footer {
+     all: unset;
+ }
+
+ .modal-footer .btn {
+     height: 25px;
+     width: 80%;
+ }
+
+ .form-control:focus {
+     border-color: none;
+     box-shadow: unset;
+ }
+
+ #myModal textarea {
+     height: 113px;
+     resize: none;
+ }
+
+
+ #footer {
+     background: #05274c;
+     color: #fff;
+     font-size: 17px;
+     font-weight: 400;
+     line-height: 27px;
+ }
+
+ #footer .border-tb {
+     border-top: 1px solid #586e87;
+     border-bottom: 1px solid #586e87;
+     padding: 32px 0;
+ }
+
+ #footer .mb-8 {
+     margin-bottom: 52px;
+ }
+
+ #footer .social-icon a {
+     all: unset;
+ }
+
+ #footer h5 {
+     font-size: 20px;
+     font-weight: 700;
+ }
+ 
  /* REFERRAL */
 img {
     border-radius: unset !important;
