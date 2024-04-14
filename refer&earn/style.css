@@ -14,12 +14,6 @@
      width: 216px;
  }
 
- .swiper-button-next,
- .swiper-button-prev {
-     width: unset;
-     position: unset;
- }
-
  .btn:hover {
      border: 1px solid #3375d9;
      color: #2762bf !important;
