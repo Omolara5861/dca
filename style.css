@@ -1137,9 +1137,9 @@ input:focus{
 }
 
 .fg-password-input {
-  height: 48px;
   border-radius: 8px;
   border: 1px solid #DDDEE0;
+
 
 }
 
@@ -1401,9 +1401,12 @@ input:focus{
     font-size:  15px !important;
     
   }
+
   .verify-box .text-code{
     align-items: self-start !important;
     font-size: 14px !important;
+    place-self: center ;
+   
   }
   .verify-box  button{
     font-size: 12px;
@@ -2080,8 +2083,6 @@ display: none;
         font-size: 20px;
   }
 }
-
-
 
 
 
