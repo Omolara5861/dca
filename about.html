@@ -1,114 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DCA Courses Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
-      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="about.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img
-              src="https://digitalcareers.academy/static/assets/images/dcasvg-logo.svg"
-              height="60"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link mx-2" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 active" href="about.html">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link mx-2 dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Courses
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="agile.html"
-                      >Agile Project Manger</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="business.html"
-                      >Business Analysis</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="scrum.html">Scrum Master</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="work-experience.html"
-                      >Work Experience</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="product.html"
-                      >Product Management</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="courses.html">View All</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="work-experience.html"
-                  >Work Experience Program</a
-                >
-              </li>
-              <li class="nav-item refer">
-                <a class="nav-link mx-2" href="refer.html">Refer & Earn</a>
-                <img src="images/coin.png" />
-              </li>
-              <!-- <li class="nav-item dropdown">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DCA Courses Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="about.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="https://digitalcareers.academy/static/assets/images/dcasvg-logo.svg" height="60" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link mx-2" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="agile.html">Agile Project Manger</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="business.html">Business Analysis</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="scrum.html">Scrum Master</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="work-experience.html">Work Experience</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product.html">Product Management</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="courses.html">View All</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="work-experience.html">Work Experience Program</a>
+            </li>
+            <li class="nav-item refer">
+              <a class="nav-link mx-2" href="refer.html">Refer & Earn</a>
+              <img src="images/coin.png" />
+            </li>
+            <!-- <li class="nav-item dropdown">
                                 <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Resources
@@ -119,7 +73,7 @@
                                     <li><a class="dropdown-item" href="blog.html">Blog</a></li>
                                 </ul>
                             </li> -->
-              <!-- <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                                 <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Company
@@ -130,720 +84,589 @@
                                     <li><a class="dropdown-item" href="#">Contact us</a></li>
                                 </ul>
                             </li> -->
-              <div class="border-left"></div>
-              <li class="nav-item">
-                <a
-                  class="nav-link mx-2"
-                  href="https://lms.digitalcareers.academy/sign-in/?next=/"
-                  target="_blank"
-                  >Login</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="mx-2 btn btn-trans"
-                  data-bs-toggle="modal"
-                  data-bs-target="#myModal"
-                  >Free tech session</a
-                >
-              </li>
-            </ul>
-          </div>
+            <div class="border-left"></div>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://lms.digitalcareers.academy/sign-in/?next=/" target="_blank">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="mx-2 btn btn-trans" data-bs-toggle="modal" data-bs-target="#myModal">Free tech session</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- The Modal -->
-      <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Free Tech Sessions Form</h4>
-              <img
-                src="images/times.png"
-                alt="Close Btn"
-                data-bs-dismiss="modal"
-              />
+      </div>
+    </nav>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Free Tech Sessions Form</h4>
+            <img src="images/times.png" alt="Close Btn" data-bs-dismiss="modal" />
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="mb-3">
+              <input type="text" name="fullname" class="form-control" id="inputEmail" placeholder="Full name" />
             </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-              <div class="mb-3">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-control"
-                  id="inputEmail"
-                  placeholder="Full name"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  name="email"
-                  class="form-control"
-                  id="inputPassword"
-                  placeholder="Email address"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputPassword"
-                  placeholder="Phone number"
-                />
-              </div>
-              <div class="mb-3">
-                <select name="course" id="course" class="form-control">
-                  <option value="program">Select program</option>
-                  <option value="agile-project-manager">
-                    Agile Project Manger
-                  </option>
-                  <option value="business-analysis">Business Analysis</option>
-                  <option value="scrum-master">Scrum Master</option>
-                  <option value="work-experience">Work Experience</option>
-                  <option value="product-management">Product Management</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <textarea name="message" class="form-control">
-Tell us what you're looking for</textarea
-                >
-              </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" id="inputPassword" placeholder="Email address" />
             </div>
-            <!-- Modal footer -->
-            <div class="modal-footer text-center w-100">
-              <button type="button" class="btn" data-bs-dismiss="modal">
-                Submit Request
-              </button>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputPassword" placeholder="Phone number" />
             </div>
+            <div class="mb-3">
+              <select name="course" id="course" class="form-control">
+                <option value="program">Select program</option>
+                <option value="agile-project-manager">
+                  Agile Project Manger
+                </option>
+                <option value="business-analysis">Business Analysis</option>
+                <option value="scrum-master">Scrum Master</option>
+                <option value="work-experience">Work Experience</option>
+                <option value="product-management">Product Management</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control">
+Tell us what you're looking for</textarea>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer text-center w-100">
+            <button type="button" class="btn" data-bs-dismiss="modal">
+              Submit Request
+            </button>
           </div>
         </div>
       </div>
-      <section id="hero" class="py-5 font-bold page-header about">
+    </div>
+    <section id="hero" class="py-5 font-bold page-header about">
+      <div>
         <div>
-          <div>
-            <h1 class="elipse position-absolute">About Us</h1>
-            <img src="images/elipse.png" alt="" />
-          </div>
-          <img src="images/elipse.png" alt="" class="elipse2" />
+          <h1 class="elipse position-absolute">About Us</h1>
+          <img src="images/elipse.png" alt="" />
         </div>
-        <img src="images/elipse.png" alt="" class="elipse4" />
-      </section>
-    </header>
-    <main>
-      <section class="container pt-5 pb-3 story border-bottom">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h2 class="mb-56">Our Story</h2>
-            <p>
-              Digital Careers Academy (DCA), a subsidiary of Digital Business
-              Konsult Ltd, is a Digital Innovation Hub that designs and builds
-              digital solutions for clients, while providing unique IT-skills
-              training and hands-on work experience opportunities to help
-              individuals transitioning to tech secure high-paying roles
-              globally.
-            </p>
-            <p>
-              We design, develop and run career-kickstart programs with
-              cross-functional teams working together remotely across the globe,
-              to create digital products in a fast-paced agile environment. Why
-              not join us?
-            </p>
-            <p>
-              At DCA, we have a plethora of vetted digital career mentors to
-              guide your journey towards securing high-paying digital roles.
-            </p>
-          </div>
-          <div class="col-md-6 our-story-image">
-            <img src="images/about/career.png" alt="" class="images" />
-          </div>
-        </div>
-      </section>
-      <section class="container py-5">
-        <div
-          class="experience d-flex flex-wrap flex-column d-md-flex flex-md-row justify-content-around align-items-center text-center"
-        >
-          <div>
-            <h3>20</h3>
-            <p class="pal">Professional</p>
-            <span>Teachers</span>
-          </div>
-          <div>
-            <h3>10</h3>
-            <p class="pal">Learning</p>
-            <span>Groups</span>
-          </div>
-          <div>
-            <h3>100</h3>
-            <p class="pal">Happy</p>
-            <span>students</span>
-          </div>
-          <div>
-            <h3>50+</h3>
-            <p class="pal">Courses</p>
-            <span>classes</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="digital__career py-5">
-        <div class="container">
-          <div class="title text-center pt-3">
-            <h2>Why Choose Digital Careers Academy?</h2>
-            <p>
-              We offer a wide range of opportunity for you. <br />
-              See what you get and your benefits
-            </p>
-            <img src="images/choose-patterns.png" alt="Patterns" />
-          </div>
-          <div class="box__section">
-            <div class="card">
-              <div class="card__image">
-                <img
-                  src="./images/about/comprehensive.png"
-                  alt=""
-                  class="images"
-                />
-              </div>
-              <div class="card__title">
-                <h5>Comprehensive Curriculum</h5>
-                <p>
-                  We offer comprehensive training in Business Analysis, Scrum
-                  Master, & Data Analytics.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__image">
-                <img src="./images/about/experience.png" alt="" />
-              </div>
-              <div class="card__title">
-                <h5>Practical Hands-on Experience</h5>
-                <p>
-                  Our interns gain work experience by using collaborative and
-                  product development tools in an interactive simulated
-                  environment.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__image">
-                <img
-                  src="./images/about/flexibility.png"
-                  alt=""
-                  class="images"
-                />
-              </div>
-              <div class="card__title">
-                <h5>Flexibility and Accessibility</h5>
-                <p>
-                  Learning management system that allows candidates access all
-                  training sessions at all times. Coaches are readily available
-                  to support.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__image">
-                <img src="./images/about/expert.png" alt="" class="images" />
-              </div>
-              <div class="card__title">
-                <h5>Industry Expert Instructors</h5>
-                <p>
-                  Our coaches are certified industry experts with years of
-                  experience who provide valuable insights and guidance.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__image">
-                <img
-                  src="./images/about/affordable.png"
-                  alt=""
-                  class="images"
-                />
-              </div>
-              <div class="card__title">
-                <h5>Affordable Fees</h5>
-                <p>
-                  Budget friendly fees. We also offer Interest free payment
-                  plans
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="container">
-        <div class="career__begin">
-          <div class="career__text w-md-100">
-            <h3>Join us to Begin your Career Today!</h3>
-            <p class="career__text">
-              We offer various courses that will equip you with the knowledge
-              and skills you need to start, switch, or boost your career. We
-              have also made the learning process super easy. Take advantage of
-              our live classes, functional curriculums, expert tutors and
-              peer-to-peer training sessions. Learn from the best, anywhere you
-              are.
-            </p>
-            <p class="ready">Ready to begin your career journey?</p>
-            <a href="courses.html" class="button">
-              Start Learning <img src="./images/About/Vector.png" alt="" />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="container team py-5">
-        <div class="title text-center">
-          <h5>our team</h5>
-          <h2>Meet Our Coaches</h2>
-          <p class="mb-5">
-            With expertise spanning diverse courses and a passion for fostering
-            learning, <br />
-            our coaches are here to guide and support you on <br />
-            your educational journey
+        <img src="images/elipse.png" alt="" class="elipse2" />
+      </div>
+      <img src="images/elipse.png" alt="" class="elipse4" />
+    </section>
+  </header>
+  <main>
+    <section class="container pt-5 pb-3 story border-bottom">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="mb-56">Our Story</h2>
+          <p>
+            Digital Careers Academy (DCA), a subsidiary of Digital Business
+            Konsult Ltd, is a Digital Innovation Hub that designs and builds
+            digital solutions for clients, while providing unique IT-skills
+            training and hands-on work experience opportunities to help
+            individuals transitioning to tech secure high-paying roles
+            globally.
+          </p>
+          <p>
+            We design, develop and run career-kickstart programs with
+            cross-functional teams working together remotely across the globe,
+            to create digital products in a fast-paced agile environment. Why
+            not join us?
+          </p>
+          <p>
+            At DCA, we have a plethora of vetted digital career mentors to
+            guide your journey towards securing high-paying digital roles.
           </p>
         </div>
+        <div class="col-md-6 our-story-image">
+          <img src="images/about/career.png" alt="" class="images" />
+        </div>
+      </div>
+    </section>
+    <section class="container py-5">
+      <div class="experience d-flex flex-wrap flex-column d-md-flex flex-md-row justify-content-around align-items-center text-center">
         <div>
-          <div class="d-flex gap-6 mb-56">
-            <div class="w-50 team-member">
-              <div class="d-flex gap-4">
-                <div class="w-30">
-                  <img
-                    src="images/about/oludare.png"
-                    alt="Oludare Olorunfemi"
-                  />
-                  <h6>Oludare Olorunfemi</h6>
-                  <p>CEO, Founder FIP, CIPP/E, CIPM, PECB cDPO, CDPSE, PSM1</p>
-                  <div class="ml-2">
-                    <a href="#" target="_blank">
-                      <img src="images/about/twitter.png" alt="Twitter" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/company/digitalcareersacademydca"
-                      target="_blank"
-                    >
-                      <img src="images/about/linkedin.png" alt="Linkedin" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/digitalcareersacademy/"
-                      target="_blank"
-                    >
-                      <img src="images/about/ig.png" alt="Instagram" />
-                    </a>
-                  </div>
-                </div>
-                <div class="line"></div>
-                <p class="w-70">
-                  Oludare is a multiskilled highly competent Data
-                  Privacy/Digital Transformation Coach with over 15 years global
-                  experience providing resource and capability development to
-                  organizations and individuals. Excellently skilled in coaching
-                  and leading teams globally in designing and developing digital
-                  products that meet customer needs, while adopting Agile
-                  frameworks. Expertise cover Data Protection, Product
-                  Management and Delivery, Digital Business Transformation, and
-                  Scrum Coaching
-                </p>
-              </div>
+          <h3>20</h3>
+          <p class="pal">Professional</p>
+          <span>Teachers</span>
+        </div>
+        <div>
+          <h3>10</h3>
+          <p class="pal">Learning</p>
+          <span>Groups</span>
+        </div>
+        <div>
+          <h3>100</h3>
+          <p class="pal">Happy</p>
+          <span>students</span>
+        </div>
+        <div>
+          <h3>50+</h3>
+          <p class="pal">Courses</p>
+          <span>classes</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="digital__career py-5">
+      <div class="container">
+        <div class="title text-center pt-3">
+          <h2>Why Choose Digital Careers Academy?</h2>
+          <p>
+            We offer a wide range of opportunity for you. <br />
+            See what you get and your benefits
+          </p>
+          <img src="images/choose-patterns.png" alt="Patterns" />
+        </div>
+        <div class="box__section">
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/about/comprehensive.png" alt="" class="images" />
             </div>
-            <div class="w-50 team-member">
-              <div class="d-flex gap-4">
-                <div class="w-30">
-                  <img
-                    src="images/about/babajide.png"
-                    alt="Babajide Jolaolu-Kehinde"
-                  />
-                  <h6>Babajide Jolaolu-Kehinde</h6>
-                  <p>Business Analysis Coach, PSPO, BPM, LSSGB, CBAP</p>
-                  <div class="ml-2">
-                    <a href="#" target="_blank">
-                      <img src="images/about/twitter.png" alt="Twitter" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/company/digitalcareersacademydca"
-                      target="_blank"
-                    >
-                      <img src="images/about/linkedin.png" alt="Linkedin" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/digitalcareersacademy/"
-                      target="_blank"
-                    >
-                      <img src="images/about/ig.png" alt="Instagram" />
-                    </a>
-                  </div>
-                </div>
-                <div class="line"></div>
-                <p class="w-70">
-                  A Proactive IIBA Certified Business Analyst, Certified
-                  Professional Scrum Product Owner, Business Process Modeller
-                  and Lean Six Sigma Yellow & Green Belt with strong
-                  understanding of business process architecture with the
-                  ability to produce high-quality output and value. Proven
-                  experience in coaching & mentoring on Business & Process
-                  Improvement Analysis. A keen team worker that is result-driven
-                  and able to motivate & mentor others to think “outside the
-                  box”
-                </p>
-              </div>
+            <div class="card__title">
+              <h5>Comprehensive Curriculum</h5>
+              <p>
+                We offer comprehensive training in Business Analysis, Scrum
+                Master, & Data Analytics.
+              </p>
             </div>
           </div>
-          <div class="d-flex gap-6 mb-56">
-            <div class="w-50 team-member">
-              <div class="d-flex gap-4">
-                <div class="w-30">
-                  <img src="images/about/lisa.png" alt="Lisa Williams" />
-                  <h6>Lisa Williams</h6>
-                  <p>MBA, PGDM, CSPO, SMC</p>
-                  <div class="ml-2">
-                    <a href="#" target="_blank">
-                      <img src="images/about/twitter.png" alt="Twitter" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/company/digitalcareersacademydca"
-                      target="_blank"
-                    >
-                      <img src="images/about/linkedin.png" alt="Linkedin" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/digitalcareersacademy/"
-                      target="_blank"
-                    >
-                      <img src="images/about/ig.png" alt="Instagram" />
-                    </a>
-                  </div>
-                </div>
-                <div class="line"></div>
-                <p class="w-70">
-                  An agile coach with experience as a product owner, business
-                  analyst and digital marketer Lisa has accreditation in scrum
-                  mastery in addition to data analysis, e-commerce and GDPR.
-                  Lisa is data-driven and customer-centric, supporting globally
-                  co-located and dispersed teams in the delivery of innovative
-                  products within the tech industry. Lisa is passionate about
-                  agile working and motivating teams to drive up engagement,
-                  commitment to quality and high performance over the delivery
-                  life-cycle.
-                </p>
-              </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/about/experience.png" alt="" />
             </div>
-            <div class="w-50 team-member">
-              <div class="d-flex gap-4">
-                <div class="w-30">
-                  <img
-                    src="images/about/nnadozie.png"
-                    alt="Nnadozie Orisakwe (PhD)"
-                  />
-                  <h6>Nnadozie Orisakwe (PhD)</h6>
-                  <p>CIPP/E, ISO27001, CDMP, ASPO, PSM1</p>
-                  <div class="ml-2">
-                    <a href="#" target="_blank">
-                      <img src="images/about/twitter.png" alt="Twitter" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/company/digitalcareersacademydca"
-                      target="_blank"
-                    >
-                      <img src="images/about/linkedin.png" alt="Linkedin" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/digitalcareersacademy/"
-                      target="_blank"
-                    >
-                      <img src="images/about/ig.png" alt="Instagram" />
-                    </a>
-                  </div>
-                </div>
-                <div class="line"></div>
-                <p class="w-70">
-                  A data privacy and information security professional with
-                  broad industry experience implementing privacy programs,
-                  information security management systems (ISMS), coaching and
-                  leading operational teams. An enthusiast of the 'shift-left'
-                  philosophy and specialist in Saas and third-party risk.
-                  Nnadozie is a digital age solutions provider helping clients
-                  deliver objectives whilst ensuring compliance to relevant
-                  regulations and standards.
-                </p>
-              </div>
+            <div class="card__title">
+              <h5>Practical Hands-on Experience</h5>
+              <p>
+                Our interns gain work experience by using collaborative and
+                product development tools in an interactive simulated
+                environment.
+              </p>
             </div>
           </div>
-          <div class="d-flex gap-6 mb-56">
-            <div class="w-50 team-member">
-              <div class="d-flex gap-4">
-                <div class="w-30">
-                  <img
-                    src="images/about/oluyemi.jpg"
-                    alt="Oluyemi Olu-Adeniran"
-                  />
-                  <h6>Oluyemi (Olalekan) Olu-Adeniran</h6>
-                  <p>B.SC.ED, PSPO, PSM, CBAP, SAFe.</p>
-                  <div class="ml-2">
-                    <a href="#" target="_blank">
-                      <img src="images/about/twitter.png" alt="Twitter" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/company/digitalcareersacademydca"
-                      target="_blank"
-                    >
-                      <img src="images/about/linkedin.png" alt="Linkedin" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/digitalcareersacademy/"
-                      target="_blank"
-                    >
-                      <img src="images/about/ig.png" alt="Instagram" />
-                    </a>
-                  </div>
-                </div>
-                <div class="line"></div>
-                <p class="w-70">
-                  Oluyemi Olu-Adeniran is a certified trainer He is an
-                  experienced Digital Product Owner/Business Analyst with a
-                  customer-centric approach. He has led cross-functional teams
-                  to deliver industry-standard solutions and help them achieve
-                  business goals and objectives. His expertise in B2B/B2C
-                  solutions has helped in bridging business and development
-                  teams for successful project outcomes. He is a skilled problem
-                  solver, driving product growth through cloud-driven tech and
-                  fostering strong stakeholder relationships.
-                </p>
-              </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/about/flexibility.png" alt="" class="images" />
             </div>
-            <div class="w-50 team-member">
-              <div class="d-flex gap-4">
-                <div class="w-30">
-                  <img src="images/about/ovie.jpg" alt="Ovie C. Akatugba" />
-                  <h6>Ovie C. Akatugba</h6>
-                  <!-- <p>B.SC.ED, PSPO, PSM, CBAP, SAFe.</p> -->
-                  <div class="ml-2">
-                    <a href="#" target="_blank">
-                      <img src="images/about/twitter.png" alt="Twitter" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/company/digitalcareersacademydca"
-                      target="_blank"
-                    >
-                      <img src="images/about/linkedin.png" alt="Linkedin" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/digitalcareersacademy/"
-                      target="_blank"
-                    >
-                      <img src="images/about/ig.png" alt="Instagram" />
-                    </a>
-                  </div>
-                </div>
-                <div class="line"></div>
-                <p class="w-70">
-                  Ovie is an Astute Business and Technical Professional with
-                  about 20 years experience spanning across Construction,
-                  Manufacturing, Business Development, Telecommunications, ICT,
-                  Maritime, Logistics and Supply Chain industries. He has been
-                  involved in many laudable projects, both within and outside
-                  the country such as The Sandton Square Project, SA; Aluminum
-                  Smelting Plant, Mozambique, EGINA OLT Package, Nigeria;
-                  Segilola Gold Mine, NG; Ardoval Oil Terminal NG; 28 Power
-                  Sub-Station, NG; Greenfield and Brownfield Brewery, FMCG Plant
-                  and Manufacturing Projects in various locations.
-                </p>
-              </div>
+            <div class="card__title">
+              <h5>Flexibility and Accessibility</h5>
+              <p>
+                Learning management system that allows candidates access all
+                training sessions at all times. Coaches are readily available
+                to support.
+              </p>
             </div>
           </div>
-          <div class="d-flex gap-6">
-            <div class="w-50 team-member">
-              <div class="d-flex gap-4">
-                <div class="w-30">
-                  <img src="images/about/taiye.png" alt="Taiye Idiaghe" />
-                  <h6>Taiye Idiaghe</h6>
-                  <p>M.SC.PM</p>
-                  <div class="ml-2">
-                    <a href="#" target="_blank">
-                      <img src="images/about/twitter.png" alt="Twitter" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/company/digitalcareersacademydca"
-                      target="_blank"
-                    >
-                      <img src="images/about/linkedin.png" alt="Linkedin" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/digitalcareersacademy/"
-                      target="_blank"
-                    >
-                      <img src="images/about/ig.png" alt="Instagram" />
-                    </a>
-                  </div>
-                </div>
-                <div class="line"></div>
-                <p class="w-70">
-                  Taiye Idiaghe is a results-driven individual from a project
-                  management background who specialises in supporting clients
-                  and their dev teams in order to improve their ways of working
-                  and performances by providing radical transparency and
-                  sustained improvement. With a M.Sc in Project Management,
-                  PRINCE2 Practitioner, and Scrum Master/Product Owner
-                  certifications, he is qualified and experienced in agile and
-                  lean practices, people management, IT management, and software
-                  delivery.
-                </p>
-              </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/about/expert.png" alt="" class="images" />
             </div>
-            <div class="w-50 team-member">
-              <div class="d-flex gap-4">
-                <div class="w-30">
-                  <img src="images/about/justice.png" alt="Coach Justice" />
-                  <h6></h6>
-                  <!-- <p>B.SC.ED, PSPO, PSM, CBAP, SAFe.</p> -->
-                  <div class="ml-2">
-                    <a href="#" target="_blank">
-                      <img src="images/about/twitter.png" alt="Twitter" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/company/digitalcareersacademydca"
-                      target="_blank"
-                    >
-                      <img src="images/about/linkedin.png" alt="Linkedin" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/digitalcareersacademy/"
-                      target="_blank"
-                    >
-                      <img src="images/about/ig.png" alt="Instagram" />
-                    </a>
-                  </div>
-                </div>
-                <div class="line"></div>
-                <p class="w-70">
-                  Coach Justice is a customer-centric and innovative Product
-                  Manager who is currently working with Microsoft, after a
-                  stinct with one of the biggest banks in Ireland managing
-                  digital products. He is a Certified Product Owner, Scrum
-                  Master and Microsoft Product Manager with 5 years experience
-                  in product strategy and customer driven product development.
-                </p>
-              </div>
+            <div class="card__title">
+              <h5>Industry Expert Instructors</h5>
+              <p>
+                Our coaches are certified industry experts with years of
+                experience who provide valuable insights and guidance.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/about/affordable.png" alt="" class="images" />
+            </div>
+            <div class="card__title">
+              <h5>Affordable Fees</h5>
+              <p>
+                Budget friendly fees. We also offer Interest free payment
+                plans
+              </p>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="career__begin">
+        <div class="career__text w-md-100">
+          <h3>Join us to Begin your Career Today!</h3>
+          <p class="career__text">
+            We offer various courses that will equip you with the knowledge
+            and skills you need to start, switch, or boost your career. We
+            have also made the learning process super easy. Take advantage of
+            our live classes, functional curriculums, expert tutors and
+            peer-to-peer training sessions. Learn from the best, anywhere you
+            are.
+          </p>
+          <p class="ready">Ready to begin your career journey?</p>
+          <a href="courses.html" class="button">
+            Start Learning <img src="./images/About/Vector.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container team py-5">
+      <div class="title text-center">
+        <h5>our team</h5>
+        <h2>Meet Our Coaches</h2>
+        <p class="mb-5">
+          With expertise spanning diverse courses and a passion for fostering
+          learning, <br />
+          our coaches are here to guide and support you on <br />
+          your educational journey
+        </p>
+      </div>
+      <div>
+        <div class="d-flex gap-6 mb-56">
+          <div class="w-50 team-member">
+            <div class="d-flex gap-4">
+              <div class="w-30">
+                <img src="images/about/oludare.png" alt="Oludare Olorunfemi" />
+                <h6>Oludare Olorunfemi</h6>
+                <p>CEO, Founder FIP, CIPP/E, CIPM, PECB cDPO, CDPSE, PSM1</p>
+                <div class="ml-2">
+                  <a href="#" target="_blank">
+                    <img src="images/about/twitter.png" alt="Twitter" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/digitalcareersacademydca" target="_blank">
+                    <img src="images/about/linkedin.png" alt="Linkedin" />
+                  </a>
+                  <a href="https://www.instagram.com/digitalcareersacademy/" target="_blank">
+                    <img src="images/about/ig.png" alt="Instagram" />
+                  </a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <p class="w-70">
+                Oludare is a multiskilled highly competent Data
+                Privacy/Digital Transformation Coach with over 15 years global
+                experience providing resource and capability development to
+                organizations and individuals. Excellently skilled in coaching
+                and leading teams globally in designing and developing digital
+                products that meet customer needs, while adopting Agile
+                frameworks. Expertise cover Data Protection, Product
+                Management and Delivery, Digital Business Transformation, and
+                Scrum Coaching
+              </p>
+            </div>
+          </div>
+          <div class="w-50 team-member">
+            <div class="d-flex gap-4">
+              <div class="w-30">
+                <img src="images/about/babajide.png" alt="Babajide Jolaolu-Kehinde" />
+                <h6>Babajide Jolaolu-Kehinde</h6>
+                <p>Business Analysis Coach, PSPO, BPM, LSSGB, CBAP</p>
+                <div class="ml-2">
+                  <a href="#" target="_blank">
+                    <img src="images/about/twitter.png" alt="Twitter" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/digitalcareersacademydca" target="_blank">
+                    <img src="images/about/linkedin.png" alt="Linkedin" />
+                  </a>
+                  <a href="https://www.instagram.com/digitalcareersacademy/" target="_blank">
+                    <img src="images/about/ig.png" alt="Instagram" />
+                  </a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <p class="w-70">
+                A Proactive IIBA Certified Business Analyst, Certified
+                Professional Scrum Product Owner, Business Process Modeller
+                and Lean Six Sigma Yellow & Green Belt with strong
+                understanding of business process architecture with the
+                ability to produce high-quality output and value. Proven
+                experience in coaching & mentoring on Business & Process
+                Improvement Analysis. A keen team worker that is result-driven
+                and able to motivate & mentor others to think “outside the
+                box”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-6 mb-56">
+          <div class="w-50 team-member">
+            <div class="d-flex gap-4">
+              <div class="w-30">
+                <img src="images/about/lisa.png" alt="Lisa Williams" />
+                <h6>Lisa Williams</h6>
+                <p>MBA, PGDM, CSPO, SMC</p>
+                <div class="ml-2">
+                  <a href="#" target="_blank">
+                    <img src="images/about/twitter.png" alt="Twitter" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/digitalcareersacademydca" target="_blank">
+                    <img src="images/about/linkedin.png" alt="Linkedin" />
+                  </a>
+                  <a href="https://www.instagram.com/digitalcareersacademy/" target="_blank">
+                    <img src="images/about/ig.png" alt="Instagram" />
+                  </a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <p class="w-70">
+                An agile coach with experience as a product owner, business
+                analyst and digital marketer Lisa has accreditation in scrum
+                mastery in addition to data analysis, e-commerce and GDPR.
+                Lisa is data-driven and customer-centric, supporting globally
+                co-located and dispersed teams in the delivery of innovative
+                products within the tech industry. Lisa is passionate about
+                agile working and motivating teams to drive up engagement,
+                commitment to quality and high performance over the delivery
+                life-cycle.
+              </p>
+            </div>
+          </div>
+          <div class="w-50 team-member">
+            <div class="d-flex gap-4">
+              <div class="w-30">
+                <img src="images/about/nnadozie.png" alt="Nnadozie Orisakwe (PhD)" />
+                <h6>Nnadozie Orisakwe (PhD)</h6>
+                <p>CIPP/E, ISO27001, CDMP, ASPO, PSM1</p>
+                <div class="ml-2">
+                  <a href="#" target="_blank">
+                    <img src="images/about/twitter.png" alt="Twitter" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/digitalcareersacademydca" target="_blank">
+                    <img src="images/about/linkedin.png" alt="Linkedin" />
+                  </a>
+                  <a href="https://www.instagram.com/digitalcareersacademy/" target="_blank">
+                    <img src="images/about/ig.png" alt="Instagram" />
+                  </a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <p class="w-70">
+                A data privacy and information security professional with
+                broad industry experience implementing privacy programs,
+                information security management systems (ISMS), coaching and
+                leading operational teams. An enthusiast of the 'shift-left'
+                philosophy and specialist in Saas and third-party risk.
+                Nnadozie is a digital age solutions provider helping clients
+                deliver objectives whilst ensuring compliance to relevant
+                regulations and standards.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-6 mb-56">
+          <div class="w-50 team-member">
+            <div class="d-flex gap-4">
+              <div class="w-30">
+                <img src="images/about/oluyemi.jpg" alt="Oluyemi Olu-Adeniran" />
+                <h6>Oluyemi (Olalekan) Olu-Adeniran</h6>
+                <p>B.SC.ED, PSPO, PSM, CBAP, SAFe.</p>
+                <div class="ml-2">
+                  <a href="#" target="_blank">
+                    <img src="images/about/twitter.png" alt="Twitter" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/digitalcareersacademydca" target="_blank">
+                    <img src="images/about/linkedin.png" alt="Linkedin" />
+                  </a>
+                  <a href="https://www.instagram.com/digitalcareersacademy/" target="_blank">
+                    <img src="images/about/ig.png" alt="Instagram" />
+                  </a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <p class="w-70">
+                Oluyemi Olu-Adeniran is a certified trainer He is an
+                experienced Digital Product Owner/Business Analyst with a
+                customer-centric approach. He has led cross-functional teams
+                to deliver industry-standard solutions and help them achieve
+                business goals and objectives. His expertise in B2B/B2C
+                solutions has helped in bridging business and development
+                teams for successful project outcomes. He is a skilled problem
+                solver, driving product growth through cloud-driven tech and
+                fostering strong stakeholder relationships.
+              </p>
+            </div>
+          </div>
+          <div class="w-50 team-member">
+            <div class="d-flex gap-4">
+              <div class="w-30">
+                <img src="images/about/ovie.jpg" alt="Ovie C. Akatugba" />
+                <h6>Ovie C. Akatugba</h6>
+                <!-- <p>B.SC.ED, PSPO, PSM, CBAP, SAFe.</p> -->
+                <div class="ml-2">
+                  <a href="#" target="_blank">
+                    <img src="images/about/twitter.png" alt="Twitter" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/digitalcareersacademydca" target="_blank">
+                    <img src="images/about/linkedin.png" alt="Linkedin" />
+                  </a>
+                  <a href="https://www.instagram.com/digitalcareersacademy/" target="_blank">
+                    <img src="images/about/ig.png" alt="Instagram" />
+                  </a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <p class="w-70">
+                Ovie is an Astute Business and Technical Professional with
+                about 20 years experience spanning across Construction,
+                Manufacturing, Business Development, Telecommunications, ICT,
+                Maritime, Logistics and Supply Chain industries. He has been
+                involved in many laudable projects, both within and outside
+                the country such as The Sandton Square Project, SA; Aluminum
+                Smelting Plant, Mozambique, EGINA OLT Package, Nigeria;
+                Segilola Gold Mine, NG; Ardoval Oil Terminal NG; 28 Power
+                Sub-Station, NG; Greenfield and Brownfield Brewery, FMCG Plant
+                and Manufacturing Projects in various locations.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-6">
+          <div class="w-50 team-member">
+            <div class="d-flex gap-4">
+              <div class="w-30">
+                <img src="images/about/taiye.png" alt="Taiye Idiaghe" />
+                <h6>Taiye Idiaghe</h6>
+                <p>M.SC.PM</p>
+                <div class="ml-2">
+                  <a href="#" target="_blank">
+                    <img src="images/about/twitter.png" alt="Twitter" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/digitalcareersacademydca" target="_blank">
+                    <img src="images/about/linkedin.png" alt="Linkedin" />
+                  </a>
+                  <a href="https://www.instagram.com/digitalcareersacademy/" target="_blank">
+                    <img src="images/about/ig.png" alt="Instagram" />
+                  </a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <p class="w-70">
+                Taiye Idiaghe is a results-driven individual from a project
+                management background who specialises in supporting clients
+                and their dev teams in order to improve their ways of working
+                and performances by providing radical transparency and
+                sustained improvement. With a M.Sc in Project Management,
+                PRINCE2 Practitioner, and Scrum Master/Product Owner
+                certifications, he is qualified and experienced in agile and
+                lean practices, people management, IT management, and software
+                delivery.
+              </p>
+            </div>
+          </div>
+          <div class="w-50 team-member">
+            <div class="d-flex gap-4">
+              <div class="w-30">
+                <img src="images/about/justice.png" alt="Coach Justice" />
+                <h6></h6>
+                <!-- <p>B.SC.ED, PSPO, PSM, CBAP, SAFe.</p> -->
+                <div class="ml-2">
+                  <a href="#" target="_blank">
+                    <img src="images/about/twitter.png" alt="Twitter" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/digitalcareersacademydca" target="_blank">
+                    <img src="images/about/linkedin.png" alt="Linkedin" />
+                  </a>
+                  <a href="https://www.instagram.com/digitalcareersacademy/" target="_blank">
+                    <img src="images/about/ig.png" alt="Instagram" />
+                  </a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <p class="w-70">
+                Coach Justice is a customer-centric and innovative Product
+                Manager who is currently working with Microsoft, after a
+                stinct with one of the biggest banks in Ireland managing
+                digital products. He is a Certified Product Owner, Scrum
+                Master and Microsoft Product Manager with 5 years experience
+                in product strategy and customer driven product development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="scroll-to-top" id="scrollToTop">
+      <img src="images/arrow-up.svg" alt="Arrow Up" />
+    </div>
+  </main>
+
+  <footer id="footer" class="py-5">
+    <div class="container">
+      <section class="row mb-8">
+        <div class="col-lg-3">
+          <address>
+            Office Address: <br />
+            BOS House, <br />
+            Olden way Business Park, <br />
+            Ballybrit Galway, H91 E65V, Ireland
+          </address>
+        </div>
+        <div class="col-lg-3">
+          <h5>Program Track</h5>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="scrum.html">Practical Scrum Master</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="business.html">Practical Business Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data-analytics.html">Data Analytics</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Resources</h5>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="faqs.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy-notice.html">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">Terms and Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Get In Touch</h5>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+            </li>
+            <li>Whatsapp</li>
+            <!-- New Changes -->
+            <li>
+              <img src="images/uk.png" alt="Uk Flag" width="24" />
+              <a class="text-white" href="https://wa.link/ybvz0x" target="_blank">+447488818292</a>
+            </li>
+            <li>
+              <img src="images/canada.png" alt="Canada Flag" width="24" />
+              <a class="text-white" href="https://wa.link/8gyj2u" target="_blank">+15873303085</a>
+            </li>
+          </ul>
+        </div>
       </section>
-      <div class="scroll-to-top" id="scrollToTop">
-        <img src="images/arrow-up.svg" alt="Arrow Up" />
-      </div>
-    </main>
+      <section class="border-tb d-flex justify-content-between">
+        <span class="align-self-center">© 2024 Digital Careers Academy</span>
+        <div class="social-icon">
+          <a href="https://www.facebook.com/digitalcareersacademyDCA">
+            <img src="images/facebook.png" alt="Facebook Icon" />
+          </a>
+          <a href="https://img.icons8.com/?size=1x&id=63306&format=png">
+            <img src="images/twitter.png" alt="Twitter Icon" />
+          </a>
+          <a href="https://www.linkedin.com/company/digitalcareersacademydca">
+            <img src="images/linkedin.png" alt="LinkedIn Icon" />
+          </a>
+          <a href="https://www.instagram.com/digitalcareersacademy/">
+            <img src="images/instagram.png" alt="Instagram Icon" />
+          </a>
+        </div>
+      </section>
+    </div>
+  </footer>
 
-    <footer id="footer" class="py-5">
-      <div class="container">
-        <section class="row mb-8">
-          <div class="col-lg-3">
-            <address>
-              Office Address: <br />
-              BOS House, <br />
-              Olden way Business Park, <br />
-              Ballybrit Galway, H91 E65V, Ireland
-            </address>
-          </div>
-          <div class="col-lg-3">
-            <h5>Program Track</h5>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="scrum.html"
-                  >Practical Scrum Master</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="business.html"
-                  >Practical Business Analysis</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="data-analytics.html"
-                  >Data Analytics</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <h5>Resources</h5>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="faqs.html"
-                  >FAQs</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="privacy-policy.html">Privacy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="terms.html">Terms and Conditions</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <h5>Get In Touch</h5>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="contact.html"
-                  >Contact Us</a
-                >
-              </li>
-              <li>Whatsapp</li>
-              <!-- New Changes -->
-              <li>
-                <img src="images/uk.png" alt="Uk Flag" width="24" />
-                <a
-                  class="text-white"
-                  href="https://wa.link/ybvz0x"
-                  target="_blank"
-                  >+447488818292</a
-                >
-              </li>
-              <li>
-                <img src="images/canada.png" alt="Canada Flag" width="24" />
-                <a
-                  class="text-white"
-                  href="https://wa.link/8gyj2u"
-                  target="_blank"
-                  >+15873303085</a
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="border-tb d-flex justify-content-between">
-          <span class="align-self-center">© 2024 Digital Careers Academy</span>
-          <div class="social-icon">
-            <a href="https://www.facebook.com/digitalcareersacademyDCA">
-              <img src="images/facebook.png" alt="Facebook Icon" />
-            </a>
-            <a href="https://img.icons8.com/?size=1x&id=63306&format=png">
-              <img src="images/twitter.png" alt="Twitter Icon" />
-            </a>
-            <a href="https://www.linkedin.com/company/digitalcareersacademydca">
-              <img src="images/linkedin.png" alt="LinkedIn Icon" />
-            </a>
-            <a href="https://www.instagram.com/digitalcareersacademy/">
-              <img src="images/instagram.png" alt="Instagram Icon" />
-            </a>
-          </div>
-        </section>
-      </div>
-    </footer>
+  <script src="js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-    <script src="js/script.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>

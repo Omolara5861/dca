@@ -1,112 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DCA Courses Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="swiper-bundle.min.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img
-              src="https://digitalcareers.academy/static/assets/images/dcasvg-logo.svg"
-              height="60"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link mx-2 active"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="about.html">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link mx-2 dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Courses
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="agile.html"
-                      >Agile Project Manger</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="business.html"
-                      >Business Analysis</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="scrum.html">Scrum Master</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="work-experience.html"
-                      >Work Experience</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="product.html"
-                      >Product Management</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="courses.html">View All</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="work-experience.html"
-                  >Work Experience Program</a
-                >
-              </li>
-              <li class="nav-item refer">
-                <a class="nav-link mx-2" href="refer.html">Refer & Earn</a>
-                <img src="images/coin.png" />
-              </li>
-              <!-- <li class="nav-item dropdown">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DCA Courses Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="https://digitalcareers.academy/static/assets/images/dcasvg-logo.svg" height="60" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="agile.html">Agile Project Manger</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="business.html">Business Analysis</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="scrum.html">Scrum Master</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="work-experience.html">Work Experience</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product.html">Product Management</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="courses.html">View All</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="work-experience.html">Work Experience Program</a>
+            </li>
+            <li class="nav-item refer">
+              <a class="nav-link mx-2" href="refer.html">Refer & Earn</a>
+              <img src="images/coin.png" />
+            </li>
+            <!-- <li class="nav-item dropdown">
                             <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Resources
@@ -117,7 +73,7 @@
                                 <li><a class="dropdown-item" href="blog.html">Blog</a></li>
                             </ul>
                         </li> -->
-              <!-- <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                             <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Company
@@ -128,831 +84,689 @@
                                 <li><a class="dropdown-item" href="#">Contact us</a></li>
                             </ul>
                         </li> -->
-              <div class="border-left"></div>
-              <li class="nav-item">
-                <a
-                  class="nav-link mx-2"
-                  href="https://lms.digitalcareers.academy/sign-in/?next=/"
-                  target="_blank"
-                  >Login</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="mx-2 btn btn-trans"
-                  data-bs-toggle="modal"
-                  data-bs-target="#myModal"
-                  >Free tech session</a
-                >
-              </li>
-            </ul>
-          </div>
+            <div class="border-left"></div>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://lms.digitalcareers.academy/sign-in/?next=/" target="_blank">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="mx-2 btn btn-trans" data-bs-toggle="modal" data-bs-target="#myModal">Free tech session</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- The Modal -->
-      <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Free Tech Sessions Form</h4>
-              <img
-                src="images/times.png"
-                alt="Close Btn"
-                data-bs-dismiss="modal"
-              />
+      </div>
+    </nav>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Free Tech Sessions Form</h4>
+            <img src="images/times.png" alt="Close Btn" data-bs-dismiss="modal" />
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="mb-3">
+              <input type="text" name="fullname" class="form-control" id="inputEmail" placeholder="Full name" />
             </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-              <div class="mb-3">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-control"
-                  id="inputEmail"
-                  placeholder="Full name"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  name="email"
-                  class="form-control"
-                  id="inputPassword"
-                  placeholder="Email address"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputPassword"
-                  placeholder="Phone number"
-                />
-              </div>
-              <div class="mb-3">
-                <select name="course" id="course" class="form-control">
-                  <option value="program">Select program</option>
-                  <option value="agile-project-manager">
-                    Agile Project Manger
-                  </option>
-                  <option value="business-analysis">Business Analysis</option>
-                  <option value="scrum-master">Scrum Master</option>
-                  <option value="work-experience">Work Experience</option>
-                  <option value="product-management">Product Management</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <textarea name="message" class="form-control">
-Tell us what you're looking for</textarea
-                >
-              </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" id="inputPassword" placeholder="Email address" />
             </div>
-            <!-- Modal footer -->
-            <div class="modal-footer text-center w-100">
-              <button type="button" class="btn" data-bs-dismiss="modal">
-                Submit Request
-              </button>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputPassword" placeholder="Phone number" />
             </div>
+            <div class="mb-3">
+              <select name="course" id="course" class="form-control">
+                <option value="program">Select program</option>
+                <option value="agile-project-manager">
+                  Agile Project Manger
+                </option>
+                <option value="business-analysis">Business Analysis</option>
+                <option value="scrum-master">Scrum Master</option>
+                <option value="work-experience">Work Experience</option>
+                <option value="product-management">Product Management</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control">
+Tell us what you're looking for</textarea>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer text-center w-100">
+            <button type="button" class="btn" data-bs-dismiss="modal">
+              Submit Request
+            </button>
           </div>
         </div>
       </div>
-      <section id="hero-sec">
-        <div class="container">
-          <div class="row py-4">
-            <div class="col-lg-6 align-self-center">
-              <h2>
-                Ignite Your Future: <br />
-                Learn, Grow, Succeed
-              </h2>
-              <p>
-                Digital Careers Academy is the online learning platform that
-                offers various courses for your development.
-              </p>
-              <div class="tns-container d-flex gap-4">
-                <a href="courses.html" class="btn"> Register Now</a>
-                <button
-                  class="btn btn-trans"
-                  data-bs-toggle="modal"
-                  data-bs-target="#myModal"
-                >
-                  Free Tech Session
-                </button>
-              </div>
-            </div>
-            <img
-              src="images/hero.png"
-              alt="Group of people sitting"
-              class="col-lg-6"
-            />
-          </div>
-        </div>
-      </section>
-    </header>
-    <main>
-      <section id="choose" class="py-4">
-        <div class="container">
-          <div class="row pb-5 features">
-            <div class="col-lg-4 mb-md-3">
-              <img src="images/thumb.png" alt="Thumbs up Icon" /> &nbsp; Over
-              200 success stories
-            </div>
-            <div class="col-lg-4 mb-md-3">
-              <img src="images/phone.png" alt="phone Icon" /> &nbsp; Live
-              digital products
-            </div>
-            <div class="col-lg-4 mb-md-3">
-              <img src="images/people.png" alt="Group of People Icon" /> &nbsp;
-              Certified careers mentors
-            </div>
-          </div>
-          <div class="title text-center">
-            <h2>Why Choose Digital Careers Academy?</h2>
-            <p>
-              We offer a wide range of opportunity for you. <br />
-              See what you get and your benefits
-            </p>
-            <img
-              src="images/choose-patterns.png"
-              alt="Patterns"
-              class="choose-plus"
-            />
-          </div>
-          <div class="row gap-4">
-            <div class="box row align-items-center col-lg-8 col-md-12">
-              <img
-                src="images/choose.png"
-                alt="Students in Class"
-                width="364"
-                height="458"
-                class="col-lg-7 col-md-12"
-              />
-              <div class="col-lg-5">
-                <p>
-                  Digital Careers Academy (DCA), a subsidiary of Digital
-                  Business Konsult Ltd, is a Digital Innovation Hub that designs
-                  and builds digital solutions for clients, while providing
-                  unique IT-skills training and hands-on work experience
-                  opportunities to help individuals transitioning to tech secure
-                  high -paying roles globally. We design, develop and run
-                  career-kickstart programs with cross-functional teams working
-                  together remotely across the to create digital products in a
-                  fast-paced
-                </p>
-                <a href="about.html" class="btn">Learn more</a>
-              </div>
-            </div>
-            <div class="box col-lg-4">
-              <div class="d-flex gap-3 mb-4">
-                <img src="images/file.png" alt="file" />
-                <h4>Comprehensive Curriculum</h4>
-              </div>
-              <div class="d-flex gap-3 mb-4">
-                <img src="images/practical.png" alt="Practical" />
-                <h4>Practical Hands-on Experience</h4>
-              </div>
-              <div class="d-flex gap-3 mb-4">
-                <img src="images/accessibility.png" alt="Accessibility" />
-                <h4>Flexibility and Accessibility</h4>
-              </div>
-              <div class="d-flex gap-3 mb-4">
-                <img src="images/instructors.png" alt="Instructors" />
-                <h4>Industry Expert Instructors</h4>
-              </div>
-              <div class="d-flex gap-3 mb-4">
-                <img src="images/fees.png" alt="Fees" />
-                <h4>Affordable Fees</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="courses">
-        <div class="container">
-          <div class="title text-center">
-            <h2>Most Enrolled Courses</h2>
-          </div>
-          <div class="courses justify-content-center my-5">
-            <div class="course">
-              <div class="course-info">
-                <img src="images/agile.png" alt="Agile Course" class="w-100" />
-                <div class="text p-3 pb-0">
-                  <h5>Agile Project Manager</h5>
-                  <p>
-                    Our APM practical training empowers candidates to lead
-                    project teams. Can...
-                  </p>
-                </div>
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>Agile Project Manager</h5>
-                  <p>
-                    Our APM practical training empowers candidates to lead
-                    project teams. Candidates will simulate scrum ceremonies
-                    weekly including sprint planning, daily stand-up, sprint
-                    review and sprint retrospective as practised within Agile
-                    environments.
-                  </p>
-                  <a href="payment.html" class="btn">Enroll Now</a>
-                  <a href="agile.html">View Course Details</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="course">
-              <div class="course-info">
-                <img
-                  src="images/business.png"
-                  alt="Agile Course"
-                  class="w-100"
-                />
-                <div class="text p-3 pb-0">
-                  <h5>Business Analysis</h5>
-                  <p>
-                    Jumpstart your TECH careers by enrolling for Digital
-                    Careerss Academy’s
-                  </p>
-                </div>
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>Business Analysis</h5>
-                  <p>
-                    Jumpstart your TECH careers by enrolling for Digital
-                    Careerss Academy’s 8-week intensive Business Analysis
-                    program.
-                  </p>
-                  <a href="payment.html" class="btn">Enroll Now</a>
-                  <a href="business.html">View Course Details</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="course">
-              <div class="course-info">
-                <img
-                  src="images/data-ana.png"
-                  alt="Agile Course"
-                  class="w-100"
-                />
-                <div class="text p-3 pb-0">
-                  <h5>Data Analytics</h5>
-                  <p>
-                    Data Analytics experts are in high demand within the global
-                    tech industry.
-                  </p>
-                </div>
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>Data Analytics</h5>
-                  <p>
-                    Data Analytics experts are in high demand within the global
-                    tech industry.
-                  </p>
-                  <a href="payment.html" class="btn">Enroll Now</a>
-                  <a href="data-analytics.html">View Course Details</a>
-                </div>
-              </div>
-            </div>
-            <div class="course">
-              <div class="course-info">
-                <img src="images/scrum.png" alt="Agile Course" class="w-100" />
-                <div class="text p-3 pb-0">
-                  <h5>Scrum Master</h5>
-                  <p>
-                    The Practical Scrum Master training is a 8-week fast-track,
-                    intensive progra...
-                  </p>
-                </div>
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>Scrum Master</h5>
-                  <p>
-                    The Practical Scrum Master training is a 8-week fast-track,
-                    intensive program that equips you with the right skills.
-                  </p>
-                  <a href="payment.html" class="btn">Enroll Now</a>
-                  <a href="scrum.html">View Course Details</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="course">
-              <div class="course-info">
-                <img src="images/work.png" alt="Agile Course" class="w-100" />
-                <div class="text p-3 pb-0">
-                  <h5>Agile Delivery Manager</h5>
-                  <p>
-                    An Agile Delivery Manager (also called an ADM) is a skilled
-                    person who focuses on...
-                  </p>
-                </div>
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>Agile Delivery Manager</h5>
-                  <p>
-                    An Agile Delivery Manager (also called an ADM) is a skilled
-                    person who focuses on making things happen, responsible for
-                    ensuring their teams have everything they need to succeed.
-                  </p>
-                  <a href="payment.html" class="btn">Enroll Now</a>
-                  <a href="agile-delivery.html">View Course Details</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="course">
-              <div class="course-info">
-                <img
-                  src="images/project.png"
-                  alt="Agile Course"
-                  class="w-100"
-                />
-                <div class="text p-3 pb-0">
-                  <h5>Product Management</h5>
-                  <p>
-                    Our Product Management course is a 12-week intensive
-                    hands-on program tha...
-                  </p>
-                </div>
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>Product Management</h5>
-                  <p>
-                    Our Product Management course is a 12-week intensive
-                    hands-on program that sees you working - in an agile
-                    environment - on the various stages of the product software
-                    development cycle.
-                  </p>
-                  <a href="payment.html" class="btn">Enroll Now</a>
-                  <a href="product.html">View Course Details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="text-center">
-            <a href="courses.html" class="btn btn-trans">View all</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="tech-session">
-        <div class="container">
-          <div class="title text-center">
-            <h2>Free Tech Session!</h2>
-            <p>
-              Unlock Your Tech Future: <br />
-              Join Our No-Code Tech Session Today!
-            </p>
-          </div>
-          <div class="row align-items-center mt-5">
-            <div class="content col-md-6">
-              <p>
-                Feeling uncertain about your career transition? Eager to test
-                the waters before making a commitment? Don't miss out on our
-                upcoming No-Code Tech Session, an exclusive opportunity to get a
-                sneak peek into the dynamic world of tech.
-              </p>
-              <br />
-              <p>
-                Discover the 'Day in the Life of a DCA Candidate' during this
-                live session, immersing yourself in our cutting-edge learning
-                process tailored for your chosen career path.
-              </p>
-              <p>Here's what you can expect:</p>
-              <ul>
-                <li>Introduction to DCA offerings</li>
-                <li>Overview of your selected training program</li>
-                <li>Engaging Q&A session</li>
-                <li>
-                  Access to exclusive discount codes for registration
-                  (exclusively for attendees)
-                </li>
-              </ul>
-              <br />
-              <p>
-                Seize the chance to explore your potential and gain valuable
-                insights. Register now for our next free taster session. Have
-                questions or need more information? Click
-                <a href="contact.html" class="text-decoration-none">support</a>
-                to get in touch.
-              </p>
-              <button
-                class="btn mt-3"
-                data-bs-toggle="modal"
-                data-bs-target="#myModal"
-              >
-                Register Now
-              </button>
-            </div>
-            <img
-              src="images/session.png"
-              alt=" Meeting"
-              class="col-md-6 mt-5"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section id="refer">
-        <div class="container">
-          <div class="title text-center text-center">
-            <h2>Refer and Earn</h2>
-            <p>
-              Inspire a friend or family member to learn an internationally
-              recognized <br />
-              tech course. Recommend any of our courses and get rewarded.
-            </p>
-          </div>
-          <div class="row mt-4 align-items-center">
-            <img
-              src="images/refer.png"
-              alt="Refer 1"
-              class="col-md-6 object-fit-cover border-30 mb-5"
-            />
-            <div class="box col-md-6">
-              <h3>How It Works</h3>
-              <div class="d-flex gap-4 mb-3">
-                <div class="count">1</div>
-                <div>
-                  <h4>You Join</h4>
-                  <p>
-                    Click refer now to sign up and create your referral profile.
-                  </p>
-                </div>
-              </div>
-              <div class="d-flex gap-4 mb-3">
-                <div class="count">2</div>
-                <div>
-                  <h4>You Invite</h4>
-                  <p>
-                    Send a referral to anyone by email or copy your unique
-                    <br />
-                    invitation link and share with friends.
-                  </p>
-                </div>
-              </div>
-              <div class="d-flex gap-4 mb-3">
-                <div class="count">3</div>
-                <div>
-                  <h4>You Earn</h4>
-                  <p>
-                    Unlock and redeem your reward once a referee purchases
-                    <br />
-                    a course.
-                    <strong> Subject to full payment of course.</strong>
-                  </p>
-                </div>
-              </div>
-              <a href="refer.html" class="btn btn-trans">Learn more</a>
-              <!-- <button class="btn mx-3">Refer Now</button> -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="testimonial">
-        <div class="container">
-          <img src="images/parterns.png" alt="A pattern" class="pattern1" />
-          <div class="title text-center">
-            <h2>
-              What our candidates <br />
-              say about us
-            </h2>
-          </div>
-          <div class="d-flex gap-5 gap-sm-2 mt-4">
-            <img
-              src="images/left.png"
-              alt="Left arrow"
-              class="img swiper-button-prev"
-            />
-            <div class="testimonials swiper">
-              <div class="card__content">
-                <div class="swiper-wrapper">
-                  <div class="testimonial row swiper-slide">
-                    <img
-                      src="images/learner1.png"
-                      alt="Customer 1"
-                      class="col-lg-4"
-                    />
-                    <div class="col-lg-7">
-                      <img src="images/stars.png" alt="Five star Rating" />
-                      <h3>DCA is a very great learning platform</h3>
-                      <p>
-                        "DCA is a very great learning platform. I’m currently
-                        enrolled in their Business Analysis training programme
-                        and it has been a wonderful experience so far. I have
-                        learnt so many new skills and this experience has even
-                        encouraged me to want to learn more about product
-                        management and product development. I’m happy I enrolled
-                        for this programme.."
-                      </p>
-                      <span>Pelumi Okunade</span>
-                    </div>
-                  </div>
-                  <div class="testimonial row swiper-slide">
-                    <img
-                      src="images/learner2.png"
-                      alt="Customer 1"
-                      class="col-lg-4"
-                    />
-                    <div class="col-lg-7">
-                      <img src="images/stars.png" alt="Five star Rating" />
-                      <h3>A Beyond Rewarding Experience!!!</h3>
-                      <p>
-                        "Enrolling with DCA has been beyond rewarding for me.
-                        Being someone who transitioned into tech from a totally
-                        unrelated field, I can now boast of the confidence,
-                        skills and expertise needed to excel in this field since
-                        enrolling for the Scrum Master and Agile Delivery
-                        Manager training at DCA. The courses delivery from the
-                        various coaches who are always available to provide
-                        learning support, hands-on training on various
-                        collaborative tools and learning resources made
-                        available to students to study at their own time, are a
-                        few benefits of enrolling on DCA. I would recommend DCA
-                        again and again. Many thanks to DCA!!!."
-                      </p>
-                      <span>Kemi Adekeye</span>
-                    </div>
-                  </div>
-                  <div class="testimonial row swiper-slide">
-                    <img
-                      src="images/learner3.png"
-                      alt="Customer 1"
-                      class="col-lg-4"
-                    />
-                    <div class="col-lg-7">
-                      <img src="images/stars.png" alt="Five star Rating" />
-                      <h3>Really great place to train</h3>
-                      <p>
-                        Really great place to train - you get hands-on
-                        experience, mentoring, personalized learning and genuine
-                        interest in your overall welfare. DCA comes highly
-                        recommended.
-                      </p>
-                      <span>Tabs</span>
-                    </div>
-                  </div>
-                  <div class="testimonial row swiper-slide">
-                    <img
-                      src="images/learner4.png"
-                      alt="Customer 1"
-                      class="col-lg-4"
-                    />
-                    <div class="col-lg-7">
-                      <img src="images/stars.png" alt="Five star Rating" />
-                      <h3>Deep Learning & Hands-on Work.</h3>
-                      <p>
-                        "I have taken a few courses and I must say this one is
-                        exemplary. Industry expert coaches tutored and helped me
-                        to be ready and pivot to a new digital role. I attended
-                        training sessions with practical and hands-on live
-                        change projects. The modelling of the training
-                        conditioned the learning environment to industry
-                        standard. It totally exceeded my expectations. I'd
-                        recommend the course to anyone who is considering moving
-                        to tech or trying to gain new tech skills.."
-                      </p>
-                      <span>Ola Balogun</span>
-                    </div>
-                  </div>
-                  <div class="testimonial row swiper-slide">
-                    <img
-                      src="images/learner5.png"
-                      alt="Customer 1"
-                      class="col-lg-4"
-                    />
-                    <div class="col-lg-7">
-                      <img src="images/stars.png" alt="Five star Rating" />
-                      <h3>Fantastic Coaches & Hands-on experience</h3>
-                      <p>
-                        "Fantastic Trainers/Coaches & opportunities for work
-                        experience for graduating students from simulation. DCA
-                        also support with free interview prep class. Candidates
-                        who joins the WX team are supported with reference when
-                        they get their permanent offers. Theoretical & Practical
-                        hands on style/framework. Great place to be!."
-                      </p>
-                      <span>Babajide Jolaolu-Kehinde</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img
-              src="images/right.png"
-              alt="Right arrow"
-              class="img swiper-button-next"
-            />
-          </div>
-          <img src="images/parterns.png" alt="A pattern" class="pattern2" />
-        </div>
-        <!-- Pagination -->
-        <div class="swiper-pagination"></div>
-      </section>
-
-      <section id="blog">
-        <div class="container">
-          <div class="title text-center">
-            <h2>Blog Post and Resources</h2>
-            <p>
-              See the developments that have occurred to Digital Careers <br />
-              Academy in the world
-            </p>
-          </div>
-          <div class="row mt-5 gap-5">
-            <div class="col-lg-5">
-              <img src="images/blog1.png" alt="Blog image 1" class="w-100" />
-              <h3>Debunking misconceptions about being in tech</h3>
-              <p>
-                There are quite a number of misconceptions about working in the
-                Tech industry. Let’s start from the fact that people believe you
-                have to be introverted or a geek.
-              </p>
-              <a href="blog1-details.html" class="btn">Read more</a>
-            </div>
-            <div class="col-lg-6">
-              <div class="d-flex gap-4 mb-4">
-                <img
-                  src="images/blog2.png"
-                  alt="Blog 1"
-                  height="200"
-                  width="197"
-                />
-                <div>
-                  <h4>Job roles one can do with no coding experience</h4>
-                  <p>
-                    There are a lot of roles you can pursue without having to
-                    code or have experience of coding. There are many industries
-                    that value skills beyond just coding.
-                  </p>
-                  <a href="blog2-details.html" class="btn">Read more</a>
-                </div>
-              </div>
-              <div class="d-flex gap-4 mb-4">
-                <img
-                  src="images/blog3.png"
-                  alt="Blog 1"
-                  height="200"
-                  width="197"
-                />
-                <div>
-                  <h4>3 Free tools for Process Mapping</h4>
-                  <p>
-                    In Agile methodology, process mapping refers to the
-                    visualization of the workflow for a particular process. This
-                    is done by creating a visual representation of the steps
-                    involved in completing a task or project.
-                  </p>
-                  <a href="blog3-details.html" class="btn">Read more</a>
-                </div>
-              </div>
-              <div class="d-flex gap-4 mb-4">
-                <img
-                  src="images/blog4.png"
-                  alt="Blog 1"
-                  height="200"
-                  width="197"
-                />
-                <div>
-                  <h4>
-                    Benefits of mentorship when transitioning into the tech
-                    industry
-                  </h4>
-                  <p>
-                    Benefits of mentorship when transitioning into the tech
-                    industry
-                  </p>
-                  <a href="blog4-details.html" class="btn">Read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="scroll-to-top" id="scrollToTop">
-        <img src="images/arrow-up.svg" alt="Arrow Up" />
-      </div>
-    </main>
-
-    <footer id="footer" class="py-5">
+    </div>
+    <section id="hero-sec">
       <div class="container">
-        <section class="row mb-8">
-          <div class="col-lg-3">
-            <address>
-              Office Address: <br />
-              BOS House, <br />
-              Olden way Business Park, <br />
-              Ballybrit Galway, H91 E65V, Ireland
-            </address>
+        <div class="row py-4">
+          <div class="col-lg-6 align-self-center">
+            <h2>
+              Ignite Your Future: <br />
+              Learn, Grow, Succeed
+            </h2>
+            <p>
+              Digital Careers Academy is the online learning platform that
+              offers various courses for your development.
+            </p>
+            <div class="tns-container d-flex gap-4">
+              <a href="courses.html" class="btn"> Register Now</a>
+              <button class="btn btn-trans" data-bs-toggle="modal" data-bs-target="#myModal">
+                Free Tech Session
+              </button>
+            </div>
           </div>
-          <div class="col-lg-3">
-            <h5>Program Track</h5>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="scrum.html"
-                  >Practical Scrum Master</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="business.html"
-                  >Practical Business Analysis</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="data-analytics.html"
-                  >Data Analytics</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <h5>Resources</h5>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="faqs.html"
-                  >FAQs</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="privacy-policy.html">Privacy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="terms.html">Terms and Conditions</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <h5>Get In Touch</h5>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="contact.html"
-                  >Contact Us</a
-                >
-              </li>
-              <li>Whatsapp</li>
-              <!-- New Changes -->
-              <li>
-                <img src="images/uk.png" alt="Uk Flag" width="24" />
-                <a
-                  class="text-white"
-                  href="https://wa.link/ybvz0x"
-                  target="_blank"
-                  >+447488818292</a
-                >
-              </li>
-              <li>
-                <img src="images/canada.png" alt="Canada Flag" width="24" />
-                <a
-                  class="text-white"
-                  href="https://wa.link/8gyj2u"
-                  target="_blank"
-                  >+15873303085</a
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="border-tb d-flex justify-content-between">
-          <span class="align-self-center">© 2024 Digital Careers Academy</span>
-          <div class="social-icon">
-            <a href="https://www.facebook.com/digitalcareersacademyDCA">
-              <img src="images/facebook.png" alt="Facebook Icon" />
-            </a>
-            <a href="https://img.icons8.com/?size=1x&id=63306&format=png">
-              <img src="images/twitter.png" alt="Twitter Icon" />
-            </a>
-            <a href="https://www.linkedin.com/company/digitalcareersacademydca">
-              <img src="images/linkedin.png" alt="LinkedIn Icon" />
-            </a>
-            <a href="https://www.instagram.com/digitalcareersacademy/">
-              <img src="images/instagram.png" alt="Instagram Icon" />
-            </a>
-          </div>
-        </section>
+          <img src="images/hero.png" alt="Group of people sitting" class="col-lg-6" />
+        </div>
       </div>
-    </footer>
-    <!--=============== SWIPER JS ===============-->
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    </section>
+  </header>
+  <main>
+    <section id="choose" class="py-4">
+      <div class="container">
+        <div class="row pb-5 features">
+          <div class="col-lg-4 mb-md-3">
+            <img src="images/thumb.png" alt="Thumbs up Icon" /> &nbsp; Over
+            200 success stories
+          </div>
+          <div class="col-lg-4 mb-md-3">
+            <img src="images/phone.png" alt="phone Icon" /> &nbsp; Live
+            digital products
+          </div>
+          <div class="col-lg-4 mb-md-3">
+            <img src="images/people.png" alt="Group of People Icon" /> &nbsp;
+            Certified careers mentors
+          </div>
+        </div>
+        <div class="title text-center">
+          <h2>Why Choose Digital Careers Academy?</h2>
+          <p>
+            We offer a wide range of opportunity for you. <br />
+            See what you get and your benefits
+          </p>
+          <img src="images/choose-patterns.png" alt="Patterns" class="choose-plus" />
+        </div>
+        <div class="row gap-4">
+          <div class="box row align-items-center col-lg-8 col-md-12">
+            <img src="images/choose.png" alt="Students in Class" width="364" height="458" class="col-lg-7 col-md-12" />
+            <div class="col-lg-5">
+              <p>
+                Digital Careers Academy (DCA), a subsidiary of Digital
+                Business Konsult Ltd, is a Digital Innovation Hub that designs
+                and builds digital solutions for clients, while providing
+                unique IT-skills training and hands-on work experience
+                opportunities to help individuals transitioning to tech secure
+                high -paying roles globally. We design, develop and run
+                career-kickstart programs with cross-functional teams working
+                together remotely across the to create digital products in a
+                fast-paced
+              </p>
+              <a href="about.html" class="btn">Learn more</a>
+            </div>
+          </div>
+          <div class="box col-lg-4">
+            <div class="d-flex gap-3 mb-4">
+              <img src="images/file.png" alt="file" />
+              <h4>Comprehensive Curriculum</h4>
+            </div>
+            <div class="d-flex gap-3 mb-4">
+              <img src="images/practical.png" alt="Practical" />
+              <h4>Practical Hands-on Experience</h4>
+            </div>
+            <div class="d-flex gap-3 mb-4">
+              <img src="images/accessibility.png" alt="Accessibility" />
+              <h4>Flexibility and Accessibility</h4>
+            </div>
+            <div class="d-flex gap-3 mb-4">
+              <img src="images/instructors.png" alt="Instructors" />
+              <h4>Industry Expert Instructors</h4>
+            </div>
+            <div class="d-flex gap-3 mb-4">
+              <img src="images/fees.png" alt="Fees" />
+              <h4>Affordable Fees</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses">
+      <div class="container">
+        <div class="title text-center">
+          <h2>Most Enrolled Courses</h2>
+        </div>
+        <div class="courses justify-content-center my-5">
+          <div class="course">
+            <div class="course-info">
+              <img src="images/agile.png" alt="Agile Course" class="w-100" />
+              <div class="text p-3 pb-0">
+                <h5>Agile Project Manager</h5>
+                <p>
+                  Our APM practical training empowers candidates to lead
+                  project teams. Can...
+                </p>
+              </div>
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <h5>Agile Project Manager</h5>
+                <p>
+                  Our APM practical training empowers candidates to lead
+                  project teams. Candidates will simulate scrum ceremonies
+                  weekly including sprint planning, daily stand-up, sprint
+                  review and sprint retrospective as practised within Agile
+                  environments.
+                </p>
+                <a href="payment.html" class="btn">Enroll Now</a>
+                <a href="agile.html">View Course Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-info">
+              <img src="images/business.png" alt="Agile Course" class="w-100" />
+              <div class="text p-3 pb-0">
+                <h5>Business Analysis</h5>
+                <p>
+                  Jumpstart your TECH careers by enrolling for Digital
+                  Careerss Academy’s
+                </p>
+              </div>
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <h5>Business Analysis</h5>
+                <p>
+                  Jumpstart your TECH careers by enrolling for Digital
+                  Careerss Academy’s 8-week intensive Business Analysis
+                  program.
+                </p>
+                <a href="payment.html" class="btn">Enroll Now</a>
+                <a href="business.html">View Course Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-info">
+              <img src="images/data-ana.png" alt="Agile Course" class="w-100" />
+              <div class="text p-3 pb-0">
+                <h5>Data Analytics</h5>
+                <p>
+                  Data Analytics experts are in high demand within the global
+                  tech industry.
+                </p>
+              </div>
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <h5>Data Analytics</h5>
+                <p>
+                  Data Analytics experts are in high demand within the global
+                  tech industry.
+                </p>
+                <a href="payment.html" class="btn">Enroll Now</a>
+                <a href="data-analytics.html">View Course Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-info">
+              <img src="images/scrum.png" alt="Agile Course" class="w-100" />
+              <div class="text p-3 pb-0">
+                <h5>Scrum Master</h5>
+                <p>
+                  The Practical Scrum Master training is a 8-week fast-track,
+                  intensive progra...
+                </p>
+              </div>
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <h5>Scrum Master</h5>
+                <p>
+                  The Practical Scrum Master training is a 8-week fast-track,
+                  intensive program that equips you with the right skills.
+                </p>
+                <a href="payment.html" class="btn">Enroll Now</a>
+                <a href="scrum.html">View Course Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-info">
+              <img src="images/work.png" alt="Agile Course" class="w-100" />
+              <div class="text p-3 pb-0">
+                <h5>Agile Delivery Manager</h5>
+                <p>
+                  An Agile Delivery Manager (also called an ADM) is a skilled
+                  person who focuses on...
+                </p>
+              </div>
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <h5>Agile Delivery Manager</h5>
+                <p>
+                  An Agile Delivery Manager (also called an ADM) is a skilled
+                  person who focuses on making things happen, responsible for
+                  ensuring their teams have everything they need to succeed.
+                </p>
+                <a href="payment.html" class="btn">Enroll Now</a>
+                <a href="agile-delivery.html">View Course Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-info">
+              <img src="images/project.png" alt="Agile Course" class="w-100" />
+              <div class="text p-3 pb-0">
+                <h5>Product Management</h5>
+                <p>
+                  Our Product Management course is a 12-week intensive
+                  hands-on program tha...
+                </p>
+              </div>
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <h5>Product Management</h5>
+                <p>
+                  Our Product Management course is a 12-week intensive
+                  hands-on program that sees you working - in an agile
+                  environment - on the various stages of the product software
+                  development cycle.
+                </p>
+                <a href="payment.html" class="btn">Enroll Now</a>
+                <a href="product.html">View Course Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="courses.html" class="btn btn-trans">View all</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech-session">
+      <div class="container">
+        <div class="title text-center">
+          <h2>Free Tech Session!</h2>
+          <p>
+            Unlock Your Tech Future: <br />
+            Join Our No-Code Tech Session Today!
+          </p>
+        </div>
+        <div class="row align-items-center mt-5">
+          <div class="content col-md-6">
+            <p>
+              Feeling uncertain about your career transition? Eager to test
+              the waters before making a commitment? Don't miss out on our
+              upcoming No-Code Tech Session, an exclusive opportunity to get a
+              sneak peek into the dynamic world of tech.
+            </p>
+            <br />
+            <p>
+              Discover the 'Day in the Life of a DCA Candidate' during this
+              live session, immersing yourself in our cutting-edge learning
+              process tailored for your chosen career path.
+            </p>
+            <p>Here's what you can expect:</p>
+            <ul>
+              <li>Introduction to DCA offerings</li>
+              <li>Overview of your selected training program</li>
+              <li>Engaging Q&A session</li>
+              <li>
+                Access to exclusive discount codes for registration
+                (exclusively for attendees)
+              </li>
+            </ul>
+            <br />
+            <p>
+              Seize the chance to explore your potential and gain valuable
+              insights. Register now for our next free taster session. Have
+              questions or need more information? Click
+              <a href="contact.html" class="text-decoration-none">support</a>
+              to get in touch.
+            </p>
+            <button class="btn mt-3" data-bs-toggle="modal" data-bs-target="#myModal">
+              Register Now
+            </button>
+          </div>
+          <img src="images/session.png" alt=" Meeting" class="col-md-6 mt-5" />
+        </div>
+      </div>
+    </section>
+
+    <section id="refer">
+      <div class="container">
+        <div class="title text-center text-center">
+          <h2>Refer and Earn</h2>
+          <p>
+            Inspire a friend or family member to learn an internationally
+            recognized <br />
+            tech course. Recommend any of our courses and get rewarded.
+          </p>
+        </div>
+        <div class="row mt-4 align-items-center">
+          <img src="images/refer.png" alt="Refer 1" class="col-md-6 object-fit-cover border-30 mb-5" />
+          <div class="box col-md-6">
+            <h3>How It Works</h3>
+            <div class="d-flex gap-4 mb-3">
+              <div class="count">1</div>
+              <div>
+                <h4>You Join</h4>
+                <p>
+                  Click refer now to sign up and create your referral profile.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex gap-4 mb-3">
+              <div class="count">2</div>
+              <div>
+                <h4>You Invite</h4>
+                <p>
+                  Send a referral to anyone by email or copy your unique
+                  <br />
+                  invitation link and share with friends.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex gap-4 mb-3">
+              <div class="count">3</div>
+              <div>
+                <h4>You Earn</h4>
+                <p>
+                  Unlock and redeem your reward once a referee purchases
+                  <br />
+                  a course.
+                  <strong> Subject to full payment of course.</strong>
+                </p>
+              </div>
+            </div>
+            <a href="refer.html" class="btn btn-trans">Learn more</a>
+            <!-- <button class="btn mx-3">Refer Now</button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonial">
+      <div class="container">
+        <img src="images/parterns.png" alt="A pattern" class="pattern1" />
+        <div class="title text-center">
+          <h2>
+            What our candidates <br />
+            say about us
+          </h2>
+        </div>
+        <div class="d-flex gap-5 gap-sm-2 mt-4">
+          <img src="images/left.png" alt="Left arrow" class="img swiper-button-prev" />
+          <div class="testimonials swiper">
+            <div class="card__content">
+              <div class="swiper-wrapper">
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner1.png" alt="Customer 1" class="col-lg-4" />
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating" />
+                    <h3>DCA is a very great learning platform</h3>
+                    <p>
+                      "DCA is a very great learning platform. I’m currently
+                      enrolled in their Business Analysis training programme
+                      and it has been a wonderful experience so far. I have
+                      learnt so many new skills and this experience has even
+                      encouraged me to want to learn more about product
+                      management and product development. I’m happy I enrolled
+                      for this programme.."
+                    </p>
+                    <span>Pelumi Okunade</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner2.png" alt="Customer 1" class="col-lg-4" />
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating" />
+                    <h3>A Beyond Rewarding Experience!!!</h3>
+                    <p>
+                      "Enrolling with DCA has been beyond rewarding for me.
+                      Being someone who transitioned into tech from a totally
+                      unrelated field, I can now boast of the confidence,
+                      skills and expertise needed to excel in this field since
+                      enrolling for the Scrum Master and Agile Delivery
+                      Manager training at DCA. The courses delivery from the
+                      various coaches who are always available to provide
+                      learning support, hands-on training on various
+                      collaborative tools and learning resources made
+                      available to students to study at their own time, are a
+                      few benefits of enrolling on DCA. I would recommend DCA
+                      again and again. Many thanks to DCA!!!."
+                    </p>
+                    <span>Kemi Adekeye</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner3.png" alt="Customer 1" class="col-lg-4" />
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating" />
+                    <h3>Really great place to train</h3>
+                    <p>
+                      Really great place to train - you get hands-on
+                      experience, mentoring, personalized learning and genuine
+                      interest in your overall welfare. DCA comes highly
+                      recommended.
+                    </p>
+                    <span>Tabs</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner4.png" alt="Customer 1" class="col-lg-4" />
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating" />
+                    <h3>Deep Learning & Hands-on Work.</h3>
+                    <p>
+                      "I have taken a few courses and I must say this one is
+                      exemplary. Industry expert coaches tutored and helped me
+                      to be ready and pivot to a new digital role. I attended
+                      training sessions with practical and hands-on live
+                      change projects. The modelling of the training
+                      conditioned the learning environment to industry
+                      standard. It totally exceeded my expectations. I'd
+                      recommend the course to anyone who is considering moving
+                      to tech or trying to gain new tech skills.."
+                    </p>
+                    <span>Ola Balogun</span>
+                  </div>
+                </div>
+                <div class="testimonial row swiper-slide">
+                  <img src="images/learner5.png" alt="Customer 1" class="col-lg-4" />
+                  <div class="col-lg-7">
+                    <img src="images/stars.png" alt="Five star Rating" />
+                    <h3>Fantastic Coaches & Hands-on experience</h3>
+                    <p>
+                      "Fantastic Trainers/Coaches & opportunities for work
+                      experience for graduating students from simulation. DCA
+                      also support with free interview prep class. Candidates
+                      who joins the WX team are supported with reference when
+                      they get their permanent offers. Theoretical & Practical
+                      hands on style/framework. Great place to be!."
+                    </p>
+                    <span>Babajide Jolaolu-Kehinde</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="images/right.png" alt="Right arrow" class="img swiper-button-next" />
+        </div>
+        <img src="images/parterns.png" alt="A pattern" class="pattern2" />
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <section id="blog">
+      <div class="container">
+        <div class="title text-center">
+          <h2>Blog Post and Resources</h2>
+          <p>
+            See the developments that have occurred to Digital Careers <br />
+            Academy in the world
+          </p>
+        </div>
+        <div class="row mt-5 gap-5">
+          <div class="col-lg-5">
+            <img src="images/blog1.png" alt="Blog image 1" class="w-100" />
+            <h3>Debunking misconceptions about being in tech</h3>
+            <p>
+              There are quite a number of misconceptions about working in the
+              Tech industry. Let’s start from the fact that people believe you
+              have to be introverted or a geek.
+            </p>
+            <a href="blog1-details.html" class="btn">Read more</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex gap-4 mb-4">
+              <img src="images/blog2.png" alt="Blog 1" height="200" width="197" />
+              <div>
+                <h4>Job roles one can do with no coding experience</h4>
+                <p>
+                  There are a lot of roles you can pursue without having to
+                  code or have experience of coding. There are many industries
+                  that value skills beyond just coding.
+                </p>
+                <a href="blog2-details.html" class="btn">Read more</a>
+              </div>
+            </div>
+            <div class="d-flex gap-4 mb-4">
+              <img src="images/blog3.png" alt="Blog 1" height="200" width="197" />
+              <div>
+                <h4>3 Free tools for Process Mapping</h4>
+                <p>
+                  In Agile methodology, process mapping refers to the
+                  visualization of the workflow for a particular process. This
+                  is done by creating a visual representation of the steps
+                  involved in completing a task or project.
+                </p>
+                <a href="blog3-details.html" class="btn">Read more</a>
+              </div>
+            </div>
+            <div class="d-flex gap-4 mb-4">
+              <img src="images/blog4.png" alt="Blog 1" height="200" width="197" />
+              <div>
+                <h4>
+                  Benefits of mentorship when transitioning into the tech
+                  industry
+                </h4>
+                <p>
+                  Benefits of mentorship when transitioning into the tech
+                  industry
+                </p>
+                <a href="blog4-details.html" class="btn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="scroll-to-top" id="scrollToTop">
+      <img src="images/arrow-up.svg" alt="Arrow Up" />
+    </div>
+  </main>
+
+  <footer id="footer" class="py-5">
+    <div class="container">
+      <section class="row mb-8">
+        <div class="col-lg-3">
+          <address>
+            Office Address: <br />
+            BOS House, <br />
+            Olden way Business Park, <br />
+            Ballybrit Galway, H91 E65V, Ireland
+          </address>
+        </div>
+        <div class="col-lg-3">
+          <h5>Program Track</h5>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="scrum.html">Practical Scrum Master</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="business.html">Practical Business Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data-analytics.html">Data Analytics</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Resources</h5>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="faqs.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy-notice.html">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">Terms and Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Get In Touch</h5>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+            </li>
+            <li>Whatsapp</li>
+            <!-- New Changes -->
+            <li>
+              <img src="images/uk.png" alt="Uk Flag" width="24" />
+              <a class="text-white" href="https://wa.link/ybvz0x" target="_blank">+447488818292</a>
+            </li>
+            <li>
+              <img src="images/canada.png" alt="Canada Flag" width="24" />
+              <a class="text-white" href="https://wa.link/8gyj2u" target="_blank">+15873303085</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="border-tb d-flex justify-content-between">
+        <span class="align-self-center">© 2024 Digital Careers Academy</span>
+        <div class="social-icon">
+          <a href="https://www.facebook.com/digitalcareersacademyDCA">
+            <img src="images/facebook.png" alt="Facebook Icon" />
+          </a>
+          <a href="https://img.icons8.com/?size=1x&id=63306&format=png">
+            <img src="images/twitter.png" alt="Twitter Icon" />
+          </a>
+          <a href="https://www.linkedin.com/company/digitalcareersacademydca">
+            <img src="images/linkedin.png" alt="LinkedIn Icon" />
+          </a>
+          <a href="https://www.instagram.com/digitalcareersacademy/">
+            <img src="images/instagram.png" alt="Instagram Icon" />
+          </a>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <!--=============== SWIPER JS ===============-->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
