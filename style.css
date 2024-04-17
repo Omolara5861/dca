@@ -264,25 +264,30 @@ body {
    background: #E9F2FF;
    width: 100%;
    text-align: center;
-   color: #3c2770;
+   color: #05274C;
     height: 319px;
     align-items: center;
-   font-weight: 900;   
+   font-weight: 900;  
+   font-size: 48px; 
 }
 
 #hero2 h3{
     font-weight:lighter;
 }
+
 .privacy .content{
     padding-left: 4em;
 }
 .privacy .list-item{
-    font-size: 12px;
+    font-size: 15px;
+    line-height: 27.2px;
     margin-left: 3px;
 }
 .privacy .list-item a{
     text-decoration: none;
     margin-left: 3px;
+    margin-left: 3px;
+    color: #05274C;
 }
 #hero3{
     position: relative;
