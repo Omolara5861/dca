@@ -17,6 +17,10 @@
      width: 216px;
  }
 
+ a {
+    text-decoration: none;
+ }
+
  .btn:hover {
      border: 1px solid #3375d9;
      color: #2762bf !important;
@@ -171,6 +175,8 @@
 
 
  #footer {
+    position: relative;
+    z-index: 10;
      background: #05274c;
      color: #fff;
      font-size: 17px;
@@ -825,7 +831,7 @@ img {
 
  .sidebar {
      width: 254px;
-     height: 90vh;
+     height: 1050px;
      display: flex;
      flex-direction: column;
      gap: 27px;
