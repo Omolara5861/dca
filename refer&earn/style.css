@@ -529,6 +529,12 @@ img {
      font-weight: 700;
      font-size: 28px;
      line-height: 42.08px;
+     color: #000;
+ }
+ .email-content h5 span {
+     font-weight: 700;
+     font-size: 28px;
+     line-height: 42.08px;
      color: #27575D;
  }
 
