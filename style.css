@@ -11,7 +11,7 @@ body {
   line-height: 24px;
   letter-spacing: 0em;
   color: #67676a;
-  overflow-x: visible;
+  overflow-x: hidden;
 }
 
 * {
@@ -460,6 +460,9 @@ body {
     }
     .mail-icon{
         margin-top: 2.5em;
+    }
+    .eye-icon {
+      margin-left: 94%;
     }
 
     .collapse-btn{
@@ -2090,5 +2093,7 @@ display: none;
   }
 }
 
-
+.emailbd{
+  background-color: red;
+}
 

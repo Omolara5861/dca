@@ -222,20 +222,20 @@
                   <label for="">Email Address</label>
                   <input
                   type="email"
+                  id="emailAddress"
                   placeholder="Enter email address"
                   class="border border-muted py-1 px-2 rounded text-muted"
                   required
                 />
              </figure>
-             <figure class="w-100 ">
+             <figure class="w-100">
               <label for="">Password</label>
-              <input
-              type="email"
-              placeholder="Enter Password"
-              class="border border-muted py-1 px-2 rounded text-muted"
-              required
-            />
-         </figure>
+              <div class="position-relative password-input-containr w-100 d-flex align-items-center  justify-content-between">
+                <input type="email" required placeholder="Enter password" class="w-100 fg-password-input  px-2 " id="">
+                <img src="./icons/eye stroke.png" alt="eye icon" class=  " eye-icon position-absolute   ">
+                
+              </div>
+        </figure>
                <button class="buttons text-light py-2 w-100 mt-3">Sign Up</button>
                
                <div class="w-100 d-flex checkbox mt- gap-2">
@@ -340,6 +340,16 @@
         </section>
       </div>
     </footer>
+
+    <script>
+      const emailBox = document.getElementById("emailAddress")
+      emailBox.addEventListener("click", (event)=>{
+         alert('startt')
+        emailBox.classList.add('emailbd')
+      })
+      
+       
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
