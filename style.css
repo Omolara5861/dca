@@ -2090,3 +2090,8 @@ img {
 .privacy h5 {
   color: #1a1a1a;
 }
+
+/* New */
+.card-header {
+  border-bottom: none !important;
+}
