@@ -1,8 +1,11 @@
+ .bg-pink {
+    background: #F5F6FA;
+ }
+ 
  nav {
      position: relative;
      z-index: 10;
  }
-
  .btn {
      border-radius: 50px;
      background: #2762bf;
@@ -240,7 +243,6 @@ img {
  .referralbox :nth-child(2) {
      display: flex;
      flex-direction: column;
-     height: 104px;
      gap: 8px;
      align-items: center;
  }
@@ -408,7 +410,7 @@ img {
      font-size: 16px;
      font-weight: 500;
      line-height: 24px;
-     margin-top: 30px;
+     margin-top: 20px;
      align-content: center;
      place-content: center;
      place-self: center;
@@ -455,8 +457,9 @@ img {
      width: 100vw;
  }
 
- .fg-password-input {
-     height: 48px;
+ .fg-password-input,
+.password-input-container :nth-child(2) {
+    height: 48px;
      border-radius: 8px;
      border: 1px solid #DDDEE0;
 
@@ -734,6 +737,7 @@ img {
      .verify-box .text-code {
          align-items: self-start !important;
          font-size: 14px !important;
+          place-self: center ;
      }
 
      .verify-box button {
@@ -821,7 +825,7 @@ img {
 
  .sidebar {
      width: 254px;
-     height: 1050px;
+     height: 90vh;
      display: flex;
      flex-direction: column;
      gap: 27px;
