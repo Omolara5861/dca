@@ -939,8 +939,8 @@ img {
      margin-left: 275px;
  }
 
- .link-container .disabled {
-     background-color: #2762BF80;
+.disabled {
+    background: #2762BF80 !important;
  }
 
  .myreferrals>:first-child {
