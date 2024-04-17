@@ -1136,7 +1136,8 @@ input:focus{
   width: 100vw;
 }
 
-.fg-password-input {
+.password-input-container :nth-child(2){
+  height: 48px;
   border-radius: 8px;
   border: 1px solid #DDDEE0;
 

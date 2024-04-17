@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCA Courses Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="https://digitalcareers.academy/static/assets/images/dcasvg-logo.svg"
+              height="60"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link mx-2" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link mx-2 dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Courses
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="agile.html"
+                      >Agile Project Manger</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="business.html"
+                      >Business Analysis</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="scrum.html">Scrum Master</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="work-experience.html"
+                      >Work Experience</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="product.html"
+                      >Product Management</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="courses.html">View All</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="work-experience.html"
+                  >Work Experience Program</a
+                >
+              </li>
+              <li class="nav-item refer">
+                <a class="nav-link mx-2" href="refer.html">Refer & Earn</a>
+                <img src="images/coin.png" />
+              </li>
+              <!-- <li class="nav-item dropdown">
+                              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  Resources
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                                  <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                              </ul>
+                          </li> -->
+              <!-- <li class="nav-item dropdown">
+                              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  Company
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                                  <li><a class="dropdown-item" href="#">Contact us</a></li>
+                              </ul>
+                          </li> -->
+              <div class="border-left"></div>
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-2"
+                  href="https://lms.digitalcareers.academy/sign-in/?next=/"
+                  target="_blank"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="mx-2 btn btn-trans"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                  >Free tech session</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Free Tech Sessions Form</h4>
+              <img
+                src="images/times.png"
+                alt="Close Btn"
+                data-bs-dismiss="modal"
+              />
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="Full name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="Phone number"
+                />
+              </div>
+              <div class="mb-3">
+                <select name="course" id="course" class="form-control">
+                  <option value="program">Select program</option>
+                  <option value="agile-project-manager">
+                    Agile Project Manger
+                  </option>
+                  <option value="business-analysis">Business Analysis</option>
+                  <option value="scrum-master">Scrum Master</option>
+                  <option value="work-experience">Work Experience</option>
+                  <option value="product-management">Product Management</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea name="message" class="form-control">
+Tell us what you're looking for</textarea
+                >
+              </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer text-center w-100">
+              <button type="button" class="btn" data-bs-dismiss="modal">
+                Submit Request
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="hero" class="py-5 font-bold page-header">
+        <div>
+          <span>
+            <h1>Privacy Notice</h1>
+          </span>
+        </div>
+      </section>
+    </header>
+    <main class="py-5 row gap-3 m-auto container privacy">
+      <ol class="col-lg-3">
+        <li class="list-item active">
+          <a href="#privacyrights" class="font-bold active"
+            >What Personal Information we collect</a
+          >
+        </li>
+        <li class="list-item">
+          <a href="#consent" class="text-muted"> How We Get Data About You</a>
+        </li>
+        <li class="list-item">
+          <a href="#useofInfo" class="text-muted">What We Use Your Data For</a>
+        </li>
+        <li class="list-item">
+          <a href="#ageRate" class="text-muted"
+            >4. Who We Share Your Data With</a
+          >
+        </li>
+        <li class="list-item">
+          <a href="#useofCookies" class="text-muted"
+            >Use of Cookies4. Who We Share Your Data With</a
+          >
+        </li>
+        <li class="list-item">
+          <a href="#malware" class="text-muted"
+            >Overseas transfers of personal data</a
+          >
+        </li>
+        <li class="list-item">
+          <a href="#datacon" class="text-muted">How long we keep your data</a>
+        </li>
+        <li class="list-item">
+          <a href="#governingLaw" class="text-muted"
+            >Your Rights as a Data Subject</a
+          >
+        </li>
+        <li class="list-item">
+          <a href="#usersOutsideEU" class="text-muted">Users outside the EU</a>
+        </li>
+        <li class="list-item">
+          <a href="#changes" class="text-muted"
+            >Changes to this Privacy Notice</a
+          >
+        </li>
+        <li class="list-item">
+          <a href="#contact" class="text-muted">11. Contacting Us</a>
+        </li>
+        <li class="list-item">
+          <a href="#info" class="text-muted"
+            >Complaints to the Information Commissioner</a
+          >
+        </li>
+      </ol>
+
+      <div class="content col-lg-8">
+        <h6>This Privacy Notice was last updated on March 12, 2024.</h6>
+        <p>
+          At Digital Careers Academy (DCA), (a subsidiary of Digital Careers
+          Academy Limited) located at BOS House, Oldenway Business Park,
+          Ballybrit, Galway, H91 E65V Ireland, we value your privacy and respect
+          any personal data entrusted into our hands. This Privacy Notice
+          (“Privacy Notice”) explains our privacy practices and how we use your
+          personal data to perform our business activities described below.
+          Please read this Privacy Notice carefully to learn how we collect,
+          use, share, and otherwise process information relating to individuals
+          (“Personal Data”), and to learn about your rights and choices
+          regarding your Personal Data. <br />
+          A reference to “Digital Careers Academy,” “we,” “us” or the
+          “organisation” is a reference to Digital Careers Academy and its
+          relevant affiliate involved in the collection, use, sharing, or other
+          processing of Personal Data. <br />
+          Unless we link to a different policy or state otherwise, this Privacy
+          Notice applies when you visit or use the Digital Careers Academy
+          website, mobile applications, APIs or related services (the
+          “Services”). By using the Services, you agree to the terms of this
+          Privacy Notice. You shouldn’t use the Services if you don’t agree with
+          this Privacy Notice or any other agreement that governs your use of
+          the Services.
+        </p>
+        <div id="privacyrights">
+          <p class="font-bold mt-5">1. Your Privacy Rights</p>
+          <p>
+            <strong>1. What Personal Information we collect:</strong> We collect
+            your personal information in order to provide and continually
+            improve our training products and services. The type of information
+            that we collect depends on how you use our products. We collect
+            certain data from you directly, like information you enter yourself,
+            data about your participation in courses, work experience meetings
+            and data from third-party platforms you connect with Digital Careers
+            Academy. We also collect some data automatically, like information
+            about your device and what parts of our services you interact or
+            engage with.
+
+            <strong>1.1 Data You Provide to Us: </strong> We may collect
+            different items of data from or about you depending on how you use
+            our Services. Below are some examples to help you better understand
+            the data we collect. You can choose not to provide certain
+            information but then you might not be able to take advantage of some
+            of our services. When you create an account and use the services,
+            including through a third-party platform, we collect any data you
+            provide directly, including:
+          </p>
+          <p>
+            <strong>Account Data: </strong> In order to use certain features
+            (like enrolling in a course), you need to create a user account.
+            When you create or update your account, we collect and store the
+            data you provide, like your name, email address, password, phone
+            number, occupation, skill interests, gender, age, date of birth, and
+            account settings and assign you a unique identifying number
+            (“Account Data”).
+          </p>
+          <p>
+            <strong>Profile Data:</strong> You can also choose to provide
+            profile information like a photo, headline, biography, language,
+            website link, social media profiles, country, or other data. Your
+            Profile Data will be publicly viewable by others.
+          </p>
+          <p>
+            <strong>Shared Content:</strong> Parts of the Services let you
+            interact with other users or share content publicly, including by
+            posting reviews on a course page, asking or answering questions,
+            sending messages to students or instructors, or posting photos or
+            other work you upload. Such shared content may be publicly viewable
+            by others depending on where it is posted.
+          </p>
+
+          <p>
+            <strong>Testimonials:</strong> As part of our promotional
+            activities, we encourage students who have secured employment or
+            fulfilled other personal objectives following participation in our
+            programmes to submit testimonials and reviews to inspire and
+            motivate others. Such testimonials and reviews may contain personal
+            information about you like your name, skills gained, occupation,
+            role, employer and location. Such content will be publicly viewable.
+          </p>
+
+          <p>
+            <strong>Course Data: </strong> When you enrol in and take courses,
+            we collect certain data including which courses, projects and tasks
+            you’ve started and completed; course purchases; subscriptions;
+            course certificates; your exchanges with trainers, and other
+            students; and essays, answers to questions, and other items
+            submitted to satisfy course requirements. If you are a trainer, we
+            store course content that may contain data about you.
+          </p>
+
+          <p>
+            <strong>Trainer Payment Data</strong> If you are a trainer, you can
+            link your PayPal or other payment account to the Services to receive
+            payments. When you link a payment account, we collect and use
+            certain information, including your payment account email address,
+            account ID, physical address, or other data necessary for us to send
+            payments to your account. In order to comply with applicable laws,
+            we also work with trusted third parties who collect tax information
+            as legally required. This tax information may include residency
+            information, tax identification numbers, biographical information,
+            and other personal information necessary for taxation purposes. For
+            security, Digital Careers Academy does not collect or store
+            sensitive bank account information. The collection, use, and
+            disclosure of your payment, billing, and taxation data is subject to
+            the privacy policy and other terms of your payment account provider.
+          </p>
+
+          <p>
+            <strong>Data About Your Accounts on Other Services</strong> We may
+            obtain certain information through your social media or other online
+            accounts if they are connected to your Digital Careers Academy
+            account. If you login to Digital Careers Academy via Facebook or
+            another third-party platform or service, we ask for your permission
+            to access certain information about that other account. For example,
+            depending on the platform or service we may collect your name,
+            profile picture, account ID number, login email address, location,
+            physical location of your access devices, gender, birthday, and list
+            of friends or contacts. Those platforms and services make
+            information available to us through their APIs. The information we
+            receive depends on what information you (via your privacy settings)
+            or the platform or service decide to give us. If you access or use
+            our Services through a third-party platform or service, or click on
+            any third-party links, the collection, use, and sharing of your data
+            will also be subject to the privacy policies and other agreements of
+            that third party.
+          </p>
+
+          <p>
+            <strong>Sweepstakes, Promotions, and Surveys</strong> We may invite
+            you to complete a survey or participate in a promotion (like a
+            contest, sweepstakes, or challenge), either through the Services or
+            a third-party platform. If you participate, we will collect and
+            store the data you provide as part of participating, such as your
+            name, email address, postal address, date of birth, or phone number.
+            That data is subject to this Privacy Notice unless otherwise stated
+            in the official rules of the promotion or in another privacy policy.
+            The data collected will be used to administer the promotion or
+            survey, including for notifying winners and distributing rewards. To
+            receive a reward, you may be required to allow us to post some of
+            your information publicly (like on a winner’s page). Where we use a
+            third-party platform to administer a survey or promotion, the third
+            party’s privacy policy will apply.
+          </p>
+
+          <p>
+            <strong>Communications and Support</strong> If you contact us for
+            support or to report a problem or concern (regardless of whether you
+            have created an account), we collect and store your contact
+            information, messages, and other data about you like your name,
+            email address, messages, location, Digital Careers Academy user ID,
+            refund transaction IDs, and any other data you provide or that we
+            collect through automated means (which we cover below). We use this
+            data to respond to you and research your question or concern, in
+            accordance with this Privacy Notice.
+          </p>
+          <p>
+            The data listed above is stored by us and associated with your
+            account.
+          </p>
+          <h5>1.2 Data We Collect through Automated Means</h5>
+          <p>
+            When you access the Services (including browsing courses), we
+            collect certain data by automated means, including:
+          </p>
+          <p>
+            <strong>System Data</strong> Technical data about your computer or
+            device, like your IP address, device type, operating system type and
+            version, unique device identifiers, browser, browser language,
+            domain and other systems data, and platform types (“System Data”).
+          </p>
+          <p>
+            <strong>Usage Data</strong> Usage statistics about your interactions
+            with the Services, including courses accessed, time spent on pages
+            or the Service, pages visited, features used, your search queries,
+            click data, date and time, referrer, and other data regarding your
+            use of the Services (“Usage Data”).
+          </p>
+          <p>
+            <strong>Approximate Geographic Data</strong> An approximate
+            geographic location, including information like country, city, and
+            geographic coordinates, calculated based on your IP address.
+          </p>
+          <p>
+            The data listed above is collected through the use of server log
+            files and tracking technologies, as detailed in the “Cookies and
+            Data Collection Tools” section below. It is stored by us and
+            associated with your account.
+          </p>
+        </div>
+
+        <div id="consent">
+          <p class="font-bold mt-5">2. Consent</p>
+          <p>
+            <strong>2. How We Get Data About You</strong>
+            We use tools like cookies, web beacons, and similar tracking
+            technologies to gather the data listed above. Some of these tools
+            offer you the ability to opt out of data collection.
+          </p>
+          <p>
+            <strong>2.1 Cookies and Data Collection Tools</strong> We use
+            cookies, which are small text files stored by your browser, to
+            collect, store, and share data about your activities across
+            websites, including on Digital Careers Academy. They allow us to
+            remember things about your visits to Digital Careers Academy, like
+            your preferred language, and to make the site easier to use. To
+            learn more about cookies, visit
+            <a
+              href="https://cookiepedia.co.uk/all-about-cookies."
+              target="_blank"
+              >https://cookiepedia.co.uk/all-about-cookies.</a
+            >
+            Digital Careers Academy and service providers acting on our behalf
+            (like Google Analytics and third-party advertisers) use server log
+            files and automated data collection tools like cookies, tags,
+            scripts, customized links, device or browser fingerprints, and web
+            beacons (together, “Data Collection Tools“) when you access and use
+            the Services. These Data Collection Tools automatically track and
+            collect certain System Data and Usage Data (as detailed in Section
+            1) when you use the Services. In some cases, we tie data gathered
+            through those Data Collection Tools to other data that we collect as
+            described in this Privacy Notice.
+          </p>
+          <p>
+            <strong>2.2 Why We Use Data Collection Tools</strong>
+            Digital Careers Academy uses the following types of Data Collection
+            Tools for the purposes described:
+          </p>
+          <ul>
+            <li>
+              Strictly Necessary: These Data Collection Tools enable you to
+              access the site, provide basic functionality (like logging in or
+              enrolling in courses), secure the site, protect against fraudulent
+              logins, and detect and prevent abuse or unauthorized use of your
+              account. These are required for the Services to work properly, so
+              if you disable them, parts of the site will break or be
+              unavailable.
+            </li>
+            <li>
+              Functional: These Data Collection Tools remember data about your
+              browser and your preferences, provide additional site
+              functionality, customize content to be more relevant to you, and
+              remember settings affecting the appearance and behavior of the
+              Services (like your preferred language or volume level for video
+              playback).
+            </li>
+            <li>
+              Performance: These Data Collection Tools help measure and improve
+              the Services by providing usage and performance data, visit
+              counts, traffic sources, or where an application was downloaded
+              from. These tools can help us test different versions of Digital
+              Careers Academy to see which features or content users prefer and
+              determine which email messages are opened
+            </li>
+            <li>
+              Advertising: These Data Collection Tools are used to deliver
+              relevant ads (on the site and/or other sites) based on things we
+              know about you like your Usage and System Data (as detailed in
+              Section 1), and things that the ad service providers know about
+              you based on their tracking data. The ads can be based on your
+              recent activity or activity over time and across other sites and
+              services. To help deliver tailored advertising, we may provide
+              these service providers with a hashed, anonymized version of your
+              email address (in a non-human-readable form) and content that you
+              share publicly on the Services.
+            </li>
+            <li>
+              <strong>Social Media: </strong> These Data Collection Tools enable
+              social media functionality, like sharing content with friends and
+              networks. These cookies may track a user or device across other
+              sites and build a profile of user interests for targeted
+              advertising purposes.
+            </li>
+          </ul>
+          <p>
+            You can set your web browser to alert you about attempts to place
+            cookies on your computer, limit the types of cookies you allow, or
+            refuse cookies altogether. If you do, you may not be able to use
+            some or all features of the Services, and your experience may be
+            different or less functional. To learn more about managing Data
+            Collection Tools, refer to Section 6.1 (Your Choices About the Use
+            of Your Data) below.
+          </p>
+        </div>
+
+        <div id="useofInfo">
+          <p class="font-bold mt-5">3. What We Use Your Data For</p>
+          <p>
+            We only process data for specified purposes and if it is justified
+            in accordance with data-protection law. The table below lists the
+            various purposes for which we process personal data and the
+            corresponding justification for it. Some processing of your personal
+            data is justified on the basis of contractual necessity. In general,
+            this applies to personal data you provide to us upon subscription to
+            manage your account and monitor academic performance.
+          </p>
+          <p>
+            We use your data to do things like provide our services, communicate
+            with you, troubleshoot issues, secure against fraud and abuse,
+            improve and update our services, analyse how people use our
+            services, serve personalized advertising, and as required by law or
+            necessary for safety and integrity. Without that information, we
+            would be unable to provide you with your chosen academic programme
+            and related support services.
+          </p>
+          <p>
+            If you engage in our programs but do not complete or procure a
+            subscription, we will retain your personal data in line with our
+            retention schedules for statistical and audit purposes or in the
+            event of a complaint or an appeal.
+          </p>
+          <p>We use the data we collect through your use of the Services to:</p>
+          <table>
+            <tr>
+              <th>Purpose</th>
+              <th>Legal basis / Justification</th>
+            </tr>
+            <tr>
+              <td>
+                Assessing eligibility to undertake our training programmes and
+                workshops
+              </td>
+              <td>
+                Processing is necessary for the purposes of taking steps prior
+                to entering into a contract with us.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Supporting applicants through the application process and
+                providing further information on the services we can offer.
+              </td>
+              <td>
+                Necessary for negotiating to enter into a contract and
+                legitimate interests in providing support to applicants.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Provide and administer training programmes, workshops and
+                related services, including to facilitate course participation,
+                issue course completion certificates, display customized
+                content, and facilitate communication with other users
+              </td>
+              <td>
+                Necessary for performing a contract, i.e. to provide your chosen
+                training programme. This can be a contract with us or a contract
+                between you and your home institution (“contractual necessity”).
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Identifying students and assisting them in trying to succeed in
+                their learning via the platform system.
+              </td>
+              <td>
+                Contractual necessity and legitimate interest in assisting our
+                students to succeed in their training.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Assessment of skills acquisition, progress and performance
+                (including attendance), and where necessary providing support.
+              </td>
+              <td>Contractual necessity.</td>
+            </tr>
+            <tr>
+              <td>
+                Process your requests and orders for courses, products, specific
+                services, information, or features. Contractual obligation
+              </td>
+              <td>Contractual obligation</td>
+            </tr>
+            <tr>
+              <td>
+                Administration of complaints and suggestions, interruption and
+                withdrawal.
+              </td>
+              <td>Contractual necessity.</td>
+            </tr>
+            <tr>
+              <td>
+                Mentoring and Employability Support. Contractual necessity and
+                our legitimate interest in assisting our students and alumni to
+                progress in their careers.
+              </td>
+              <td>
+                Contractual necessity and our legitimate interest in assisting
+                our students and alumni to progress in their careers.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Regulating Digital Careers Academy’s community (including
+                dealing with misconduct under our procedures for academic and
+                other misconduct including disciplinary procedures).
+              </td>
+              <td>
+                Contractual necessity and our legitimate interest in obtaining
+                payment for the services we provide.
+              </td>
+            </tr>
+            <tr>
+              <td>Processing instructor payments</td>
+              <td>
+                Contractual necessity and our legitimate interest in rendering
+                payment for the services we procure.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Protecting our property and assets (e.g. by dealing with
+                misconduct).
+              </td>
+              <td>
+                Necessary for our legitimate interest in safeguarding our
+                property and assets.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Providing appropriate I.T. tools and other infrastructure
+                facilities e.g. a virtual learning environment.
+              </td>
+              <td>
+                Contractual necessity; legitimate interest in providing a proper
+                infrastructure to support the provision of academic programmes
+                and related student services.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Solicit feedback from users Contractual necessity and our
+                legitimate interest in ensuring the service is improved and
+                optimised
+              </td>
+              <td>
+                Contractual necessity and our legitimate interest in ensuring
+                the service is improved and optimised
+              </td>
+            </tr>
+            <tr>
+              <td>Solicit testimonials and reviews</td>
+              <td>
+                Necessary for our legitimate interests in maintaining and
+                optimising the business and marketing.
+              </td>
+            </tr>
+            <tr>
+              <td>Registering alumni to maintain an alumni network.</td>
+              <td>
+                Necessary for our legitimate interests in maintaining an alumni
+                network, and marketing.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Communicate with you about your account by: Responding to your
+                questions and concerns; Sending you administrative messages and
+                information, including messages from instructors, trainers,
+                students; notifications about changes to our Service; and
+                updates to our agreements; Sending you information, such as by
+                email or text messages, about your progress in courses, rewards
+                programs, new services, new features, promotions, newsletters,
+                and other available courses (which you can opt out of at any
+                time);
+              </td>
+              <td>
+                Contractual necessity and our legitimate interest in marketing
+                Digital Careers Academy and promoting student welfare.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Facilitate the Services’ technical functioning, including
+                troubleshooting and resolving issues, securing the Services, and
+                preventing fraud and abuse;
+              </td>
+              <td>Legitimate interest</td>
+            </tr>
+            <tr>
+              <td>
+                Market and administer surveys and promotions administered or
+                sponsored by Digital Careers Academy;
+              </td>
+              <td>Legitimate interest</td>
+            </tr>
+          </table>
+        </div>
+        <div id="ageRate">
+          <p class="font-bold mt-5">4. Who We Share Your Data With</p>
+          <p>
+            We share certain data about you with instructors, other students,
+            companies performing services for us, Digital Careers Academy
+            affiliates, our business partners, analytics and data enrichment
+            providers, your social media providers, companies helping us run
+            promotions and surveys, and advertising companies who help us
+            promote our Services. We may also share your data as needed for
+            security, legal compliance, or as part of a corporate restructuring.
+            Lastly, we can share data in other ways if it is aggregated or
+            de-identified or if we get your consent.
+          </p>
+          <p>
+            We may share your data with third parties under the following
+            circumstances or as otherwise described in this Privacy Policy:
+          </p>
+          <ul>
+            <li>
+              With Your Instructors: We share data that we have about you
+              (except your email address) with instructors or teaching
+              assistants for courses you enrol in or request information about,
+              so they can improve their courses for you and other students. This
+              data may include things like your city, country, browser language,
+              operating system, device settings, the site that brought you to
+              Digital Careers Academy, and your activities on Digital Careers
+              Academy. If we collect additional data about you (like age or
+              gender), we may share that too. We will not share your email
+              address with instructors or teaching assistants. We also enable
+              our instructors to implement Google Analytics on their course
+              pages to track sources of traffic to their courses and optimize
+              their course pages.
+            </li>
+            <li>
+              With Other Students and Instructors: Depending on your settings,
+              your shared content and profile data may be publicly viewable,
+              including to other students and instructors. If you ask a question
+              to an instructor or teaching assistant, your information
+              (including your name) may also be publicly viewable by other users
+              depending on your settings. When you collaborate and work on
+              projects with other students, they will be able to see your data.
+              Your data will also be viewable by other students on the mobile
+              messaging apps we use.
+            </li>
+            <li>
+              With Service Providers, Contractors, and Agents: We share your
+              data with third-party companies who perform services on our
+              behalf, like payment processing, fraud and abuse prevention, data
+              analysis, marketing and advertising services (including retargeted
+              advertising), email and hosting services, and customer services
+              and support. These service providers may access your personal data
+              and are required to use it solely as we direct, to provide our
+              requested service.
+            </li>
+            <li>
+              With our Affiliates: We may share your data within our corporate
+              family of companies that are related by common ownership or
+              control to enable or support us in providing the Services.
+            </li>
+            <li>
+              With Business Partners: With your consent, we may share
+              information that can be used to directly contact you with third
+              party business partners, such as companies that may be offering
+              products or services or other opportunities that may be of
+              interest to you. We have agreements with other websites and
+              platforms to distribute our Services and drive traffic to Digital
+              Careers Academy. Depending on your location, we may share your
+              data with these partners.
+            </li>
+            <li>
+              To Power Social Media Features: The social media features in the
+              Services (like the Facebook Like button) may allow the third-party
+              social media provider to collect things like your IP address and
+              which page of the Services you’re visiting, and to set a cookie to
+              enable the feature. Your interactions with these features are
+              governed by the third-party company’s privacy policy.
+            </li>
+            <li>
+              To Administer Promotions and Surveys: We may share your data as
+              necessary to administer, market, or sponsor promotions and surveys
+              you choose to participate in, as required by applicable law (like
+              to provide a winners list or make required filings), or in
+              accordance with the rules of the promotion or survey.
+            </li>
+            <li>
+              For Advertising: If we decide to use an advertising-supported
+              revenue model in the future, we may use and share certain System
+              Data and Usage Data with third-party advertisers and networks to
+              show general demographic and preference information among our
+              users. We may also allow advertisers to collect System Data
+              through Data Collection Tools (as detailed in Section 2.1), to use
+              this data to offer you targeted ad delivery to personalize your
+              user experience (through behavioural advertising), and to
+              undertake web analytics. Advertisers may also share with us the
+              data they collect about you. To learn more or opt out from
+              participating ad networks’ behavioural advertising, see Section
+              6.1 (Your Choices About the Use of Your Data) below. Note that if
+              you opt out, you’ll continue to be served generic ads.
+            </li>
+            <li>
+              For Security and Legal Compliance: We may disclose your data to
+              third parties if we (in our sole discretion) have a good faith
+              belief that the disclosure is:
+              <ul class="list-style-circle">
+                <li>Permitted or required by law;</li>
+                <li>
+                  Requested as part of a judicial, governmental, or legal
+                  inquiry, order, or proceeding;
+                </li>
+                <li>
+                  Reasonably necessary as part of a valid subpoena, warrant, or
+                  other legally-valid request;
+                </li>
+                <li>
+                  Reasonably necessary to enforce our Terms of Use, Privacy
+                  Policy, and other legal agreements;
+                </li>
+                <li>
+                  Required to detect, prevent, or address fraud, abuse, misuse,
+                  potential violations of law (or rule or regulation), or
+                  security or technical issues; or
+                </li>
+                <li>
+                  Reasonably necessary in our discretion to protect against
+                  imminent harm to the rights, property, or safety of Digital
+                  Careers Academy, our users, employees, members of the public,
+                  or our Services.
+                </li>
+                <li>
+                  We may also disclose data about you to our auditors and legal
+                  advisors in order to assess our disclosure obligations and
+                  rights under this Privacy Notice.
+                </li>
+              </ul>
+            </li>
+            <li>
+              During a Change in Control: If Digital Careers Academy undergoes a
+              business transaction like a merger, acquisition, corporate
+              divestiture, or dissolution (including bankruptcy), or a sale of
+              all or some of its assets, we may share, disclose, or transfer all
+              of your data to the successor organization during such transition
+              or in contemplation of a transition (including during due
+              diligence).
+            </li>
+            <li>
+              After Aggregation/De-identification: we may disclose or use
+              aggregated or de-identified data for any purpose
+            </li>
+            <li>
+              With Your Permission: with your consent, we may share data to
+              third parties outside the scope of this Privacy Notice.
+            </li>
+          </ul>
+        </div>
+
+        <div id="useofCookies">
+          <p class="font-bold mt-5">5. How we protect your data</p>
+          <p>
+            We take appropriate precautions including organisational, technical,
+            and physical measures to help safeguard against accidental or
+            unlawful destruction, loss, alteration, and unauthorised disclosure
+            of, or access to, the Personal Data we process or use. We limit
+            access to your personal data to those employees, agents, contractors
+            and other third parties who have a business need to know. They will
+            only process your personal data on our instructions and they are
+            subject to a duty of confidentiality. We have put in place
+            procedures to deal with any suspected personal data breach and will
+            notify you and any applicable regulator of a breach where we are
+            legally required to do so.
+          </p>
+          <p>
+            While we follow generally accepted standards to protect Personal
+            Data, no method of storage or transmission is 100% secure. You are
+            solely responsible for protecting your password, limiting access to
+            your devices and signing out of websites after your sessions. If you
+            have any questions about the security of our websites, please
+            contact us by using the information in the “Contacting us” section,
+            below.
+          </p>
+        </div>
+        <div id="malware">
+          <p class="font-bold mt-5" id="">6. Malware/Spyware/Viruses</p>
+          <p>
+            Where possible, we aim to hold personal data relating to students
+            within the EEA. Where any of your personal data is transferred
+            outside the EEA it will be subject to a legally binding data sharing
+            agreement and to an adequacy decision by the European Commission
+            (country, territory or specified sectors), or other appropriate
+            safeguards as set out in Article 46 of the GDPR.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-bold mt-5" id="dataCon">
+            7. How long we keep your data
+          </p>
+
+          <p>
+            We may retain your Personal Data for a period of time consistent
+            with the original purpose of collection (see the “Purposes for which
+            we process Personal Data and the legal bases on which we rely”
+            section, above) or as long as required to fulfil our legal
+            obligations. We determine the appropriate retention period for
+            Personal Data on the basis of the amount, nature, and sensitivity of
+            the Personal Data being processed, the potential risk of harm from
+            unauthorised use or disclosure of the Personal Data, whether we can
+            achieve the purposes of the processing through other means, and on
+            the basis of applicable legal requirements (such as applicable
+            statutes of limitation).
+          </p>
+          <p>
+            After expiry of the applicable retention periods, your Personal Data
+            will be deleted. If there is any data that we are unable, for
+            technical reasons, to delete entirely from our systems, we will
+            implement appropriate measures to prevent any further use of such
+            data.
+          </p>
+          <p>
+            For more information on data retention periods, please contact us by
+            using the information in the “Contacting us” section, below.
+          </p>
+        </div>
+
+        <div id="governingLaw">
+          <p class="font-bold mt-5">8.Your rights as a data subject</p>
+          <p>
+            As a data subject, you may have certain rights relating to your
+            Personal Data, subject to local data protection laws. Depending on
+            the applicable laws these rights may include the right to:
+          </p>
+          <ul>
+            <li>Access your Personal Data held by us;</li>
+            <li>Know more about how we processed your Personal Data</li>
+            <li>
+              Rectify inaccuracies or where appropriate, given the purposes for
+              which your data is processed, the right to have incomplete data
+              completed;
+            </li>
+            <li>
+              Erase or delete your personal data. This is a limited right which
+              applies, among other circumstances, when the data is no longer
+              required, consent has been withdrawn and/or the processing has no
+              legal justification. There are also exceptions to this right, such
+              as when the processing is required by law or in the public
+              interest;
+            </li>
+            <li>
+              Object to the processing of your personal data for marketing
+              purposes. You may also object when the processing is based on the
+              public interest or other legitimate interests, unless we have
+              compelling legitimate grounds to continue with the processing.
+            </li>
+            <li>
+              Restrict the processing of your personal data. This is a limited
+              right which will apply in specific circumstances and for a limited
+              period.
+            </li>
+            <li>
+              Transfer your Personal Data to another controller if the data is
+              processed by automated means and the processing is based on your
+              consent or contractual necessity.
+            </li>
+            <li>
+              Opt out of certain disclosures of your Personal Data to third
+              parties
+            </li>
+            <li>
+              If you’re under the age of 16, opt in to certain disclosures of
+              your Personal Data to third parties;
+            </li>
+            <li>
+              Not be discriminated against for exercising your rights described
+              above;
+            </li>
+            <li>
+              Not be subject to a decision based solely on automated processing,
+              including profiling, which produces legal effects (“Automated
+              Decision-Making”). Automated Decision-Making currently does not
+              take place on our websites or in our services;
+            </li>
+            <li>
+              Withdraw your consent at any time (to the extent we rely on
+              consent for processing), without affecting the lawfulness of the
+              processing based on such consent before its withdrawal. Your
+              requests will be considered at the latest within one month.
+            </li>
+          </ul>
+          <h5>8.1 Your Choices About the Use of Your Data</h5>
+          <p>
+            You can choose not to provide certain data to us, but you may not be
+            able to use certain features of the Services.
+          </p>
+          <ul>
+            <li>
+              To stop receiving promotional communications from us, you can opt
+              out by using the unsubscribe mechanism in the promotional
+              communication you receive. Note that regardless of your email
+              preference settings, we will send you transactional and
+              relationship messages regarding the Services, including
+              administrative confirmations, order confirmations, important
+              updates about the Services, and notices about our policies.
+            </li>
+            <li>
+              If you’re located in the European Economic Area, you may opt out
+              of certain Data Collection Tools by clicking the “Cookie settings“
+              link at the bottom of any page.
+            </li>
+            <li>
+              The browser or device you use may allow you to control cookies and
+              other types of local data storage. To learn more about managing
+              cookies, visit
+              <a href="https://cookiepedia.co.uk/how-to-manage-cookies."
+                >https://cookiepedia.co.uk/how-to-manage-cookies.</a
+              >
+              Your wireless device may also allow you to control whether
+              location or other data is collected and shared.
+            </li>
+            <li>
+              To get information and control cookies used for tailored
+              advertising from participating companies, see the consumer opt-out
+              pages for the
+              <a href="http://www.networkadvertising.org/choices"
+                >Network Advertising Initiative
+              </a>
+              and
+              <a href="http://www.aboutads.info/choices/"
+                >Digital Advertising Alliance,</a
+              >
+              or if you’re located in the European Economic Area, visit the
+              <a href="http://www.youronlinechoices.eu/">Your Online Choices</a>
+              site. To opt out of Google’s display advertising or customize
+              Google Display Network ads, visit the
+              <a href="https://www.google.com/settings/ads"
+                >Google Ads Settings page.</a
+              >
+              To opt out of Taboola’s targeted ads, see the Opt-out Link in
+              their
+              <a href="https://www.taboola.com/cookie-policy">Cookie Policy.</a>
+            </li>
+            <li>
+              To opt out of allowing Google Analytics, Mixpanel, ZoomInfo, or
+              Clearbit to use your data for analytics or enrichment, see the
+              <a href="https://tools.google.com/dlpage/gaoptout">
+                Google Analytics Opt-out Browser Add-on,</a
+              >
+              <a href="https://mixpanel.com/optout/"
+                >Mixpanel Opt-Out Cookie,</a
+              >
+              <a
+                href="https://www.zoominfo.com/business/about-zoominfo/privacy-policy"
+                >ZoomInfo’s policy,</a
+              >
+              and
+              <a href="https://clearbit.com/privacy">
+                Clearbit data claiming mechanism.</a
+              >
+            </li>
+            <li>
+              Apple iOS, Android OS, and Microsoft Windows each provide their
+              own instructions on how to control in-app tailored advertising.
+              For other devices and operating systems, you should review your
+              privacy settings on that platform.
+            </li>
+          </ul>
+          <p>
+            If you have any questions about your data, our use of it, or your
+            rights, please contact us by using the information in the
+            “Contacting us” section, below.
+          </p>
+        </div>
+        <div id="usersOutsideEU">
+          <p class="font-bold mt-5">9. Users outside the UK</p>
+          <p>
+            In order to provide the Services to you, we must transfer your data
+            out of the United Kingdom and process it there. We ensure adequate
+            data protective measures are in place in such location where our
+            data is processed. By visiting or using our Services, you consent to
+            storage of your data on servers located in the United Kingdom. If
+            you are using the Services from outside the United Kingdom, you
+            consent to the transfer, storage, and processing of your data in and
+            to the United Kingdom or other countries.
+          </p>
+          <p>
+            We may also subcontract the processing of your data to, or otherwise
+            share your data with, service providers and others in countries
+            other than your country of residence, including the United Kingdom,
+            in accordance with applicable law. Such third parties may be engaged
+            in, among other things, the provision of services to you, the
+            processing of transactions and/or the provision of support services.
+            By providing us with your information, you acknowledge any such
+            transfer, storage or use.
+          </p>
+          <p>
+            If we provide any information about you to any such non-European
+            Union entities, we will take appropriate measures to ensure such
+            companies protect your information adequately in accordance with
+            this Privacy Notice
+          </p>
+          <p>
+            If applicable, you may make a complaint to the data protection
+            supervisory authority in the country where you are based.
+            Alternatively, you may seek a remedy through local courts if you
+            believe your rights have been breached.
+          </p>
+        </div>
+        <div id="changes">
+          <p class="font-bold mt-5">10. Changes to this Privacy Notice</p>
+          <p>
+            We will update this Privacy Notice from time to time to reflect
+            changes in our practices, technologies, legal requirements, and
+            other factors. If we do, we will update the “effective date” at the
+            top. If we make a material update, we may provide you with notice
+            prior to the update taking effect, such as by posting a conspicuous
+            notice on our website or by contacting you directly, or where
+            required under applicable law and feasible, seek your consent to
+            these changes.
+          </p>
+          <p>
+            As permitted by applicable law, if you continue to use the Services
+            after the effective date of any change, then your access and/or use
+            will be deemed an acceptance of (and agreement to follow and be
+            bound by) the revised Privacy Notice. The revised Privacy Notice
+            supersedes all previous Privacy Notices.
+          </p>
+          <p>
+            We encourage you to periodically review this Privacy Notice to stay
+            informed about our collection, processing and sharing of your
+            Personal Data.
+          </p>
+        </div>
+
+        <div id="contact">
+          <p class="font-bold mt-5">11. Contacting us</p>
+          <h5>11.1. Exercising your rights, queries and complaints</h5>
+          <p>
+            For more information on your rights, if you wish to exercise any
+            right; any concerns, questions or queries you may have or if you
+            wish to make a compliant, please contact our Data Protection
+            Officer:
+          </p>
+          <p><strong>Name: </strong> Oludare Olorunfemi.</p>
+          <p>
+            <strong>Email address: </strong>
+            <a href="mailto:info@digitalbusinesskonsult.com"
+              >info@digitalbusinesskonsult.com</a
+            >
+          </p>
+        </div>
+
+        <div id="info">
+          <p class="font-bold mt-5">
+            12. Complaints to the Information Commissioner
+          </p>
+          <p>
+            You have a right to complain to the Information Commissioner’s
+            Office (ICO) about the way in which we process your personal data.
+            You can make a complaint on the ICO’s
+          </p>
+        </div>
+      </div>
+
+      <div class="scroll-to-top" id="scrollToTop">
+        <img src="images/arrow-up.svg" alt="Arrow Up" />
+      </div>
+    </main>
+    <footer id="footer" class="py-5">
+      <div class="container">
+        <section class="row mb-8">
+          <div class="col-md-3">
+            <address>
+              Office Address: <br />
+              BOS House, <br />
+              Olden way Business Park, <br />
+              Ballybrit Galway, H91 E65V, Ireland
+            </address>
+          </div>
+          <div class="col-md-3">
+            <h5>Program Track</h5>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="scrum.html"
+                  >Practical Scrum Master</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="business.html"
+                  >Practical Business Analysis</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data-analytics.html"
+                  >Data Analytics</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Resources</h5>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="faqs.html"
+                  >FAQs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="privacy-policy.html">Privacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terms.html">Terms and Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Get In Touch</h5>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li>Whatsapp</li>
+              <!-- New Changes -->
+              <li>
+                <img src="images/uk.png" alt="Uk Flag" width="24" />
+                <a
+                  class="text-white"
+                  href="https://wa.link/ybvz0x"
+                  target="_blank"
+                  >+447488818292</a
+                >
+              </li>
+              <li>
+                <img src="images/canada.png" alt="Canada Flag" width="24" />
+                <a
+                  class="text-white"
+                  href="https://wa.link/8gyj2u"
+                  target="_blank"
+                  >+15873303085</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="border-tb d-flex justify-content-between">
+          <span class="align-self-center">© 2024 Digital Careers Academy</span>
+          <div class="social-icon">
+            <img src="images/facebook.png" alt="Facebook Icon" />
+            <img src="images/twitter.png" alt="Twitter Icon" />
+            <img src="images/linkedin.png" alt="LinkedIn Icon" />
+            <img src="images/instagram.png" alt="Instagram Icon" />
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
