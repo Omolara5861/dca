@@ -829,7 +829,7 @@ img {
 
  .sidebar {
      width: 254px;
-     height: 1035px;
+     height: 990px;
      display: flex;
      flex-direction: column;
      gap: 27px;
@@ -991,7 +991,6 @@ img {
  }
 
  .table-container {
-     height: 384px;
      margin-left: 4%;
      margin-right: 4%;
      padding-left: 10px;
