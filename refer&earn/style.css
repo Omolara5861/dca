@@ -175,8 +175,6 @@
 
 
  #footer {
-    position: relative;
-    z-index: 10;
      background: #05274c;
      color: #fff;
      font-size: 17px;
@@ -831,7 +829,7 @@ img {
 
  .sidebar {
      width: 254px;
-     height: 1050px;
+     height: 1035px;
      display: flex;
      flex-direction: column;
      gap: 27px;
