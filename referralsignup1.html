@@ -17,6 +17,21 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      #emailAddress{
+        border: 1px solid rgb(201, 201, 201);
+      }
+      #errMsg{
+        display: none;
+        font-size: 14px;
+        color: #F96060;
+        margin-bottom: 2%;
+        line-height: 21px;
+      }
+      .error{
+        border: 1px solid #F96060 !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -194,7 +209,7 @@
             <h6 class="text-center">Sign Up to Refer & Earn</h6>
             <div class="signup-form">
               
-              <form action="" class="signup-form ">
+              <form action="" class="signup-form "  onsubmit="regex(event)">
                 <div class="d-flex justify-content-between w-100">
                    <figure>
                         <label for="">First Name</label>
@@ -221,22 +236,24 @@
                  ">
                   <label for="">Email Address</label>
                   <input
-                  type="email"
+                  type="text"
                   id="emailAddress"
                   placeholder="Enter email address"
-                  class="border border-muted py-1 px-2 rounded text-muted"
+                  class=" py-1 px-2 rounded text-muted"
                   required
                 />
              </figure>
+             <p id="errMsg">Invalid email address!</p>
+
              <figure class="w-100">
               <label for="">Password</label>
               <div class="position-relative password-input-containr w-100 d-flex align-items-center  justify-content-between">
-                <input type="email" required placeholder="Enter password" class="w-100 fg-password-input  px-2 " id="">
-                <img src="./icons/eye stroke.png" alt="eye icon" class=  " eye-icon position-absolute   ">
+                <input type="password" required placeholder="Enter password" class=" border border-muted  w-100 fg-password-input rounded px-2 " id="">
+                <img src="./icons/eye stroke.png" alt="eye icon" class=" eye-icon position-absolute   ">
                 
               </div>
         </figure>
-               <button class="buttons text-light py-2 w-100 mt-3">Sign Up</button>
+               <button  type="submit" class="buttons text-light py-2 w-100 mt-3">Sign Up</button>
                
                <div class="w-100 d-flex checkbox mt- gap-2">
                   <input type="checkbox" checked>
@@ -342,14 +359,28 @@
     </footer>
 
     <script>
-      const emailBox = document.getElementById("emailAddress")
-      emailBox.addEventListener("click", (event)=>{
-         alert('startt')
-        emailBox.classList.add('emailbd')
-      })
-      
-       
-    </script>
+
+     
+    function regex(e) {
+        e.preventDefault();
+
+       const emailAddressInput = document.getElementById('emailAddress');
+       const message = document.getElementById("errMsg")
+       const emailAddress = emailAddressInput.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+
+        if (!emailRegex.test(emailAddress)) {
+            emailAddressInput.classList.add('error'); 
+            message.style.display="block"
+            return; 
+        }
+
+        emailAddressInput.classList.remove('error');
+        message.style.display ="none"
+
+    }
+
+  </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
