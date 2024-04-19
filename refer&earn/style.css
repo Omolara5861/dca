@@ -1575,3 +1575,25 @@ img {
  .privacy ol li a.active {
      color: #05274c !important;
  }
+
+  .eye-icon {
+        top: 20px;
+            right: 10px;
+            cursor: pointer;
+  }
+
+   #emailAddress {
+       border: 1px solid rgb(201, 201, 201);
+   }
+
+   #errMsg {
+       display: none;
+       font-size: 14px;
+       color: #F96060;
+       margin-bottom: 2%;
+       line-height: 21px;
+   }
+
+   .error {
+       border: 1px solid #F96060 !important;
+   }
