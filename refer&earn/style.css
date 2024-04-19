@@ -284,13 +284,6 @@ img {
 
  }
 
- .signup-page .row>:first-child {
-     height: 875px;
-     top: 101px;
-
-
- }
-
  /* REQUEST SUBMISSION PAGE */
 
  .request-container {
@@ -348,7 +341,6 @@ img {
  }
 
  .signup-form figure {
-     width: 230px;
      height: 80px;
      display: flex;
      flex-direction: column;
@@ -707,7 +699,7 @@ img {
 
      .signup-page .row .form-container {
          width: 90%;
-         margin-left: 2%;
+         margin: auto;
      }
 
      .signup-form {
@@ -739,6 +731,16 @@ img {
 
 
  @media (max-width: 400px) {
+
+    .signup-form .d-flex {
+        flex-direction: column !important;
+        gap: unset !important;;
+    }
+
+        .signup-form .d-flex .w-50 {
+            width: 100% !important;
+        } 
+
      .verify-email .mail-text {
          font-size: 15px !important;
 
