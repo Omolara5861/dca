@@ -313,9 +313,14 @@ img {
 
 
  /* SIGNUP ANDD LOGIN  */
+
+ .signup-page {
+    overflow: hidden;
+ }
+
  .signup-page .form-container {
      width: 476px;
-     /* height: 495px; */
+
      margin-left: 130px;
      display: flex;
      flex-direction: column;
