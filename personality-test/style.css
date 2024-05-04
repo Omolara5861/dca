@@ -796,11 +796,41 @@
                     height: 48px;
                     border-radius: 8px;
                     margin-top: 10px;
-                    text-align: center;
                 }
 
+                .progress-b {
+                    width: 120px;
+                }
+
+                .progress-b span {
+                    display: block;
+                    width: 120px;
+                        height: 10px;
+                        gap: 0px;
+                        border-radius: 16px;
+                        background: #E6EEFC;
+                    }
+                .progress-b span.full {
+                    background: #367CE4;
+                }
+                .progress-b p {
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 21px;
+                        color: #363636;
+                        text-align: center;
+                }
 
    @media (max-width:769px) {
+
+    .progress-b span {
+            width: 44px;
+            height: 10px;
+
+        }
+                .progress-b p {
+                    text-align: unset;
+                }
        .question-container {
            width: 90vw;
            margin-left: 0;
