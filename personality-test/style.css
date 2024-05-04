@@ -672,6 +672,132 @@
 
    }
 
+        /* REFERRAL */
+        img {
+            border-radius: unset !important;
+        }
+    
+        input:focus {
+            outline: none;
+        }
+    
+        .referralbox {
+            width: 650px;
+            height: 477px;
+            border: 1px;
+            box-shadow: 0px 3px 10px 0px #0000001A;
+            display: flex;
+            flex-direction: row;
+            margin-top: 82px;
+            border-radius: 20px;
+            margin-bottom: 20%;
+        }
+    
+        .referbox {
+            display: flex;
+            flex-direction: column;
+            width: 339px;
+            height: 220px;
+            margin-top: 77px;
+            margin-left: 140.5px;
+            gap: 16px;
+            align-items: center;
+        }
+    
+        .tick-box {
+            width: 100px;
+            height: 100px;
+    
+        }
+
+        .referralbox :nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+        }
+    
+        .verify-email :nth-child(1) {
+            line-height: 42px;
+            color: #1A1A1A;
+            font-size: 28px;
+            font-weight: 800;
+        }
+    
+        .verify-email :nth-child(2) {
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            line-height: 27px;
+            color: #67676A;
+        }
+
+                .verify-container {
+                    width: 620px;
+                    height: 477px;
+                    border: 1px;
+                    box-shadow: 0px 3px 10px 0px #0000001A;
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 82px;
+                    border-radius: 20px;
+                    margin-bottom: 20%;
+        
+                }
+        
+                .verify-box {
+                    width: 466px;
+                    height: 354px;
+                    margin-left: 70.5px;
+                    align-items: flex-start;
+                }
+        
+                .verify-box button {
+                    height: 48px;
+                    border-radius: 50px;
+                    background-color: #2762BF;
+                    gap: 8px;
+                    border: 0;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    margin-top: 20px;
+                    align-content: center;
+                    place-content: center;
+                    place-self: center;
+                    width: 90%;
+                }
+        
+                .verify-box h6 {
+                    font-size: 27px;
+                    font-weight: 800;
+                    color: #1A1A1A;
+                    line-height: 27px;
+                    place-self: flex-start;
+                }
+        
+                .verify-box p {
+                    font-weight: 500;
+                    color: #67676A;
+                    place-self: center;
+        
+                }
+        
+                .input-container {
+                    width: 466px;
+                    height: 500px;
+                    gap: 2px;
+                }
+        
+                .otp-input {
+                    border: 1px solid rgb(181, 179, 179);
+                    width: 70px;
+                    height: 48px;
+                    border-radius: 8px;
+                    margin-top: 10px;
+                    text-align: center;
+                }
 
 
    @media (max-width:769px) {
