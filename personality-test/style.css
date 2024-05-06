@@ -1,6 +1,9 @@
 .bg-pink {
   background: #f5f6fa;
 }
+p {
+  margin: 0;
+}
 
 nav {
   position: relative;
@@ -406,7 +409,7 @@ a {
 }
 
 .button-container button {
-  width: 216px;
+  width: unset;
 }
 
 .border-btn {
@@ -796,6 +799,20 @@ input:focus {
   line-height: 21px;
   color: #363636;
   text-align: center;
+}
+
+.tied-courses {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #367CE4;
+}
+
+.text2 {
+  color: #000000B5 !important;
+  font-size: 16px !important;
 }
 
 @media (max-width: 769px) {

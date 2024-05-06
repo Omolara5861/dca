@@ -149,6 +149,7 @@ function moveToNextInput(event, nextIndex) {
   }
 }
 
+
 function showResult() {
   // Collect and calculate points for each course
   const courses = [
@@ -180,14 +181,15 @@ function showResult() {
 
   // Display result
   if (winningCourses.length === 1) {
-    alert(
-      `Congratulations! Based on your answers, the recommended course for you is ${winningCourses[0]}.`
-    );
+    const winningCourse = winningCourses[0];
+    // Encode the winning course as a query parameter
+    const encodedCourse = encodeURIComponent(winningCourse);
+    // Redirect to congratulations.html with the winning course appended
+    window.location.href = `congratulations.html?course=${encodedCourse}`;
   } else {
-    const tieMessage = `There is a tie between the following courses: ${winningCourses.join(
-      ", "
-    )}.`;
-    const contactCoach = "Contact a coach for further deliberations";
-    alert(`${tieMessage}\n\n${contactCoach}`);
+    const tiedCourses = winningCourses.join(',');
+    window.location.href = `tie.html?courses=${encodeURIComponent(tiedCourses)}`;
   }
 }
+
+
