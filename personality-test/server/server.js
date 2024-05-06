@@ -36,7 +36,7 @@ app.post('/sendVerificationCode', (req, res) => {
     const mailOptions = {
         from: 'omolara.adebowale@axieta.io',
         to: userEmail,
-        subject: 'Email Verification Code',
+        subject: 'Digital Careers Personality Test Email Verification Code',
         text: `Your verification code is: ${verificationCode}`,
     };
 

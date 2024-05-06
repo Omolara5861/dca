@@ -28,8 +28,24 @@ function changeStep(btn) {
   steps[index].classList.add("active-form");
 }
 
+function storeEmailInSession(email) {
+  const userEmail = email.value.trim();
+
+  if (userEmail) {
+    sessionStorage.setItem('userEmail', userEmail);
+    console.log('Email stored in session storage:', userEmail);
+  } else {
+    console.error('Email not found or invalid.');
+    // Handle error or display message to the user
+  }
+}
+function getEmailFromSessionStorage() {
+  const userEmail = sessionStorage.getItem('userEmail');
+  return userEmail;
+}
 function sendVerificationCode() {
   const userEmailInput = document.getElementById("userEmail");
+  storeEmailInSession(userEmailInput);
 
   // Validate user input
   const emailPattern = /[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com)/;
@@ -65,12 +81,13 @@ function sendVerificationCode() {
 }
 
 function verifyCode() {
-  console.log('Worked');
-  const userEmailInput = document.getElementById("userEmail");
+
   // Retrieve OTP code from input boxes
   const otpInputs = [];
   for (let i = 1; i <= 6; i++) {
     const inputBox = document.getElementById(`inputBox${i}`);
+
+    // Validate input
     if (!inputBox.checkValidity()) {
       alert("Please enter a valid OTP.");
       return;
@@ -78,9 +95,12 @@ function verifyCode() {
     otpInputs.push(inputBox.value);
   }
 
+
   // Combine OTP values into a single code
   const code = otpInputs.join("");
-  console.log(code);
+
+  const userEmail = getEmailFromSessionStorage();
+
 
   // Make a request to the server to verify the code
   const requestOptions = {
@@ -89,15 +109,18 @@ function verifyCode() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      email: userEmailInput.value,
+      email: userEmail,
       code: code,
     }),
   };
 
+  console.log("Request Options:", requestOptions);
+
+  // Testing fetch call
   fetch("http://localhost:3000/verifyCode", requestOptions)
     .then((response) => {
+      console.log("Fetch response:", response);
       if (response.ok) {
-        console.log('Hi');
         alert("Verification successful!");
         window.location.href = "questions.html"; // Navigate to questions.html on success
       } else {
@@ -107,11 +130,11 @@ function verifyCode() {
       }
     })
     .catch((error) => {
-      console.log('Hey');
       console.error("Error:", error);
       alert("An error occurred. Please try again later.");
     });
 }
+
 
 // Function to move focus to the next input box automatically
 function moveToNextInput(event, nextIndex) {
