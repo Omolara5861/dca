@@ -53,6 +53,7 @@ function sendVerificationCode() {
     .then((response) => {
       if (response.ok) {
         alert("Verification code sent successfully!");
+        window.location.href = 'verify-otp.html'
       } else {
         alert("Error sending verification code. Please try again.");
       }
@@ -64,8 +65,8 @@ function sendVerificationCode() {
 }
 
 function verifyCode() {
+  console.log('Worked');
   const userEmailInput = document.getElementById("userEmail");
-  // Retrieve OTP input values
   // Retrieve OTP code from input boxes
   const otpInputs = [];
   for (let i = 1; i <= 6; i++) {
@@ -79,6 +80,7 @@ function verifyCode() {
 
   // Combine OTP values into a single code
   const code = otpInputs.join("");
+  console.log(code);
 
   // Make a request to the server to verify the code
   const requestOptions = {
@@ -95,6 +97,7 @@ function verifyCode() {
   fetch("http://localhost:3000/verifyCode", requestOptions)
     .then((response) => {
       if (response.ok) {
+        console.log('Hi');
         alert("Verification successful!");
         window.location.href = "questions.html"; // Navigate to questions.html on success
       } else {
@@ -104,6 +107,7 @@ function verifyCode() {
       }
     })
     .catch((error) => {
+      console.log('Hey');
       console.error("Error:", error);
       alert("An error occurred. Please try again later.");
     });

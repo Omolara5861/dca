@@ -56,13 +56,15 @@ app.post('/verifyCode', (req, res) => {
     const userEmail = req.body.email;
     const userCode = req.body.code;
 
+    console.log(userCode, userEmail);
+
     // Check if the verification code exists and is still valid (e.g., within 5 minutes)
     if (verificationCodes[userEmail] && verificationCodes[userEmail].code === userCode) {
         const timestamp = verificationCodes[userEmail].timestamp;
         const currentTime = Date.now();
 
-        // Set an expiration time (e.g., 5 minutes)
-        const expirationTime = 5 * 60 * 1000;
+        // Set an expiration time (e.g., 30 minutes)
+        const expirationTime = 30 * 60 * 1000;
 
         if (currentTime - timestamp <= expirationTime) {
             res.status(200).send('Verification successful!');
@@ -76,4 +78,4 @@ app.post('/verifyCode', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
-});                                                           
+});
