@@ -1482,6 +1482,30 @@ form button {
   position: unset !important;
 }
 
+/* Personality Test Pop up */
+.personality-test {
+  width: 260px;
+}
+.personality-test .pt-card {
+  background: #fff;
+  border: 0.56px solid #DDDEE0;
+  box-shadow: 0px 25px 40px 5px #00000026;
+}
+.personality-test .pt-card .content {
+  padding: 19px;
+}
+.personality-test .pt-card .content h6 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22.5px;
+  color: #1a1a1a;
+}
+.personality-test .pt-card .content p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: #363636;
+}
 /* MEDIA QUERIES FOR MOBILE & TABLETS */
 
 @media (max-width: 1000.98px) {
