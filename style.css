@@ -1485,11 +1485,51 @@ form button {
 /* Personality Test Pop up */
 .personality-test {
   width: 260px;
+  height: 446px;
+  border-radius: 9.03px;
+  position: absolute;
+  top: 170px;
+  right: 22px;
+  z-index: 30;
+}
+.personality-test img{
+  border-radius: unset;
 }
 .personality-test .pt-card {
   background: #fff;
   border: 0.56px solid #DDDEE0;
   box-shadow: 0px 25px 40px 5px #00000026;
+  position: relative;
+  margin-bottom: 13px;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.pt-card.visible {
+  display: block;
+  opacity: 1;
+}
+
+.personality-test .idea {
+  position: absolute;
+  right: -10px;
+  cursor: pointer;
+}
+.personality-test .pt-text {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+      background-image: linear-gradient(49.36deg, #2D47D0 10.7%, #6D0D8E 79.84%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+}
+.personality-test .pt-card .cancel {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  cursor: pointer;
 }
 .personality-test .pt-card .content {
   padding: 19px;
