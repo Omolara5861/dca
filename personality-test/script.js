@@ -89,6 +89,43 @@ function sendVerificationCode() {
     });
 }
 
+function resendVerificationCode() {
+  // Retrieve user email from session storage
+  const userEmail = getEmailFromSessionStorage();
+
+  // Validate user email format
+  const emailPattern = /[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com)/;
+  if (!emailPattern.test(userEmail)) {
+    alert("Invalid email format. Please provide a valid Gmail or Yahoo address.");
+    return;
+  }
+
+  // Make a request to the server to resend the verification code
+  const requestOptions = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email: userEmail,
+    }),
+  };
+
+  fetch("http://localhost:3000/resendVerificationCode", requestOptions)
+    .then((response) => {
+      if (response.ok) {
+        alert("New verification code sent successfully!");
+      } else {
+        alert("Error resending verification code. Please try again.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again later.");
+    });
+}
+
+
 function verifyCode() {
 
   // Retrieve OTP code from input boxes

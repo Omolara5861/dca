@@ -52,6 +52,44 @@ app.post('/sendVerificationCode', (req, res) => {
     });
 });
 
+// Endpoint to resend a verification code to a user's email
+app.post('/resendVerificationCode', (req, res) => {
+    const userEmail = req.body.email;
+
+    // Check if the user's email already has a verification code pending
+    if (verificationCodes[userEmail]) {
+        // Generate a new verification code
+        const newVerificationCode = Math.floor(100000 + Math.random() * 900000).toString();
+
+        // Update the verification code and timestamp
+        verificationCodes[userEmail] = {
+            code: newVerificationCode,
+            timestamp: Date.now(),
+        };
+
+        // Set up email data with the new verification code
+        const mailOptions = {
+            from: 'your@example.com', // Update with your sender email address
+            to: userEmail,
+            subject: 'Digital Careers Personality Test Email Verification Code (Resend)',
+            text: `Your new verification code is: ${newVerificationCode}`,
+        };
+
+        // Send the email
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                console.log(error);
+                res.status(500).send('Error resending verification code.');
+            } else {
+                console.log('Resent email: ' + info.response);
+                res.status(200).send('New verification code sent successfully.');
+            }
+        });
+    } else {
+        res.status(400).send('No pending verification code found for this email.');
+    }
+});
+
 app.post('/verifyCode', (req, res) => {
     const userEmail = req.body.email;
     const userCode = req.body.code;
