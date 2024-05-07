@@ -76,6 +76,30 @@ app.post('/verifyCode', (req, res) => {
     }
 });
 
+// Endpoint to send email to support@digitalcareers.academy
+app.post('/sendAdvisorEmail', (req, res) => {
+    const { fullName, emailAddress, tiedCourses } = req.body;
+
+    // Set up email data
+    const mailOptions = {
+        from: 'omolara.adebowale@axieta.io',
+        to: 'support@digitalcareers.academy',
+        subject: 'Tied Courses - New Request for a Course Advisor',
+        text: `Candidate Details:\n\nFull Name: ${fullName}\nEmail Address: ${emailAddress}\n\nTied Courses:\n${tiedCourses.join(', ')}`,
+    };
+
+    // Send the email
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.log(error);
+            res.status(500).send('Error sending email to support.');
+        } else {
+            console.log('Email sent to support: ' + info.response);
+            res.status(200).send('Email sent successfully to support.');
+        }
+    });
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });

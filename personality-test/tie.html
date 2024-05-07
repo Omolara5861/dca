@@ -158,7 +158,7 @@ Tell us what you're looking for</textarea>
          </div>
          <div class="button-container mx-auto">
            <a href="../index.html"><button type="button" class="btn btn-trans">Return to homepage</button></a>
-           <button type="button" class="btn">Contact Course Advisor</button>
+           <button type="button" class="btn" onclick="contactAdvisor()">Contact Course Advisor</button>
          </div>
        </figure>
      </div>
@@ -267,6 +267,51 @@ Tell us what you're looking for</textarea>
         tiedCoursesElement.appendChild(courseElement);
       });
     }
+
+    function contactAdvisor() {
+      function getEmailFromSessionStorage() {
+      const userEmail = sessionStorage.getItem('userEmail');
+      return userEmail;
+      }
+      function getFirstNameFromSessionStorage() {
+      const userFirstName = sessionStorage.getItem('userFirstName');
+      return userFirstName;
+      }
+      function getLastFromSessionStorage() {
+      const userLastName = sessionStorage.getItem('userLastName');
+      return userLastName;
+      }
+    const fullName = getFirstNameFromSessionStorage() + ' ' + getLastFromSessionStorage();
+    const emailAddress = getEmailFromSessionStorage();
+
+    // Prepare data to send to server
+    const data = {
+    fullName: fullName,
+    emailAddress: emailAddress,
+    tiedCourses: tiedCoursesParam
+    };
+
+    // Send POST request to server to send email
+    fetch('http://localhost:3000/sendAdvisorEmail', {
+    method: 'POST',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+    })
+    .then(response => {
+    if (response.ok) {
+    window.location.href = 'success.html';
+    } else {
+    throw new Error('Failed to send email.');
+    }
+    })
+    .catch(error => {
+    console.error('Error sending email:', error);
+    alert('Failed to send email. Please try again later.');
+    });
+    }
+
   </script>
 </body>
 

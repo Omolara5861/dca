@@ -28,14 +28,19 @@ function changeStep(btn) {
   steps[index].classList.add("active-form");
 }
 
-function storeEmailInSession(email) {
+function storeDetailsInSession(firstName, lastName, email) {
+  const userFirstName = firstName.value.trim();
+  const userLastName = lastName.value.trim();
   const userEmail = email.value.trim();
 
-  if (userEmail) {
+  if (userEmail && userFirstName && userLastName) {
+    sessionStorage.setItem('userFirstName', userFirstName);
+    sessionStorage.setItem('userLastName', userLastName);
     sessionStorage.setItem('userEmail', userEmail);
-    console.log('Email stored in session storage:', userEmail);
-  } else {
-    console.error('Email not found or invalid.');
+    console.log('Details stored in session storage:', userEmail, userFirstName, userLastName);
+  }
+  else {
+    console.error('Details not found or invalid.');
     // Handle error or display message to the user
   }
 }
@@ -43,9 +48,13 @@ function getEmailFromSessionStorage() {
   const userEmail = sessionStorage.getItem('userEmail');
   return userEmail;
 }
+
 function sendVerificationCode() {
+  const userFirstNameInput = document.getElementById("userFirstName");
+  const userLastNameInput = document.getElementById("userLastName");
   const userEmailInput = document.getElementById("userEmail");
-  storeEmailInSession(userEmailInput);
+
+  storeDetailsInSession(userFirstNameInput, userLastNameInput, userEmailInput);
 
   // Validate user input
   const emailPattern = /[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com)/;
@@ -191,5 +200,3 @@ function showResult() {
     window.location.href = `tie.html?courses=${encodeURIComponent(tiedCourses)}`;
   }
 }
-
-
