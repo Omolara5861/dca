@@ -34,7 +34,7 @@ app.post('/sendVerificationCode', (req, res) => {
 
     // Set up email data with the verification code
     const mailOptions = {
-        from: 'omolara.adebowale@axieta.io',
+        from: 'no-reply@digitalcareers.academy',
         to: userEmail,
         subject: 'Digital Careers Personality Test Email Verification Code',
         text: `Your verification code is: ${verificationCode}`,
@@ -69,7 +69,7 @@ app.post('/resendVerificationCode', (req, res) => {
 
         // Set up email data with the new verification code
         const mailOptions = {
-            from: 'your@example.com', // Update with your sender email address
+            from: 'no-reply@digitalcareers.academy', // Update with your sender email address
             to: userEmail,
             subject: 'Digital Careers Personality Test Email Verification Code (Resend)',
             text: `Your new verification code is: ${newVerificationCode}`,
