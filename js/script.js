@@ -42,25 +42,6 @@ function selectOption(plan) {
 }
 
 
-/*=============== SWIPER JS ===============*/
-let swiperCards = new Swiper(".card__content", {
-  loop: true,
-  spaceBetween: 32,
-  grabCursor: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  }
-});
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const ideaDiv = document.getElementById('ideaDiv');
   const ptCard = document.getElementById('ptCard');
@@ -80,4 +61,24 @@ document.addEventListener("DOMContentLoaded", function () {
     ptCard.classList.remove('visible');
   });
 });
+
+/*=============== SWIPER JS ===============*/
+let swiperCards = new Swiper(".card__content", {
+  loop: true,
+  spaceBetween: 32,
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+});
+
+
 
