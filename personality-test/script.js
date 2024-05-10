@@ -74,7 +74,7 @@ function sendVerificationCode() {
     }),
   };
 
-  fetch("http://localhost:3000/sendVerificationCode", requestOptions)
+  fetch("http://localhost:5000/sendVerificationCode", requestOptions)
     .then((response) => {
       if (response.ok) {
         alert("Verification code sent successfully!");
@@ -111,7 +111,7 @@ function resendVerificationCode() {
     }),
   };
 
-  fetch("http://localhost:3000/resendVerificationCode", requestOptions)
+  fetch("http://localhost:5000/resendVerificationCode", requestOptions)
     .then((response) => {
       if (response.ok) {
         alert("New verification code sent successfully!");
@@ -163,7 +163,7 @@ function verifyCode() {
   console.log("Request Options:", requestOptions);
 
   // Testing fetch call
-  fetch("http://localhost:3000/verifyCode", requestOptions)
+  fetch("http://localhost:5000/verifyCode", requestOptions)
     .then((response) => {
       console.log("Fetch response:", response);
       if (response.ok) {

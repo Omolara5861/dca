@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const port = 3000;
+const port = 5000;
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -13,8 +13,8 @@ app.use(cors());
 const transporter = nodemailer.createTransport({
     service: 'mailjet',
     auth: {
-        user: '281f914878ace6537a09ba0c413ee872',
-        pass: 'd603e0b25dac20e9c9e7b4a688f40e06',
+        user: 'd66f6c281af1279d6d9f8c7071e31d66',
+        pass: '386ac1f5fa30d27194041616e4c11ac5',
     },
 });
 
@@ -34,8 +34,8 @@ app.post('/sendVerificationCode', (req, res) => {
 
     // Set up email data with the verification code
     const mailOptions = {
-        from: 'no-reply@digitalcareers.academy',
-        to: userEmail,
+        from: 'debbiegterra@gmail.com',
+        to: 'tahamel118@rencr.com',
         subject: 'Digital Careers Personality Test Email Verification Code',
         text: `Your verification code is: ${verificationCode}`,
     };
@@ -120,7 +120,7 @@ app.post('/sendAdvisorEmail', (req, res) => {
 
     // Set up email data
     const mailOptions = {
-        from: 'omolara.adebowale@axieta.io',
+        from: emailAddress,
         to: 'support@digitalcareers.academy',
         subject: 'Tied Courses - New Request for a Course Advisor',
         text: `Candidate Details:\n\nFull Name: ${fullName}\nEmail Address: ${emailAddress}\n\nTied Courses:\n${tiedCourses.join(', ')}`,
