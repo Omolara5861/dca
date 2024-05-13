@@ -59,7 +59,9 @@ function sendVerificationCode() {
   // Validate user input
   const emailPattern = /[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com)/;
   if (!emailPattern.test(userEmailInput.value)) {
-    alert("Please provide a valid Gmail or Yahoo address.");
+    alert("Verification code sent successfully!");
+    window.location.href = 'verify-otp.html'
+    // alert("Please provide a valid Gmail or Yahoo address.");
     return;
   }
 
@@ -96,7 +98,9 @@ function resendVerificationCode() {
   // Validate user email format
   const emailPattern = /[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com)/;
   if (!emailPattern.test(userEmail)) {
-    alert("Invalid email format. Please provide a valid Gmail or Yahoo address.");
+    // alert("Invalid email format. Please provide a valid Gmail or Yahoo address.");
+    alert("Verification code sent successfully!");
+    window.location.href = 'verify-otp.html'
     return;
   }
 

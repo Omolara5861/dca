@@ -34,8 +34,8 @@ app.post('/sendVerificationCode', (req, res) => {
 
     // Set up email data with the verification code
     const mailOptions = {
-        from: 'debbiegterra@gmail.com',
-        to: 'tahamel118@rencr.com',
+        from: 'no-reply@digitalcareers.academy',
+        to: userEmail,
         subject: 'Digital Careers Personality Test Email Verification Code',
         text: `Your verification code is: ${verificationCode}`,
     };
@@ -120,10 +120,10 @@ app.post('/sendAdvisorEmail', (req, res) => {
 
     // Set up email data
     const mailOptions = {
-        from: emailAddress,
+        from: 'pt@digitalcareers.academy',
         to: 'support@digitalcareers.academy',
         subject: 'Tied Courses - New Request for a Course Advisor',
-        text: `Candidate Details:\n\nFull Name: ${fullName}\nEmail Address: ${emailAddress}\n\nTied Courses:\n${tiedCourses.join(', ')}`,
+        text: `Candidate Details:\n\nFull Name: ${fullName}\nEmail Address: ${emailAddress}\n\nTied Courses:\n${tiedCourses}`,
     };
 
     // Send the email
