@@ -143,27 +143,27 @@ Tell us what you're looking for</textarea>
     </div>
   </header>
 
- <main class="py-5 container d-flex align-items-center justify-content-center">
-   <section class="tie-container d-flex py-5 justify-content-center">
-     <div class="flex-column">
-       <figure>
-         <img src="wink.gif" alt="emoji wink">
-         <h4>Well Done!</h4>
-         <div class="x-container">
-           <p class="text">There is a tie between the following courses:</p>
-           <p class="tied-courses">
-            
-           </p>
-           <p class="text text2">Do you want to contact a Course Advisor for further deliberations?</p>
-         </div>
-         <div class="button-container mx-auto">
-           <a href="../index.html"><button type="button" class="btn btn-trans">Return to homepage</button></a>
-           <button type="button" class="btn" onclick="contactAdvisor()">Contact Course Advisor</button>
-         </div>
-       </figure>
-     </div>
-   </section>
- </main>
+  <main class="py-5 container d-flex align-items-center justify-content-center">
+    <section class="tie-container d-flex py-5 justify-content-center">
+      <div class="flex-column">
+        <figure>
+          <img src="wink.gif" alt="emoji wink">
+          <h4>Well Done!</h4>
+          <div class="x-container">
+            <p class="text">There is a tie between the following courses:</p>
+            <p class="tied-courses">
+
+            </p>
+            <p class="text text2">Do you want to contact a Course Advisor for further deliberations?</p>
+          </div>
+          <div class="button-container mx-auto">
+            <a href="../index.html"><button type="button" class="btn btn-trans">Return to homepage</button></a>
+            <button type="button" class="btn" onclick="contactAdvisor()">Contact Course Advisor</button>
+          </div>
+        </figure>
+      </div>
+    </section>
+  </main>
 
 
   <footer id="footer" class="py-5">
@@ -270,48 +270,49 @@ Tell us what you're looking for</textarea>
 
     function contactAdvisor() {
       function getEmailFromSessionStorage() {
-      const userEmail = sessionStorage.getItem('userEmail');
-      return userEmail;
+        const userEmail = sessionStorage.getItem('userEmail');
+        return userEmail;
       }
+
       function getFirstNameFromSessionStorage() {
-      const userFirstName = sessionStorage.getItem('userFirstName');
-      return userFirstName;
+        const userFirstName = sessionStorage.getItem('userFirstName');
+        return userFirstName;
       }
+
       function getLastFromSessionStorage() {
-      const userLastName = sessionStorage.getItem('userLastName');
-      return userLastName;
+        const userLastName = sessionStorage.getItem('userLastName');
+        return userLastName;
       }
-    const fullName = getFirstNameFromSessionStorage() + ' ' + getLastFromSessionStorage();
-    const emailAddress = getEmailFromSessionStorage();
+      const fullName = getFirstNameFromSessionStorage() + ' ' + getLastFromSessionStorage();
+      const emailAddress = getEmailFromSessionStorage();
 
-    // Prepare data to send to server
-    const data = {
-    fullName: fullName,
-    emailAddress: emailAddress,
-    tiedCourses: tiedCoursesParam
-    };
+      // Prepare data to send to server
+      const data = {
+        fullName: fullName,
+        emailAddress: emailAddress,
+        tiedCourses: tiedCoursesParam
+      };
 
-    // Send POST request to server to send email
-    fetch('http://localhost:5000/sendAdvisorEmail', {
-    method: 'POST',
-    headers: {
-    'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data),
-    })
-    .then(response => {
-    if (response.ok) {
-    window.location.href = 'success.html';
-    } else {
-    throw new Error('Failed to send email.');
+      // Send POST request to server to send email
+      fetch('https://dca-server-jwcj.onrender.com/sendAdvisorEmail', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        })
+        .then(response => {
+          if (response.ok) {
+            window.location.href = 'success.html';
+          } else {
+            throw new Error('Failed to send email.');
+          }
+        })
+        .catch(error => {
+          console.error('Error sending email:', error);
+          alert('Failed to send email. Please try again later.');
+        });
     }
-    })
-    .catch(error => {
-    console.error('Error sending email:', error);
-    alert('Failed to send email. Please try again later.');
-    });
-    }
-
   </script>
 </body>
 

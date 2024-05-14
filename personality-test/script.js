@@ -76,7 +76,7 @@ function sendVerificationCode() {
     }),
   };
 
-  fetch("http://localhost:5000/sendVerificationCode", requestOptions)
+  fetch("https://dca-server-jwcj.onrender.com/sendVerificationCode", requestOptions)
     .then((response) => {
       if (response.ok) {
         alert("Verification code sent successfully!");
@@ -115,7 +115,7 @@ function resendVerificationCode() {
     }),
   };
 
-  fetch("http://localhost:5000/resendVerificationCode", requestOptions)
+  fetch("https://dca-server-jwcj.onrender.com/resendVerificationCode", requestOptions)
     .then((response) => {
       if (response.ok) {
         alert("New verification code sent successfully!");
@@ -167,7 +167,7 @@ function verifyCode() {
   console.log("Request Options:", requestOptions);
 
   // Testing fetch call
-  fetch("http://localhost:5000/verifyCode", requestOptions)
+  fetch("https://dca-server-jwcj.onrender.com/verifyCode", requestOptions)
     .then((response) => {
       console.log("Fetch response:", response);
       if (response.ok) {
