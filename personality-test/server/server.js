@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -13,8 +13,8 @@ app.use(cors());
 const transporter = nodemailer.createTransport({
     service: 'mailjet',
     auth: {
-        user: 'd66f6c281af1279d6d9f8c7071e31d66',
-        pass: '386ac1f5fa30d27194041616e4c11ac5',
+        user: process.env.MAIL_SERVER_USER,
+        pass: process.env.MAIL_SERVER_PASSWORD
     },
 });
 
