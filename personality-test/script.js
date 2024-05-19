@@ -64,7 +64,7 @@ function sendVerificationCode() {
   const emailPattern = /[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com)/;
   if (!emailPattern.test(userEmailInput.value)) {
     alert("Verification code sent successfully!");
-    window.location.href = "verify-otp.html";
+    window.location.href = "verify.html";
     // alert("Please provide a valid Gmail or Yahoo address.");
     return;
   }
@@ -87,7 +87,8 @@ function sendVerificationCode() {
     .then((response) => {
       if (response.ok) {
         alert("Verification code sent successfully!");
-        window.location.href = "verify-otp.html";
+        window.location.href = "verify.html";
+        return;
       } else {
         alert("Error sending verification code. Please try again.");
       }
