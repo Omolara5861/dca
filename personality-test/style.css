@@ -10,8 +10,8 @@ nav {
   z-index: 10;
 }
 /* Hide spinner arrows on number-type inputs */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   /* Hide the spinner arrows in WebKit browsers */
   appearance: none;
@@ -214,7 +214,9 @@ a {
 /* PERSONALITY TESTS
 
      /* PERSONAL DETAILS STYLES */
-
+.otp-text {
+  cursor: pointer;
+}
 .details-container {
   width: 731px;
   height: 481px;
@@ -802,16 +804,16 @@ input:focus {
 }
 
 .tied-courses {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: center;
-    color: #367CE4;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: #367ce4;
 }
 
 .text2 {
-  color: #000000B5 !important;
+  color: #000000b5 !important;
   font-size: 16px !important;
 }
 
