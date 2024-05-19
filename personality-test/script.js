@@ -34,18 +34,22 @@ function storeDetailsInSession(firstName, lastName, email) {
   const userEmail = email.value.trim();
 
   if (userEmail && userFirstName && userLastName) {
-    sessionStorage.setItem('userFirstName', userFirstName);
-    sessionStorage.setItem('userLastName', userLastName);
-    sessionStorage.setItem('userEmail', userEmail);
-    console.log('Details stored in session storage:', userEmail, userFirstName, userLastName);
-  }
-  else {
-    console.error('Details not found or invalid.');
+    sessionStorage.setItem("userFirstName", userFirstName);
+    sessionStorage.setItem("userLastName", userLastName);
+    sessionStorage.setItem("userEmail", userEmail);
+    console.log(
+      "Details stored in session storage:",
+      userEmail,
+      userFirstName,
+      userLastName
+    );
+  } else {
+    console.error("Details not found or invalid.");
     // Handle error or display message to the user
   }
 }
 function getEmailFromSessionStorage() {
-  const userEmail = sessionStorage.getItem('userEmail');
+  const userEmail = sessionStorage.getItem("userEmail");
   return userEmail;
 }
 
@@ -60,7 +64,7 @@ function sendVerificationCode() {
   const emailPattern = /[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com)/;
   if (!emailPattern.test(userEmailInput.value)) {
     alert("Verification code sent successfully!");
-    window.location.href = 'verify-otp.html'
+    window.location.href = "verify-otp.html";
     // alert("Please provide a valid Gmail or Yahoo address.");
     return;
   }
@@ -76,11 +80,14 @@ function sendVerificationCode() {
     }),
   };
 
-  fetch("https://dca-server-jwcj.onrender.com/sendVerificationCode", requestOptions)
+  fetch(
+    "https://dca-server-jwcj.onrender.com/sendVerificationCode",
+    requestOptions
+  )
     .then((response) => {
       if (response.ok) {
         alert("Verification code sent successfully!");
-        window.location.href = 'verify-otp.html'
+        window.location.href = "verify-otp.html";
       } else {
         alert("Error sending verification code. Please try again.");
       }
@@ -100,7 +107,7 @@ function resendVerificationCode() {
   if (!emailPattern.test(userEmail)) {
     // alert("Invalid email format. Please provide a valid Gmail or Yahoo address.");
     alert("Verification code sent successfully!");
-    window.location.href = 'verify-otp.html'
+    window.location.href = "verify-otp.html";
     return;
   }
 
@@ -115,7 +122,10 @@ function resendVerificationCode() {
     }),
   };
 
-  fetch("https://dca-server-jwcj.onrender.com/resendVerificationCode", requestOptions)
+  fetch(
+    "https://dca-server-jwcj.onrender.com/resendVerificationCode",
+    requestOptions
+  )
     .then((response) => {
       if (response.ok) {
         alert("New verification code sent successfully!");
@@ -129,9 +139,7 @@ function resendVerificationCode() {
     });
 }
 
-
 function verifyCode() {
-
   // Retrieve OTP code from input boxes
   const otpInputs = [];
   for (let i = 1; i <= 6; i++) {
@@ -145,12 +153,10 @@ function verifyCode() {
     otpInputs.push(inputBox.value);
   }
 
-
   // Combine OTP values into a single code
   const code = otpInputs.join("");
 
   const userEmail = getEmailFromSessionStorage();
-
 
   // Make a request to the server to verify the code
   const requestOptions = {
@@ -185,7 +191,6 @@ function verifyCode() {
     });
 }
 
-
 // Function to move focus to the next input box automatically
 function moveToNextInput(event, nextIndex) {
   const maxLength = parseInt(event.target.getAttribute("maxlength"), 10);
@@ -198,7 +203,6 @@ function moveToNextInput(event, nextIndex) {
     }
   }
 }
-
 
 function showResult() {
   // Collect and calculate points for each course
@@ -216,6 +220,12 @@ function showResult() {
   for (let i = 0; i < courses.length; i++) {
     for (let j = 1; j <= 3; j++) {
       const radioName = `course${i + 1}q${j}`;
+      if (!document.querySelector(`input[name="${radioName}"]:checked`)) {
+        alert(
+          "You have unanswered question(s), please ensure all questions are completed before submitting"
+        );
+        return; // Exit the function if any question is unanswered
+      }
       const selectedValue = parseInt(
         document.querySelector(`input[name="${radioName}"]:checked`).value
       );
@@ -237,7 +247,9 @@ function showResult() {
     // Redirect to congratulations.html with the winning course appended
     window.location.href = `congratulations.html?course=${encodedCourse}`;
   } else {
-    const tiedCourses = winningCourses.join(',');
-    window.location.href = `tie.html?courses=${encodeURIComponent(tiedCourses)}`;
+    const tiedCourses = winningCourses.join(",");
+    window.location.href = `tie.html?courses=${encodeURIComponent(
+      tiedCourses
+    )}`;
   }
 }
