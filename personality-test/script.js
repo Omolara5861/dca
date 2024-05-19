@@ -53,21 +53,26 @@ function getEmailFromSessionStorage() {
   return userEmail;
 }
 
-function sendVerificationCode() {
+function sendVerificationCode(event) {
+  // Prevent the default form submission
+  event.preventDefault();
+
   const userFirstNameInput = document.getElementById("userFirstName");
   const userLastNameInput = document.getElementById("userLastName");
   const userEmailInput = document.getElementById("userEmail");
+  const submitButton = document.getElementById("submitButton");
 
   storeDetailsInSession(userFirstNameInput, userLastNameInput, userEmailInput);
 
   // Validate user input
   const emailPattern = /[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com)/;
   if (!emailPattern.test(userEmailInput.value)) {
-    alert("Verification code sent successfully!");
-    window.location.href = "verify.html";
-    // alert("Please provide a valid Gmail or Yahoo address.");
+    alert("Please provide a valid Gmail or Yahoo address.");
     return;
   }
+
+  // Disable the submit button to prevent multiple submissions
+  submitButton.disabled = true;
 
   // Make a request to the server to send the verification code
   const requestOptions = {
@@ -88,14 +93,15 @@ function sendVerificationCode() {
       if (response.ok) {
         alert("Verification code sent successfully!");
         window.location.href = "verify.html";
-        return;
       } else {
         alert("Error sending verification code. Please try again.");
+        submitButton.disabled = false; // Re-enable button on error
       }
     })
     .catch((error) => {
       console.error("Error:", error);
       alert("An error occurred. Please try again later.");
+      submitButton.disabled = false; // Re-enable button on error
     });
 }
 
