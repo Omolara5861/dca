@@ -270,7 +270,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 527px;
-  height: 408px;
   gap: 46px;
 }
 
@@ -426,7 +425,7 @@ a {
   .details-container,
   .welcome-container {
     margin-top: 75px;
-    width: 90vw;
+    width: 100%;
   }
 
   .details-container div,
@@ -499,8 +498,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 813px;
-  height: 1294px;
-  margin-top: 112px;
+  margin-top: 32px;
   gap: 48px;
 }
 
@@ -820,6 +818,59 @@ input:focus {
 }
 
 @media (max-width: 769px) {
+
+  .referralbox, .verify-container {
+    width: 100%;
+  }
+  .verify-container {
+      padding: 20px;
+
+    }
+    .referbox {
+      width: 100%;
+      margin-left: unset;
+    }
+        .otp-input {
+          width: 15%;
+          height: 44px;
+        }
+
+                .verify-box button {
+                  width: 100%;
+                }
+                .otp-text {
+                  display: none;
+                }
+  h4 {
+    font-size: 24px !important;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+    .verify-box h6, .verify-email :nth-child(1), .congrats-content h5 {
+      font-size: 24px !important;
+    }
+        .welcome-container {
+          height: auto;
+          padding-left:20px ;
+          padding-right:20px ;
+        }
+
+        .welcome-container div {
+          width: unset;
+        }
+
+                .question-box> :first-child, .question-box, 
+                
+                .question-box div figure {
+                  height: auto;
+                }
+
+                                .question-box div figure {
+                                  display: block !important;
+                                }
   .progress-b span {
     width: 44px;
     height: 10px;
@@ -835,7 +886,7 @@ input:focus {
 
   .question-box {
     width: 90vw;
-    margin-left: 0;
+    padding: 20px;
   }
 
   .question-container .container-box a button {
@@ -860,6 +911,7 @@ input:focus {
     max-width: 90vw;
     padding-left: 9px;
     align-items: center;
+    padding: unset !important;
   }
 
   .radio {
@@ -884,6 +936,21 @@ input:focus {
   .question-box div h4 {
     width: 80vw;
     line-height: 27px;
-    font-size: 20px;
+    font-size: 20px !important;
   }
+
+    .radio {
+      text-align: left;
+      place-items: unset;
+    }
+
+        .radio p {
+          max-width: unset;
+          margin-left: 30px;
+          margin-top: 25px;
+        }
+
+                .radio span {
+                  margin-top: 25px;
+                }
 }
