@@ -829,6 +829,7 @@ input:focus {
     .referbox {
       width: 100%;
       margin-left: unset;
+      padding: 10px;
     }
         .otp-input {
           width: 15%;
