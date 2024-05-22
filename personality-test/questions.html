@@ -279,7 +279,7 @@ Tell us what you're looking for</textarea>
          </div>
 
 
-         <button type="button" class=" btn next-btn">Next</button>
+         <button type="button" class=" btn next-btn" disabled>Next</button>
          <div class="d-flex gap-4 justify-content-center">
           <div class="progress-b">
             <span class="full"></span>
@@ -310,10 +310,6 @@ Tell us what you're looking for</textarea>
 
 
      </section>
-
-
-
-
 
      <!-- FORM  4-6 -->
 
@@ -451,7 +447,7 @@ Tell us what you're looking for</textarea>
          </div>
          <div class="w-100 d-flex gap-3">
            <button type="button" class="w-50 btn btn-trans previous-btn">Prev</button>
-           <button type="button" class="w-50 mx-2 btn next-btn">Next</button>
+           <button type="button" class="w-50 mx-2 btn next-btn" disabled>Next</button>
          </div>
  <div class="d-flex gap-4 justify-content-center">
    <div class="progress-b">
@@ -614,7 +610,7 @@ Tell us what you're looking for</textarea>
 
          <div class="w-100 d-flex gap-3">
            <button type="button" class="w-50 btn btn-trans previous-btn">Prev</button>
-           <button type="button" class="w-50 mx-2 btn next-btn">Next</button>
+           <button type="button" class="w-50 mx-2 btn next-btn" disabled>Next</button>
          </div>
  <div class="d-flex gap-4 justify-content-center">
    <div class="progress-b">
@@ -779,7 +775,7 @@ Tell us what you're looking for</textarea>
          </div>
          <div class="w-100 d-flex gap-3">
            <button type="button" class="w-50 btn btn-trans previous-btn">Prev</button>
-           <button type="button" class="w-50 mx-2 btn next-btn">Next</button>
+           <button type="button" class="w-50 mx-2 btn next-btn" disabled>Next</button>
          </div>
           <div class="d-flex gap-4 justify-content-center">
             <div class="progress-b">
@@ -946,7 +942,7 @@ Tell us what you're looking for</textarea>
 
          <div class="w-100 d-flex gap-3">
            <button type="button" class="w-50 btn btn-trans previous-btn">Prev</button>
-           <button type="button" class="w-50 mx-2 btn next-btn">Next</button>
+           <button type="button" class="w-50 mx-2 btn next-btn" disabled>Next</button>
          </div>
  <div class="d-flex gap-4 justify-content-center">
    <div class="progress-b">
@@ -1113,7 +1109,7 @@ Tell us what you're looking for</textarea>
          </div>
          <div class="w-100 d-flex gap-3">
            <button type="button" class="w-50 btn btn-trans previous-btn">Prev</button>
-           <button type="button" class="w-50 btn submit-btn" onclick="showResult()">Submit</button>
+           <button type="button" class="w-50 btn submit-btn" onclick="showResult()" disabled>Submit</button>
          </div>
  <div class="d-flex gap-4 justify-content-center">
    <div class="progress-b">
@@ -1239,6 +1235,33 @@ Tell us what you're looking for</textarea>
       </section>
     </div>
   </footer>
+<script>
+    const steps1 = document.querySelectorAll('.step');
+    steps1.forEach(step => {
+    const nextBtn = step.querySelector('.next-btn, .submit-btn');
+    const radioGroups = step.querySelectorAll('.question-box');
+
+    function checkAllQuestionsAnswered() {
+    let allAnswered = true;
+    radioGroups.forEach(group => {
+    const radios = group.querySelectorAll('input[type="radio"]');
+    const isAnswered = Array.from(radios).some(radio => radio.checked);
+    if (!isAnswered) {
+    allAnswered = false;
+    }
+    });
+    nextBtn.disabled = !allAnswered;
+    }
+
+    radioGroups.forEach(group => {
+    const radios = group.querySelectorAll('input[type="radio"]');
+    radios.forEach(radio => {
+    radio.addEventListener('change', checkAllQuestionsAnswered);
+    });
+    });
+    });
+
+</script>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
