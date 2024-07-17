@@ -165,7 +165,7 @@ Tell us what you're looking for</textarea>
       </div>
     </section>
 <div class="personality-test">
-  <div class="pt-card visible" id="ptCard">
+  <div class="pt-card" id="ptCard">
     <img src="images/pt.png" alt="Lady">
     <img src="images/cancel.svg" alt="Cancel Icon" class="cancel" id="cancelBtn">
     <div class="content text-center">
@@ -784,6 +784,22 @@ Tell us what you're looking for</textarea>
     </div>
   </footer>
   <!--=============== SWIPER JS ===============-->
+  <script>
+     document.addEventListener("DOMContentLoaded", function() {
+     var ptCard = document.getElementById("ptCard");
+     if (!localStorage.getItem("ptCardSeen")) {
+     ptCard.classList.add("visible");
+     }
+     localStorage.setItem("ptCardSeen", "true");
+      var today = new Date().toISOString().slice(0, 10);
+      var lastVisitDate = localStorage.getItem("lastVisitDate");
+
+      if (lastVisitDate !== today) {
+      ptCard.classList.add("visible");
+      }
+      localStorage.setItem("lastVisitDate", today);
+     });
+  </script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
