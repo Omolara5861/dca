@@ -237,12 +237,6 @@ img {
 
  }
 
- /* .referralbox  > :first-child img{
-  width: 75px;
-  height: 75px;
-  margin-top: 12.5px;
-  margin-left: 12.5px;
-} */
  .referralbox :nth-child(2) {
      display: flex;
      flex-direction: column;
@@ -849,6 +843,8 @@ img {
      color: #363636;
      border-radius: 8px;
      font-weight: 600;
+     /* Added */
+     width: fit-content;
      font-size: 16px;
      line-height: 24px;
      height: 48px;
@@ -864,7 +860,7 @@ img {
      border-radius: 50px;
      color: white;
      gap: 8px;
-     /* Removed width: ; */
+     /* Changed width: ; */
      width: fit-content;
      height: 48px;
      border: none;
