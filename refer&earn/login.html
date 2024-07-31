@@ -143,45 +143,42 @@ Tell us what you're looking for</textarea>
     </div>
   </header>
 
-  <main class="signup-page">
-    <div class="row gx-2 d-flex">
-      <div class="col-12 col-md-6">
+    <main class="signup-page m-auto" id="auth">
+      <div class="d-flex flex-xl-row flex-column">
+        <div class="left-side d-flex flex-column justify-content-center align-items-center w-50">
+          <div class="form-container mt-0">
+            <h6 class="text-center">Welcome Back!</h6>
+            <div class="signup-form">
 
-        <div class="form-container">
-          <h6 class="text-center">Welcome Back!</h6>
-          <div class="signup-form">
+              <form action="" class="signup-form ">
 
-            <form action="" class="signup-form ">
+                <figure class="w-100">
+                  <label for="">Email Address</label>
+                  <input type="text" placeholder="Enter email address" class="border w-100  border-muted py-1 px-2 rounded text-muted" required />
+                </figure>
+                <figure class="w-100">
+                  <label for="">Password</label>
+                  <div class="position-relative password-input-containr w-100 d-flex align-items-center  justify-content-between">
+                    <input type="password" required placeholder="Enter password" class=" border border-muted  w-100 fg-password-input rounded px-2 " id="password">
+                    <img src="../icons/eye-stroke.png" alt="eye icon" class=" eye-icon position-absolute" onclick="togglePasswordVisibility()">
+                  </div>
+                </figure>
+                <div class="forgot-password">
+                  <a href="forgotpassword.html" class="p-tag "> <input type="checkbox"> Forgot Password?</a>
+                </div>
+                <a href="./referralwallet/activereferees.html" class="  my-3 btn w-100 align-content-center buttons text-light">Login</a>
 
-              <figure class="w-100">
-                <label for="">Email Address</label>
-                <input type="text" placeholder="Enter email address" class="border w-100  border-muted py-1 px-2 rounded text-muted" required />
-              </figure>
-             <figure class="w-100">
-               <label for="">Password</label>
-               <div class="position-relative password-input-containr w-100 d-flex align-items-center  justify-content-between">
-                   <input type="password" required placeholder="Enter password" class=" border border-muted  w-100 fg-password-input rounded px-2 " id="password">
-                   <img src="../icons/eye-stroke.png" alt="eye icon" class=" eye-icon position-absolute" onclick="togglePasswordVisibility()">
-               </div>
-             </figure>
-              <div class="d-flex gap-1 forgot-password">
-                <input type="checkbox">
-                <a href="forgotpassword.html" class="p-tag ">Forgot Password?</a>
-              </div>
-              <a href="./referralwallet/activereferees.html" class="  my-3 btn w-100 align-content-center buttons text-light">Login</a>
-
-            </form>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="right-side w-50 align-self-center mt-5 mt-lg-0">
+          <div class="content">
+            <img src="images/signup.png" alt="signup and refer instructions" class="w-100 instructions-img" />
           </div>
         </div>
       </div>
-
-
-      <div class="col-12 col-md-6">
-        <img src="images/login.png" alt="signup and refer instructions" class="instructions-img" />
-      </div>
-
-    </div>
-  </main>
+    </main>
 
   <footer id="footer" class="py-5">
     <div class="container">

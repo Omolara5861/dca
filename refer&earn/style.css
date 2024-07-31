@@ -1595,7 +1595,8 @@ img {
 
         @media (max-width: 1100px) {
             .signup-page .form-container {
-                width: unset;
+                width: 100%;
+                padding: 20px;
                 height: fit-content;
                 margin-left: 0;
             }
