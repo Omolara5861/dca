@@ -765,7 +765,7 @@ img {
     border-radius: 16px;
   }
 
- main .flex-column .main-content> :first-child {
+ main .flex-column .main-content .box {
      background: #E9F2FF;
      height: 268px;
      border: 1px solid #EEEEEF;
@@ -1201,3 +1201,7 @@ img {
                             padding: 10px;
                          }
         }
+
+.logout {
+    font-weight: 700;
+}
